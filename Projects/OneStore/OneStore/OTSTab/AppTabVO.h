@@ -21,7 +21,6 @@
 @end
 
 
-
-@interface AppTabVO : NSObject
+@interface AppTabVO : NSObject<NSCoding>
 @property (nonatomic, strong) NSArray<AppTabItemVO *> *items;
 @end

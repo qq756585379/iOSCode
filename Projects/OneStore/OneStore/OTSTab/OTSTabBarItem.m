@@ -22,6 +22,14 @@
 
 @implementation OTSTabBarItem
 
++ (instancetype)itemWithTitle:(NSString *)title image:(UIImage *)image selectedImage:(UIImage *)selectedImage{
+    OTSTabBarItem *item = [[self alloc] initWithFrame:CGRectZero];
+    item.title = title;
+    item.image = image;
+    item.selectedImage = selectedImage;
+    return item;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -93,14 +101,6 @@
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.indicateView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.f constant:8.f]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.indicateView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.f constant:-14.f]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.indicateView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1.f constant:6]];
-}
-
-+ (instancetype)itemWithTitle:(NSString *)title image:(UIImage *)image selectedImage:(UIImage *)selectedImage{
-    OTSTabBarItem *item = [[self alloc] initWithFrame:CGRectZero];
-    item.title = title;
-    item.image = image;
-    item.selectedImage = selectedImage;
-    return item;
 }
 
 - (void)setFrame:(CGRect)frame{

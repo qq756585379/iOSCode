@@ -86,7 +86,7 @@
 
 - (void)registerRootVC:(UIViewController *)aRootVC{
     if (self.rootVC) {
-        NSLog(@"已经设置了rootvc，不能重复设置");
+        DLog(@"已经设置了rootvc，不能重复设置");
         return ;
     }
     self.rootVC = aRootVC;
@@ -94,7 +94,7 @@
 
 - (void)registerTabArray:(NSArray *)aTabArray{
     if (self.tabArray) {
-        NSLog(@"已经设置了tabarray，不能重复设置");
+        DLog(@"已经设置了tabarray，不能重复设置");
         return ;
     }
     self.tabArray = aTabArray;
@@ -102,7 +102,7 @@
 
 - (void)registerPCContainer:(UIViewController *)aPCContainer{
     if (self.pcContainer) {
-        NSLog(@"已经设置了pc Container，不能重复设置");
+        DLog(@"已经设置了pc Container，不能重复设置");
         return ;
     }
     self.pcContainer = aPCContainer;
@@ -123,7 +123,7 @@
     }
     aKeyName = [aKeyName lowercaseString];
     if (self.mapping[aKeyName]) {
-        NSLog(@"overwrite router vo key[%@], mapping vo,%@", aKeyName, self.mapping[aKeyName]);
+        DLog(@"overwrite router vo key[%@], mapping vo,%@", aKeyName, self.mapping[aKeyName]);
     }
     self.mapping[aKeyName] = aVO;
 }
@@ -142,7 +142,7 @@
     }
     aKeyName = [aKeyName lowercaseString];
     if (self.nativeFuncMapping[aKeyName]) {
-        NSLog(@"overwrite native func vo key[%@], mapping vo,%@", aKeyName, self.nativeFuncMapping[aKeyName]);
+        DLog(@"overwrite native func vo key[%@], mapping vo,%@", aKeyName, self.nativeFuncMapping[aKeyName]);
     }
     self.nativeFuncMapping[aKeyName] = aVO;
 }
@@ -169,7 +169,7 @@
  */
 - (id)routerWithUrl:(NSURL *)aUrl callbackBlock:(OTSNativeFuncVOBlock)aBlock{
     if (!aUrl) {
-        NSLog(@"router error url");
+        DLog(@"router error url");
         return nil;
     }
     NSString *scheme = aUrl.scheme;

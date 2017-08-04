@@ -12,7 +12,6 @@
 
 @interface OTSRouter : NSObject
 
-//单例
 + (instancetype)singletonInstance;
 
 @property (nonatomic, strong) NSMutableDictionary *mapping;
@@ -27,14 +26,9 @@
  *  功能:最顶层显示的vc
  */
 - (UIViewController *)topVC;
-/**
- *  功能:是否是iPhone
- */
+
 - (BOOL)isPhone;
-/**
- *  功能:是否是iPad
- */
-//- (BOOL)isPad;
+- (BOOL)isPad;
 
 - (void)registerRootVC:(UIViewController *)aRootVC;
 - (void)registerTabArray:(NSArray *)aTabArray;

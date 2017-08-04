@@ -30,3 +30,5 @@
 #import "NSString+util.h"
 #import "OTSGlobalValue.h"
 #import "NSObject+PerformBlock.h"
+
+#import "OTSFont.h"

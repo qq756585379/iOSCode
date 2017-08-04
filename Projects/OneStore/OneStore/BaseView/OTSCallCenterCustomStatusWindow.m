@@ -33,7 +33,7 @@
 
 @interface OTSCallCenterCustomStatusWindow()
 @property (nonatomic, strong) UIButton *messageButton;
-@property (nonatomic, strong) UILabel *unReadLabel;
+@property (nonatomic, strong) UILabel  *unReadLabel;
 @property (nonatomic, assign) NSInteger unReadCount;
 @end
 
@@ -87,19 +87,16 @@
             self.transform = CGAffineTransformIdentity;
         }
             break;
-            
         case UIInterfaceOrientationPortraitUpsideDown:
         {
             self.transform = CGAffineTransformMakeRotation(M_PI);
         }
             break;
-            
         case UIInterfaceOrientationLandscapeLeft:
         {
             self.transform = CGAffineTransformMakeRotation(-M_PI_2);
         }
             break;
-            
         case UIInterfaceOrientationLandscapeRight:
         {
             self.transform = CGAffineTransformMakeRotation(M_PI_2);
@@ -216,7 +213,6 @@
     }
     return _messageButton;
 }
-
 - (UILabel *)unReadLabel{
     if (!_unReadLabel) {
         _unReadLabel = [[UILabel alloc] init];
@@ -229,7 +225,6 @@
     }
     return _unReadLabel;
 }
-
 - (void)dealloc{
     [self unobserveAllNotifications];
 }

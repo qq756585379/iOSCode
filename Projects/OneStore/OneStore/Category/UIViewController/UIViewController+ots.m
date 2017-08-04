@@ -32,7 +32,7 @@
 }
 
 - (void)repeateClickTabBarItem:(NSNumber *)count{
-    NSLog(@"%@ 没有实现此方法 %@",self.class, NSStringFromSelector(_cmd));
+    DLog(@"%@ 没有实现此方法 %@",self.class, NSStringFromSelector(_cmd));
 }
 
 @end

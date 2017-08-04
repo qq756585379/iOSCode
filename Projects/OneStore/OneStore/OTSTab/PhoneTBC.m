@@ -40,14 +40,14 @@
     [[NSNotificationCenter defaultCenter] addObserverForName:@"updateTabVO" object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification *note) {
         STRONG_SELF;
         PhoneTabBarItem *item = note.object;
-        AppTabVO *newVO = [AppTabVO new];
         NSMutableArray *items = self.logic.appTabVO.items.mutableCopy;
         NSInteger index = [self.customTabBar.items indexOfObject:item];
         if (items.count >= index + 1) {
-            [items replaceObjectAtIndex:[self.customTabBar.items indexOfObject:item] withObject:item.vo];
+            [items replaceObjectAtIndex:index withObject:item.vo];
         }
+        
+        AppTabVO *newVO = [AppTabVO new];
         newVO.items = (id)items;
-
         [OTSArchiveData archiveDataInCache:newVO withFileName:@"AppTabVO.plist"];
         self.logic.appTabVO = newVO;
     }];
@@ -180,7 +180,7 @@
     if (tempItem.vo.type.integerValue > 0 && tempItem.vo.redPoint.boolValue) {
         NSDate *nowDate = [NSDate date];
         [[NSUserDefaults standardUserDefaults] setObject:@((nowDate.timeIntervalSince1970) * 1000) forKey:[NSString stringWithFormat:@"PhoneTabBarItemLastUpdateTime%@",tempItem.vo.type]];
-        [[NSUserDefaults standardUserDefaults]synchronize];
+        [[NSUserDefaults standardUserDefaults] synchronize];
     }
     
     [super setSelectedIndex:self.customTabBar.selectedIndex];
@@ -251,6 +251,11 @@
             [self updateWithVO:notification.object];
         }
     }
+}
+
+#pragma mark -BI
+- (void)doBITrackerFromVC:(OTSVC *)aFromVC destVC:(OTSVC *)aDestVC destIndex:(NSInteger)tabIndex{
+    
 }
 
 - (OTSTabbarLogic *)logic{

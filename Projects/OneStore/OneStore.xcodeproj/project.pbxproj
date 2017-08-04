@@ -10,6 +10,11 @@
 		53F9C8AFF8E163FC82366FE8 /* libPods-Shows-OneStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DAD8F7734D2263E7D7336A /* libPods-Shows-OneStore.a */; };
 		F5070B411F2B1237002C0ADF /* AppFunctionSwitchVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070B401F2B1237002C0ADF /* AppFunctionSwitchVO.m */; };
 		F5070B441F2B12A1002C0ADF /* OTSFunctionSwithLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070B431F2B12A1002C0ADF /* OTSFunctionSwithLogic.m */; };
+		F5076ACF1F32BABE0094AEED /* OTSGifNilView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076ACE1F32BABE0094AEED /* OTSGifNilView.m */; };
+		F5076AD21F32BB390094AEED /* OTSFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076AD11F32BB390094AEED /* OTSFont.m */; };
+		F5076AD91F32BDE10094AEED /* OTSListSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076AD61F32BDE10094AEED /* OTSListSearchBar.m */; };
+		F5076ADA1F32BDE10094AEED /* OTSSearchBarWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076AD81F32BDE10094AEED /* OTSSearchBarWordView.m */; };
+		F5076ADE1F32C0490094AEED /* OTSBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076ADD1F32C0490094AEED /* OTSBadgeButton.m */; };
 		F51EC0571F1C444B00735E7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0561F1C444B00735E7C /* main.m */; };
 		F51EC05A1F1C444B00735E7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0591F1C444B00735E7C /* AppDelegate.m */; };
 		F51EC05D1F1C444B00735E7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC05C1F1C444B00735E7C /* ViewController.m */; };
@@ -334,6 +339,16 @@
 		F5070B401F2B1237002C0ADF /* AppFunctionSwitchVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppFunctionSwitchVO.m; sourceTree = "<group>"; };
 		F5070B421F2B12A1002C0ADF /* OTSFunctionSwithLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSFunctionSwithLogic.h; sourceTree = "<group>"; };
 		F5070B431F2B12A1002C0ADF /* OTSFunctionSwithLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSFunctionSwithLogic.m; sourceTree = "<group>"; };
+		F5076ACD1F32BABE0094AEED /* OTSGifNilView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGifNilView.h; sourceTree = "<group>"; };
+		F5076ACE1F32BABE0094AEED /* OTSGifNilView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGifNilView.m; sourceTree = "<group>"; };
+		F5076AD01F32BB390094AEED /* OTSFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSFont.h; sourceTree = "<group>"; };
+		F5076AD11F32BB390094AEED /* OTSFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSFont.m; sourceTree = "<group>"; };
+		F5076AD51F32BDE10094AEED /* OTSListSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSListSearchBar.h; sourceTree = "<group>"; };
+		F5076AD61F32BDE10094AEED /* OTSListSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSListSearchBar.m; sourceTree = "<group>"; };
+		F5076AD71F32BDE10094AEED /* OTSSearchBarWordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSearchBarWordView.h; sourceTree = "<group>"; };
+		F5076AD81F32BDE10094AEED /* OTSSearchBarWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSearchBarWordView.m; sourceTree = "<group>"; };
+		F5076ADC1F32C0490094AEED /* OTSBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSBadgeButton.h; sourceTree = "<group>"; };
+		F5076ADD1F32C0490094AEED /* OTSBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSBadgeButton.m; sourceTree = "<group>"; };
 		F51EC0521F1C444B00735E7C /* OneStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51EC0561F1C444B00735E7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F51EC0581F1C444B00735E7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -704,6 +719,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F5076AD41F32BDE10094AEED /* OTSListSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				F5076AD51F32BDE10094AEED /* OTSListSearchBar.h */,
+				F5076AD61F32BDE10094AEED /* OTSListSearchBar.m */,
+				F5076AD71F32BDE10094AEED /* OTSSearchBarWordView.h */,
+				F5076AD81F32BDE10094AEED /* OTSSearchBarWordView.m */,
+			);
+			path = OTSListSearchBar;
+			sourceTree = "<group>";
+		};
+		F5076ADB1F32C0490094AEED /* OTSBadgeButton */ = {
+			isa = PBXGroup;
+			children = (
+				F5076ADC1F32C0490094AEED /* OTSBadgeButton.h */,
+				F5076ADD1F32C0490094AEED /* OTSBadgeButton.m */,
+			);
+			path = OTSBadgeButton;
+			sourceTree = "<group>";
+		};
 		F51EC0491F1C444B00735E7C = {
 			isa = PBXGroup;
 			children = (
@@ -725,6 +760,7 @@
 		F51EC0541F1C444B00735E7C /* OneStore */ = {
 			isa = PBXGroup;
 			children = (
+				F52916541F3403420097B496 /* Pad */,
 				F5FFFEAA1F219CA5007B55F1 /* OTSLogic */,
 				F5FFFEA61F219C50007B55F1 /* NetWork */,
 				F5FFFE9F1F219615007B55F1 /* MyCenter */,
@@ -858,13 +894,34 @@
 				F58C7A431F1C5EFE00AC2928 /* OTSLog.m */,
 				F5FFFE671F207F4F007B55F1 /* OTSLaunch.h */,
 				F5FFFE681F207F4F007B55F1 /* OTSLaunch.m */,
+				F5076AD01F32BB390094AEED /* OTSFont.h */,
+				F5076AD11F32BB390094AEED /* OTSFont.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		F52916541F3403420097B496 /* Pad */ = {
+			isa = PBXGroup;
+			children = (
+				F52916551F3403500097B496 /* BaseView */,
+			);
+			path = Pad;
+			sourceTree = "<group>";
+		};
+		F52916551F3403500097B496 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 		F54881101F1EEA5100A8416E /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				F5076ADB1F32C0490094AEED /* OTSBadgeButton */,
+				F5076AD41F32BDE10094AEED /* OTSListSearchBar */,
+				F5076ACD1F32BABE0094AEED /* OTSGifNilView.h */,
+				F5076ACE1F32BABE0094AEED /* OTSGifNilView.m */,
 				F54881111F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.h */,
 				F54881121F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.m */,
 			);
@@ -1676,6 +1733,7 @@
 				F51EC10B1F1C59AD00735E7C /* OTSClientInfo.m in Sources */,
 				F51EC1171F1C59EF00735E7C /* NSDictionary+router.m in Sources */,
 				F51EC10A1F1C59AD00735E7C /* OTSBIGlobalValue.m in Sources */,
+				F5076AD91F32BDE10094AEED /* OTSListSearchBar.m in Sources */,
 				F51EC1121F1C59E500735E7C /* OTSRouter.m in Sources */,
 				F5070B411F2B1237002C0ADF /* AppFunctionSwitchVO.m in Sources */,
 				F51EC0E41F1C550400735E7C /* UIViewController+base.m in Sources */,
@@ -1686,6 +1744,8 @@
 				F5070B441F2B12A1002C0ADF /* OTSFunctionSwithLogic.m in Sources */,
 				F59A16AA1F287EB300EF7866 /* OTSTBC.m in Sources */,
 				F5FFFE691F207F4F007B55F1 /* OTSLaunch.m in Sources */,
+				F5076ADE1F32C0490094AEED /* OTSBadgeButton.m in Sources */,
+				F5076ADA1F32BDE10094AEED /* OTSSearchBarWordView.m in Sources */,
 				F5FFFE871F20D0E8007B55F1 /* PhoneApolloNC.m in Sources */,
 				F5FFFE8A1F20D218007B55F1 /* PhoneCustomRootNC.m in Sources */,
 				F51EC10D1F1C59AD00735E7C /* OTSMappingVO.m in Sources */,
@@ -1695,7 +1755,9 @@
 				F58C7A441F1C5EFE00AC2928 /* OTSLog.m in Sources */,
 				F5FFFE7E1F20CEBB007B55F1 /* PhoneVC.m in Sources */,
 				F5FFFE841F20D09F007B55F1 /* PhoneNC.m in Sources */,
+				F5076ACF1F32BABE0094AEED /* OTSGifNilView.m in Sources */,
 				F51EC0571F1C444B00735E7C /* main.m in Sources */,
+				F5076AD21F32BB390094AEED /* OTSFont.m in Sources */,
 				F59A16A71F28786900EF7866 /* OTSNetworkManager.m in Sources */,
 				F51EC0EA1F1C551B00735E7C /* UIViewController+router.m in Sources */,
 				F5FFFE6F1F2080BC007B55F1 /* OTSTabBar.m in Sources */,

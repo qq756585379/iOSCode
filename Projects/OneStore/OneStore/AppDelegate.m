@@ -12,7 +12,6 @@
 #import "OTSRouter.h"
 #import "OTSLaunch.h"
 #import "PhoneTBC.h"
-//WCSession
 #import <WatchConnectivity/WatchConnectivity.h>
 
 @interface AppDelegate ()<WCSessionDelegate>
@@ -127,7 +126,6 @@
     }
     [UIApplication sharedApplication].shortcutItems = tempArray;
 }
-
 - (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void(^)(BOOL succeeded))completionHandler{
     
 //    OTSBITrackerBDPramaVO *vo = [OTSBITrackerBDPramaVO new];

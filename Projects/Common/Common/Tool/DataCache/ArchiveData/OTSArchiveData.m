@@ -23,8 +23,7 @@
 /**
  *  功能:取档
  */
-+ (id<NSCoding>)unarchiveDataInDocWithFileName:(NSString *)aFileName
-{
++ (id<NSCoding>)unarchiveDataInDocWithFileName:(NSString *)aFileName{
     NSString *documentPath = [OTSFileManager appDocPath];
     NSString *filePath = [documentPath stringByAppendingPathComponent:aFileName];
     return [NSKeyedUnarchiver unarchiveObjectWithFile:filePath];
