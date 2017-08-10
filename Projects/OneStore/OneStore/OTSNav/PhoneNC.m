@@ -1,51 +1,56 @@
 //
-//  OTSNC.m
+//  PhoneNC.m
 //  OneStore
 //
-//  Created by yangjun on 2017/5/11.
-//  Copyright © 2017年 yangjun. All rights reserved.
+//  Created by 杨俊 on 2017/7/20.
+//  Copyright © 2017年 Lenovo-Apple. All rights reserved.
 //
 
-#import "OTSNC.h"
+#import "PhoneNC.h"
 
-@interface OTSNC ()
+@interface PhoneNC ()
 
 @end
 
-@implementation OTSNC
+@implementation PhoneNC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
 }
 
+- (void)switchToRootVC:(UIViewController *)aVc{
+    if (!aVc) return;
+    if (self.viewControllers[0] != aVc) {
+        [self setViewControllers:@[aVc]];
+        if (self.topViewController.isViewLoaded) {
+            [self.topViewController viewWillAppear:YES];
+            [self.topViewController viewDidAppear:YES];
+        }
+    }
+}
+
 #pragma mark - Orientations
 - (BOOL)shouldAutorotate{
     return [self.topViewController shouldAutorotate];
 }
+
 - (UIInterfaceOrientationMask)supportedInterfaceOrientations{
     return [self.topViewController supportedInterfaceOrientations];
 }
+
 #pragma mark - presentation
 - (UIModalPresentationStyle)modalPresentationStyle{
     return [self.topViewController modalPresentationStyle];
 }
+
 - (UIModalTransitionStyle)modalTransitionStyle{
     return [self.topViewController modalTransitionStyle];
 }
 
+- (void)dealloc{
+    [self unobserveAllNotifications];
+}
+
+
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-

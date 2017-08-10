@@ -60,7 +60,7 @@ DEPENDENCIES:
   - BlocksKit (~> 2.2.5)
   - CocoaLumberjack (~> 3.2.0)
   - DateTools (~> 2.0.0)
-  - FLAnimatedImage
+  - FLAnimatedImage (~> 1.0.12)
   - Masonry (~> 1.0.2)
   - MBProgressHUD (~> 1.0.0)
   - MJExtension (~> 3.0.13)
@@ -87,6 +87,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
 
-PODFILE CHECKSUM: c6e3e593110248508c1c3e2504bd4abaeb950e60
+PODFILE CHECKSUM: 44ee316f252bc00028b3e5d75f4e593d3d554db6
 
 COCOAPODS: 1.2.1

@@ -13,4 +13,6 @@
 
 @property(nonatomic,retain) PhoneTabBarItem *tabbarItem;
 
+- (void)switchToRootVC:(UIViewController *)aVc;
+
 @end

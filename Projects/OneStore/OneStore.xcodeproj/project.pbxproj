@@ -15,6 +15,21 @@
 		F5076AD91F32BDE10094AEED /* OTSListSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076AD61F32BDE10094AEED /* OTSListSearchBar.m */; };
 		F5076ADA1F32BDE10094AEED /* OTSSearchBarWordView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076AD81F32BDE10094AEED /* OTSSearchBarWordView.m */; };
 		F5076ADE1F32C0490094AEED /* OTSBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5076ADD1F32C0490094AEED /* OTSBadgeButton.m */; };
+		F51636401F39A8C600F47DC6 /* UITabBarController+ots.m in Sources */ = {isa = PBXBuildFile; fileRef = F516363F1F39A8C600F47DC6 /* UITabBarController+ots.m */; };
+		F51636461F39AEEC00F47DC6 /* OTSVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F51636441F39AEEC00F47DC6 /* OTSVC.m */; };
+		F516364A1F39B1B700F47DC6 /* OTSNC.m in Sources */ = {isa = PBXBuildFile; fileRef = F51636491F39B1B700F47DC6 /* OTSNC.m */; };
+		F516364D1F39B1C300F47DC6 /* PhoneNC.m in Sources */ = {isa = PBXBuildFile; fileRef = F516364C1F39B1C300F47DC6 /* PhoneNC.m */; };
+		F51636501F39B1D100F47DC6 /* PhoneCartNC.m in Sources */ = {isa = PBXBuildFile; fileRef = F516364F1F39B1D100F47DC6 /* PhoneCartNC.m */; };
+		F51636531F39B1DE00F47DC6 /* PhoneCustomRootNC.m in Sources */ = {isa = PBXBuildFile; fileRef = F51636521F39B1DE00F47DC6 /* PhoneCustomRootNC.m */; };
+		F51636561F39B1FD00F47DC6 /* OTSNCDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F51636551F39B1FD00F47DC6 /* OTSNCDelegate.m */; };
+		F51636591F39B2E600F47DC6 /* UIViewController+OTSAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F51636581F39B2E600F47DC6 /* UIViewController+OTSAnimation.m */; };
+		F516365C1F39BA2B00F47DC6 /* PhoneApolloNC.m in Sources */ = {isa = PBXBuildFile; fileRef = F516365B1F39BA2B00F47DC6 /* PhoneApolloNC.m */; };
+		F51636601F39BCFD00F47DC6 /* PhoneCategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F516365F1F39BCFD00F47DC6 /* PhoneCategoryVC.m */; };
+		F516366A1F39C16100F47DC6 /* PhoneCategoryCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F51636691F39C16100F47DC6 /* PhoneCategoryCVCell.m */; };
+		F516366E1F39C37600F47DC6 /* CategoryVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F516366D1F39C37600F47DC6 /* CategoryVO.m */; };
+		F51636711F39C3BC00F47DC6 /* CategoryADSDataVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F51636701F39C3BC00F47DC6 /* CategoryADSDataVO.m */; };
+		F51636741F39C41700F47DC6 /* CategoryADSContainersVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F51636731F39C41700F47DC6 /* CategoryADSContainersVO.m */; };
+		F51636771F39C47300F47DC6 /* HomePromotionDetailVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F51636761F39C47300F47DC6 /* HomePromotionDetailVO.m */; };
 		F51EC0571F1C444B00735E7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0561F1C444B00735E7C /* main.m */; };
 		F51EC05A1F1C444B00735E7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0591F1C444B00735E7C /* AppDelegate.m */; };
 		F51EC05D1F1C444B00735E7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC05C1F1C444B00735E7C /* ViewController.m */; };
@@ -289,18 +304,19 @@
 		F59A16A41F28709600EF7866 /* UIViewController+ots.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A16A31F28709600EF7866 /* UIViewController+ots.m */; };
 		F59A16A71F28786900EF7866 /* OTSNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A16A61F28786900EF7866 /* OTSNetworkManager.m */; };
 		F59A16AA1F287EB300EF7866 /* OTSTBC.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A16A91F287EB300EF7866 /* OTSTBC.m */; };
+		F5E816EB1F3BF04A00B2E2A7 /* GrouponVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E816EA1F3BF04A00B2E2A7 /* GrouponVO.m */; };
+		F5E8391B1F3C4E9800B2E2A7 /* OTSHotRecommendCategoryVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8391A1F3C4E9800B2E2A7 /* OTSHotRecommendCategoryVO.m */; };
+		F5E8397F1F3C6B4400B2E2A7 /* GrouponAbroadBuyOut.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8397E1F3C6B4400B2E2A7 /* GrouponAbroadBuyOut.m */; };
+		F5E839821F3C6BA700B2E2A7 /* GrouponSerialVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E839811F3C6BA700B2E2A7 /* GrouponSerialVO.m */; };
+		F5E839851F3C6C3300B2E2A7 /* ProductVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E839841F3C6C3300B2E2A7 /* ProductVO.m */; };
 		F5FFFE691F207F4F007B55F1 /* OTSLaunch.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE681F207F4F007B55F1 /* OTSLaunch.m */; };
 		F5FFFE6C1F208095007B55F1 /* PhoneTBC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE6B1F208095007B55F1 /* PhoneTBC.m */; };
 		F5FFFE6F1F2080BC007B55F1 /* OTSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE6E1F2080BC007B55F1 /* OTSTabBar.m */; };
 		F5FFFE721F2080E9007B55F1 /* OTSTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE711F2080E9007B55F1 /* OTSTabBarItem.m */; };
 		F5FFFE7E1F20CEBB007B55F1 /* PhoneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE7D1F20CEBA007B55F1 /* PhoneVC.m */; };
-		F5FFFE841F20D09F007B55F1 /* PhoneNC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE831F20D09F007B55F1 /* PhoneNC.m */; };
-		F5FFFE871F20D0E8007B55F1 /* PhoneApolloNC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE861F20D0E8007B55F1 /* PhoneApolloNC.m */; };
-		F5FFFE8A1F20D218007B55F1 /* PhoneCustomRootNC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE891F20D218007B55F1 /* PhoneCustomRootNC.m */; };
 		F5FFFE8D1F20D2DA007B55F1 /* PhoneTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE8C1F20D2DA007B55F1 /* PhoneTabBarItem.m */; };
 		F5FFFE901F20D33A007B55F1 /* PhoneTabBarItemVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE8F1F20D33A007B55F1 /* PhoneTabBarItemVO.m */; };
 		F5FFFE931F2186C3007B55F1 /* AppTabVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE921F2186C3007B55F1 /* AppTabVO.m */; };
-		F5FFFE991F219358007B55F1 /* PhoneCartNC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE981F219358007B55F1 /* PhoneCartNC.m */; };
 		F5FFFE9E1F2195E2007B55F1 /* OTSCartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE9D1F2195E2007B55F1 /* OTSCartVC.m */; };
 		F5FFFEA21F21965B007B55F1 /* PhoneMyyhdIndexTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFEA11F21965B007B55F1 /* PhoneMyyhdIndexTVC.m */; };
 		F5FFFEA91F219C63007B55F1 /* OTSOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFEA81F219C63007B55F1 /* OTSOperationManager.m */; };
@@ -349,6 +365,36 @@
 		F5076AD81F32BDE10094AEED /* OTSSearchBarWordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSearchBarWordView.m; sourceTree = "<group>"; };
 		F5076ADC1F32C0490094AEED /* OTSBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSBadgeButton.h; sourceTree = "<group>"; };
 		F5076ADD1F32C0490094AEED /* OTSBadgeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSBadgeButton.m; sourceTree = "<group>"; };
+		F516363E1F39A8C600F47DC6 /* UITabBarController+ots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+ots.h"; sourceTree = "<group>"; };
+		F516363F1F39A8C600F47DC6 /* UITabBarController+ots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+ots.m"; sourceTree = "<group>"; };
+		F51636431F39AEEC00F47DC6 /* OTSVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSVC.h; sourceTree = "<group>"; };
+		F51636441F39AEEC00F47DC6 /* OTSVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSVC.m; sourceTree = "<group>"; };
+		F51636481F39B1B700F47DC6 /* OTSNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNC.h; sourceTree = "<group>"; };
+		F51636491F39B1B700F47DC6 /* OTSNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNC.m; sourceTree = "<group>"; };
+		F516364B1F39B1C300F47DC6 /* PhoneNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneNC.h; sourceTree = "<group>"; };
+		F516364C1F39B1C300F47DC6 /* PhoneNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNC.m; sourceTree = "<group>"; };
+		F516364E1F39B1D100F47DC6 /* PhoneCartNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneCartNC.h; sourceTree = "<group>"; };
+		F516364F1F39B1D100F47DC6 /* PhoneCartNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneCartNC.m; sourceTree = "<group>"; };
+		F51636511F39B1DE00F47DC6 /* PhoneCustomRootNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneCustomRootNC.h; sourceTree = "<group>"; };
+		F51636521F39B1DE00F47DC6 /* PhoneCustomRootNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneCustomRootNC.m; sourceTree = "<group>"; };
+		F51636541F39B1FD00F47DC6 /* OTSNCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNCDelegate.h; sourceTree = "<group>"; };
+		F51636551F39B1FD00F47DC6 /* OTSNCDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNCDelegate.m; sourceTree = "<group>"; };
+		F51636571F39B2E600F47DC6 /* UIViewController+OTSAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+OTSAnimation.h"; sourceTree = "<group>"; };
+		F51636581F39B2E600F47DC6 /* UIViewController+OTSAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+OTSAnimation.m"; sourceTree = "<group>"; };
+		F516365A1F39BA2B00F47DC6 /* PhoneApolloNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneApolloNC.h; sourceTree = "<group>"; };
+		F516365B1F39BA2B00F47DC6 /* PhoneApolloNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneApolloNC.m; sourceTree = "<group>"; };
+		F516365E1F39BCFD00F47DC6 /* PhoneCategoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneCategoryVC.h; sourceTree = "<group>"; };
+		F516365F1F39BCFD00F47DC6 /* PhoneCategoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneCategoryVC.m; sourceTree = "<group>"; };
+		F51636681F39C16100F47DC6 /* PhoneCategoryCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneCategoryCVCell.h; sourceTree = "<group>"; };
+		F51636691F39C16100F47DC6 /* PhoneCategoryCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneCategoryCVCell.m; sourceTree = "<group>"; };
+		F516366C1F39C37600F47DC6 /* CategoryVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryVO.h; sourceTree = "<group>"; };
+		F516366D1F39C37600F47DC6 /* CategoryVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryVO.m; sourceTree = "<group>"; };
+		F516366F1F39C3BC00F47DC6 /* CategoryADSDataVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryADSDataVO.h; sourceTree = "<group>"; };
+		F51636701F39C3BC00F47DC6 /* CategoryADSDataVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryADSDataVO.m; sourceTree = "<group>"; };
+		F51636721F39C41700F47DC6 /* CategoryADSContainersVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryADSContainersVO.h; sourceTree = "<group>"; };
+		F51636731F39C41700F47DC6 /* CategoryADSContainersVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryADSContainersVO.m; sourceTree = "<group>"; };
+		F51636751F39C47300F47DC6 /* HomePromotionDetailVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePromotionDetailVO.h; sourceTree = "<group>"; };
+		F51636761F39C47300F47DC6 /* HomePromotionDetailVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePromotionDetailVO.m; sourceTree = "<group>"; };
 		F51EC0521F1C444B00735E7C /* OneStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51EC0561F1C444B00735E7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F51EC0581F1C444B00735E7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -652,6 +698,16 @@
 		F59A16A61F28786900EF7866 /* OTSNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkManager.m; sourceTree = "<group>"; };
 		F59A16A81F287EB300EF7866 /* OTSTBC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSTBC.h; sourceTree = "<group>"; };
 		F59A16A91F287EB300EF7866 /* OTSTBC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSTBC.m; sourceTree = "<group>"; };
+		F5E816E91F3BF04A00B2E2A7 /* GrouponVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrouponVO.h; sourceTree = "<group>"; };
+		F5E816EA1F3BF04A00B2E2A7 /* GrouponVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrouponVO.m; sourceTree = "<group>"; };
+		F5E839191F3C4E9800B2E2A7 /* OTSHotRecommendCategoryVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSHotRecommendCategoryVO.h; sourceTree = "<group>"; };
+		F5E8391A1F3C4E9800B2E2A7 /* OTSHotRecommendCategoryVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSHotRecommendCategoryVO.m; sourceTree = "<group>"; };
+		F5E8397D1F3C6B4400B2E2A7 /* GrouponAbroadBuyOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrouponAbroadBuyOut.h; sourceTree = "<group>"; };
+		F5E8397E1F3C6B4400B2E2A7 /* GrouponAbroadBuyOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrouponAbroadBuyOut.m; sourceTree = "<group>"; };
+		F5E839801F3C6BA700B2E2A7 /* GrouponSerialVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrouponSerialVO.h; sourceTree = "<group>"; };
+		F5E839811F3C6BA700B2E2A7 /* GrouponSerialVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrouponSerialVO.m; sourceTree = "<group>"; };
+		F5E839831F3C6C3300B2E2A7 /* ProductVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductVO.h; sourceTree = "<group>"; };
+		F5E839841F3C6C3300B2E2A7 /* ProductVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductVO.m; sourceTree = "<group>"; };
 		F5FFFE671F207F4F007B55F1 /* OTSLaunch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLaunch.h; sourceTree = "<group>"; };
 		F5FFFE681F207F4F007B55F1 /* OTSLaunch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLaunch.m; sourceTree = "<group>"; };
 		F5FFFE6A1F208095007B55F1 /* PhoneTBC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneTBC.h; sourceTree = "<group>"; };
@@ -662,20 +718,12 @@
 		F5FFFE711F2080E9007B55F1 /* OTSTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSTabBarItem.m; sourceTree = "<group>"; };
 		F5FFFE7C1F20CEBA007B55F1 /* PhoneVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneVC.h; sourceTree = "<group>"; };
 		F5FFFE7D1F20CEBA007B55F1 /* PhoneVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneVC.m; sourceTree = "<group>"; };
-		F5FFFE821F20D09F007B55F1 /* PhoneNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneNC.h; sourceTree = "<group>"; };
-		F5FFFE831F20D09F007B55F1 /* PhoneNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNC.m; sourceTree = "<group>"; };
-		F5FFFE851F20D0E8007B55F1 /* PhoneApolloNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneApolloNC.h; sourceTree = "<group>"; };
-		F5FFFE861F20D0E8007B55F1 /* PhoneApolloNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneApolloNC.m; sourceTree = "<group>"; };
-		F5FFFE881F20D218007B55F1 /* PhoneCustomRootNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneCustomRootNC.h; sourceTree = "<group>"; };
-		F5FFFE891F20D218007B55F1 /* PhoneCustomRootNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneCustomRootNC.m; sourceTree = "<group>"; };
 		F5FFFE8B1F20D2DA007B55F1 /* PhoneTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneTabBarItem.h; sourceTree = "<group>"; };
 		F5FFFE8C1F20D2DA007B55F1 /* PhoneTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneTabBarItem.m; sourceTree = "<group>"; };
 		F5FFFE8E1F20D33A007B55F1 /* PhoneTabBarItemVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneTabBarItemVO.h; sourceTree = "<group>"; };
 		F5FFFE8F1F20D33A007B55F1 /* PhoneTabBarItemVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneTabBarItemVO.m; sourceTree = "<group>"; };
 		F5FFFE911F2186C3007B55F1 /* AppTabVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTabVO.h; sourceTree = "<group>"; };
 		F5FFFE921F2186C3007B55F1 /* AppTabVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTabVO.m; sourceTree = "<group>"; };
-		F5FFFE971F219358007B55F1 /* PhoneCartNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneCartNC.h; sourceTree = "<group>"; };
-		F5FFFE981F219358007B55F1 /* PhoneCartNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneCartNC.m; sourceTree = "<group>"; };
 		F5FFFE9C1F2195E2007B55F1 /* OTSCartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCartVC.h; sourceTree = "<group>"; };
 		F5FFFE9D1F2195E2007B55F1 /* OTSCartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCartVC.m; sourceTree = "<group>"; };
 		F5FFFEA01F21965B007B55F1 /* PhoneMyyhdIndexTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneMyyhdIndexTVC.h; sourceTree = "<group>"; };
@@ -739,6 +787,70 @@
 			path = OTSBadgeButton;
 			sourceTree = "<group>";
 		};
+		F51636471F39B1A900F47DC6 /* OTSNav */ = {
+			isa = PBXGroup;
+			children = (
+				F51636481F39B1B700F47DC6 /* OTSNC.h */,
+				F51636491F39B1B700F47DC6 /* OTSNC.m */,
+				F516364B1F39B1C300F47DC6 /* PhoneNC.h */,
+				F516364C1F39B1C300F47DC6 /* PhoneNC.m */,
+				F516365A1F39BA2B00F47DC6 /* PhoneApolloNC.h */,
+				F516365B1F39BA2B00F47DC6 /* PhoneApolloNC.m */,
+				F516364E1F39B1D100F47DC6 /* PhoneCartNC.h */,
+				F516364F1F39B1D100F47DC6 /* PhoneCartNC.m */,
+				F51636511F39B1DE00F47DC6 /* PhoneCustomRootNC.h */,
+				F51636521F39B1DE00F47DC6 /* PhoneCustomRootNC.m */,
+				F51636541F39B1FD00F47DC6 /* OTSNCDelegate.h */,
+				F51636551F39B1FD00F47DC6 /* OTSNCDelegate.m */,
+			);
+			path = OTSNav;
+			sourceTree = "<group>";
+		};
+		F516365D1F39BCDF00F47DC6 /* OTSCategory */ = {
+			isa = PBXGroup;
+			children = (
+				F516366B1F39C32700F47DC6 /* Model */,
+				F51636671F39C14B00F47DC6 /* View */,
+				F516365E1F39BCFD00F47DC6 /* PhoneCategoryVC.h */,
+				F516365F1F39BCFD00F47DC6 /* PhoneCategoryVC.m */,
+			);
+			path = OTSCategory;
+			sourceTree = "<group>";
+		};
+		F51636671F39C14B00F47DC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F51636681F39C16100F47DC6 /* PhoneCategoryCVCell.h */,
+				F51636691F39C16100F47DC6 /* PhoneCategoryCVCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F516366B1F39C32700F47DC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F516366C1F39C37600F47DC6 /* CategoryVO.h */,
+				F516366D1F39C37600F47DC6 /* CategoryVO.m */,
+				F516366F1F39C3BC00F47DC6 /* CategoryADSDataVO.h */,
+				F51636701F39C3BC00F47DC6 /* CategoryADSDataVO.m */,
+				F51636721F39C41700F47DC6 /* CategoryADSContainersVO.h */,
+				F51636731F39C41700F47DC6 /* CategoryADSContainersVO.m */,
+				F51636751F39C47300F47DC6 /* HomePromotionDetailVO.h */,
+				F51636761F39C47300F47DC6 /* HomePromotionDetailVO.m */,
+				F5E816E91F3BF04A00B2E2A7 /* GrouponVO.h */,
+				F5E816EA1F3BF04A00B2E2A7 /* GrouponVO.m */,
+				F5E839191F3C4E9800B2E2A7 /* OTSHotRecommendCategoryVO.h */,
+				F5E8391A1F3C4E9800B2E2A7 /* OTSHotRecommendCategoryVO.m */,
+				F5E8397D1F3C6B4400B2E2A7 /* GrouponAbroadBuyOut.h */,
+				F5E8397E1F3C6B4400B2E2A7 /* GrouponAbroadBuyOut.m */,
+				F5E839801F3C6BA700B2E2A7 /* GrouponSerialVO.h */,
+				F5E839811F3C6BA700B2E2A7 /* GrouponSerialVO.m */,
+				F5E839831F3C6C3300B2E2A7 /* ProductVO.h */,
+				F5E839841F3C6C3300B2E2A7 /* ProductVO.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F51EC0491F1C444B00735E7C = {
 			isa = PBXGroup;
 			children = (
@@ -760,6 +872,8 @@
 		F51EC0541F1C444B00735E7C /* OneStore */ = {
 			isa = PBXGroup;
 			children = (
+				F516365D1F39BCDF00F47DC6 /* OTSCategory */,
+				F51636471F39B1A900F47DC6 /* OTSNav */,
 				F52916541F3403420097B496 /* Pad */,
 				F5FFFEAA1F219CA5007B55F1 /* OTSLogic */,
 				F5FFFEA61F219C50007B55F1 /* NetWork */,
@@ -839,6 +953,10 @@
 				F51EC0E61F1C551200735E7C /* UIViewController+custom.m */,
 				F51EC0E21F1C550400735E7C /* UIViewController+base.h */,
 				F51EC0E31F1C550400735E7C /* UIViewController+base.m */,
+				F516363E1F39A8C600F47DC6 /* UITabBarController+ots.h */,
+				F516363F1F39A8C600F47DC6 /* UITabBarController+ots.m */,
+				F51636571F39B2E600F47DC6 /* UIViewController+OTSAnimation.h */,
+				F51636581F39B2E600F47DC6 /* UIViewController+OTSAnimation.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -846,18 +964,14 @@
 		F51EC0F81F1C597C00735E7C /* BaseVC */ = {
 			isa = PBXGroup;
 			children = (
+				F51636431F39AEEC00F47DC6 /* OTSVC.h */,
+				F51636441F39AEEC00F47DC6 /* OTSVC.m */,
 				F51EC0FC1F1C598A00735E7C /* OTSContainerController.h */,
 				F51EC0FD1F1C598A00735E7C /* OTSContainerController.m */,
 				F51EC0F91F1C598300735E7C /* OTSPresentController.h */,
 				F51EC0FA1F1C598300735E7C /* OTSPresentController.m */,
 				F5FFFE7C1F20CEBA007B55F1 /* PhoneVC.h */,
 				F5FFFE7D1F20CEBA007B55F1 /* PhoneVC.m */,
-				F5FFFE821F20D09F007B55F1 /* PhoneNC.h */,
-				F5FFFE831F20D09F007B55F1 /* PhoneNC.m */,
-				F5FFFE881F20D218007B55F1 /* PhoneCustomRootNC.h */,
-				F5FFFE891F20D218007B55F1 /* PhoneCustomRootNC.m */,
-				F5FFFE971F219358007B55F1 /* PhoneCartNC.h */,
-				F5FFFE981F219358007B55F1 /* PhoneCartNC.m */,
 			);
 			path = BaseVC;
 			sourceTree = "<group>";
@@ -1293,8 +1407,6 @@
 		F5FFFE811F20D076007B55F1 /* Apollo */ = {
 			isa = PBXGroup;
 			children = (
-				F5FFFE851F20D0E8007B55F1 /* PhoneApolloNC.h */,
-				F5FFFE861F20D0E8007B55F1 /* PhoneApolloNC.m */,
 			);
 			path = Apollo;
 			sourceTree = "<group>";
@@ -1723,51 +1835,67 @@
 			files = (
 				F5FFFE6C1F208095007B55F1 /* PhoneTBC.m in Sources */,
 				F5FFFE9E1F2195E2007B55F1 /* OTSCartVC.m in Sources */,
+				F51636401F39A8C600F47DC6 /* UITabBarController+ots.m in Sources */,
+				F51636711F39C3BC00F47DC6 /* CategoryADSDataVO.m in Sources */,
 				F51EC0FE1F1C598A00735E7C /* OTSContainerController.m in Sources */,
 				F5FFFEB01F219D2B007B55F1 /* OTSTabbarLogic.m in Sources */,
 				F51EC1181F1C59EF00735E7C /* NSString+router.m in Sources */,
+				F51636741F39C41700F47DC6 /* CategoryADSContainersVO.m in Sources */,
 				F5FFFE931F2186C3007B55F1 /* AppTabVO.m in Sources */,
 				F5FFFE721F2080E9007B55F1 /* OTSTabBarItem.m in Sources */,
 				F51EC05D1F1C444B00735E7C /* ViewController.m in Sources */,
+				F516364A1F39B1B700F47DC6 /* OTSNC.m in Sources */,
 				F5FFFEA21F21965B007B55F1 /* PhoneMyyhdIndexTVC.m in Sources */,
+				F51636531F39B1DE00F47DC6 /* PhoneCustomRootNC.m in Sources */,
+				F516365C1F39BA2B00F47DC6 /* PhoneApolloNC.m in Sources */,
 				F51EC10B1F1C59AD00735E7C /* OTSClientInfo.m in Sources */,
+				F51636771F39C47300F47DC6 /* HomePromotionDetailVO.m in Sources */,
+				F51636461F39AEEC00F47DC6 /* OTSVC.m in Sources */,
 				F51EC1171F1C59EF00735E7C /* NSDictionary+router.m in Sources */,
 				F51EC10A1F1C59AD00735E7C /* OTSBIGlobalValue.m in Sources */,
 				F5076AD91F32BDE10094AEED /* OTSListSearchBar.m in Sources */,
 				F51EC1121F1C59E500735E7C /* OTSRouter.m in Sources */,
+				F5E839851F3C6C3300B2E2A7 /* ProductVO.m in Sources */,
 				F5070B411F2B1237002C0ADF /* AppFunctionSwitchVO.m in Sources */,
+				F516364D1F39B1C300F47DC6 /* PhoneNC.m in Sources */,
 				F51EC0E41F1C550400735E7C /* UIViewController+base.m in Sources */,
 				F51EC05A1F1C444B00735E7C /* AppDelegate.m in Sources */,
+				F51636601F39BCFD00F47DC6 /* PhoneCategoryVC.m in Sources */,
 				F51EC0E71F1C551200735E7C /* UIViewController+custom.m in Sources */,
 				F54881131F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.m in Sources */,
 				F51EC0FB1F1C598300735E7C /* OTSPresentController.m in Sources */,
 				F5070B441F2B12A1002C0ADF /* OTSFunctionSwithLogic.m in Sources */,
+				F51636501F39B1D100F47DC6 /* PhoneCartNC.m in Sources */,
 				F59A16AA1F287EB300EF7866 /* OTSTBC.m in Sources */,
+				F5E839821F3C6BA700B2E2A7 /* GrouponSerialVO.m in Sources */,
 				F5FFFE691F207F4F007B55F1 /* OTSLaunch.m in Sources */,
 				F5076ADE1F32C0490094AEED /* OTSBadgeButton.m in Sources */,
 				F5076ADA1F32BDE10094AEED /* OTSSearchBarWordView.m in Sources */,
-				F5FFFE871F20D0E8007B55F1 /* PhoneApolloNC.m in Sources */,
-				F5FFFE8A1F20D218007B55F1 /* PhoneCustomRootNC.m in Sources */,
 				F51EC10D1F1C59AD00735E7C /* OTSMappingVO.m in Sources */,
 				F5FFFEA91F219C63007B55F1 /* OTSOperationManager.m in Sources */,
 				F5FFFEAD1F219CB2007B55F1 /* OTSLogic.m in Sources */,
 				F51EC0DF1F1C54B700735E7C /* OTSAgreementVC.m in Sources */,
+				F51636591F39B2E600F47DC6 /* UIViewController+OTSAnimation.m in Sources */,
 				F58C7A441F1C5EFE00AC2928 /* OTSLog.m in Sources */,
 				F5FFFE7E1F20CEBB007B55F1 /* PhoneVC.m in Sources */,
-				F5FFFE841F20D09F007B55F1 /* PhoneNC.m in Sources */,
+				F51636561F39B1FD00F47DC6 /* OTSNCDelegate.m in Sources */,
+				F5E8391B1F3C4E9800B2E2A7 /* OTSHotRecommendCategoryVO.m in Sources */,
 				F5076ACF1F32BABE0094AEED /* OTSGifNilView.m in Sources */,
 				F51EC0571F1C444B00735E7C /* main.m in Sources */,
 				F5076AD21F32BB390094AEED /* OTSFont.m in Sources */,
 				F59A16A71F28786900EF7866 /* OTSNetworkManager.m in Sources */,
 				F51EC0EA1F1C551B00735E7C /* UIViewController+router.m in Sources */,
 				F5FFFE6F1F2080BC007B55F1 /* OTSTabBar.m in Sources */,
+				F5E8397F1F3C6B4400B2E2A7 /* GrouponAbroadBuyOut.m in Sources */,
 				F51EC10E1F1C59AD00735E7C /* OTSNativeFuncVO.m in Sources */,
 				F5FFFE901F20D33A007B55F1 /* PhoneTabBarItemVO.m in Sources */,
+				F516366A1F39C16100F47DC6 /* PhoneCategoryCVCell.m in Sources */,
+				F516366E1F39C37600F47DC6 /* CategoryVO.m in Sources */,
 				F51EC11E1F1C5D0C00735E7C /* OTSUnionLoginWebVC.m in Sources */,
-				F5FFFE991F219358007B55F1 /* PhoneCartNC.m in Sources */,
 				F59A16A41F28709600EF7866 /* UIViewController+ots.m in Sources */,
 				F51EC10C1F1C59AD00735E7C /* OTSGlobalValue.m in Sources */,
 				F5FFFE8D1F20D2DA007B55F1 /* PhoneTabBarItem.m in Sources */,
+				F5E816EB1F3BF04A00B2E2A7 /* GrouponVO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

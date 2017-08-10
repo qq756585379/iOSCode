@@ -17,6 +17,9 @@
 		F5070ABE1F2ACECA002C0ADF /* GCDTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070ABD1F2ACECA002C0ADF /* GCDTestVC.m */; };
 		F5070AC11F2ADEB9002C0ADF /* NSOperationTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070AC01F2ADEB9002C0ADF /* NSOperationTestVC.m */; };
 		F5070AC41F2ADF7C002C0ADF /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070AC31F2ADF7C002C0ADF /* DownloadOperation.m */; };
+		F5E8391F1F3C54A200B2E2A7 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */; };
+		F5E839221F3C54B600B2E2A7 /* RACSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E839211F3C54B600B2E2A7 /* RACSecondViewController.m */; };
+		F5FA078D1F3AE4B90048954F /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FA078C1F3AE4B90048954F /* libCommon.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,11 @@
 		F5070AC01F2ADEB9002C0ADF /* NSOperationTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationTestVC.m; sourceTree = "<group>"; };
 		F5070AC21F2ADF7C002C0ADF /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
 		F5070AC31F2ADF7C002C0ADF /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
+		F5E8391D1F3C54A200B2E2A7 /* RACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
+		F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
+		F5E839201F3C54B600B2E2A7 /* RACSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSecondViewController.h; sourceTree = "<group>"; };
+		F5E839211F3C54B600B2E2A7 /* RACSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSecondViewController.m; sourceTree = "<group>"; };
+		F5FA078C1F3AE4B90048954F /* libCommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCommon.a; path = "../Common/build/Release-iphoneos/libCommon.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FA078D1F3AE4B90048954F /* libCommon.a in Frameworks */,
 				330BBAC9F0F5B1E9881A991B /* libPods-Shows-Demos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +65,7 @@
 		388BA739F9C1C4F8A33DD1FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5FA078C1F3AE4B90048954F /* libCommon.a */,
 				311B57FAF1A936C09B5C1272 /* libPods-Shows-Demos.a */,
 			);
 			name = Frameworks;
@@ -91,6 +101,7 @@
 		F5070AA31F2ACE31002C0ADF /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				F5E8391C1F3C549100B2E2A7 /* RAC */,
 				F5070ABB1F2ACEAD002C0ADF /* 多线程 */,
 				F5070AA71F2ACE31002C0ADF /* AppDelegate.h */,
 				F5070AA81F2ACE31002C0ADF /* AppDelegate.m */,
@@ -124,6 +135,17 @@
 				F5070AC31F2ADF7C002C0ADF /* DownloadOperation.m */,
 			);
 			path = "多线程";
+			sourceTree = "<group>";
+		};
+		F5E8391C1F3C549100B2E2A7 /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8391D1F3C54A200B2E2A7 /* RACViewController.h */,
+				F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */,
+				F5E839201F3C54B600B2E2A7 /* RACSecondViewController.h */,
+				F5E839211F3C54B600B2E2A7 /* RACSecondViewController.m */,
+			);
+			path = RAC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +273,9 @@
 				F5070AAC1F2ACE31002C0ADF /* ViewController.m in Sources */,
 				F5070AC41F2ADF7C002C0ADF /* DownloadOperation.m in Sources */,
 				F5070AC11F2ADEB9002C0ADF /* NSOperationTestVC.m in Sources */,
+				F5E8391F1F3C54A200B2E2A7 /* RACViewController.m in Sources */,
 				F5070ABE1F2ACECA002C0ADF /* GCDTestVC.m in Sources */,
+				F5E839221F3C54B600B2E2A7 /* RACSecondViewController.m in Sources */,
 				F5070AA91F2ACE31002C0ADF /* AppDelegate.m in Sources */,
 				F5070AA61F2ACE31002C0ADF /* main.m in Sources */,
 			);
@@ -376,6 +400,25 @@
 			baseConfigurationReference = 6E28065135F411A8DAA3E8D4 /* Pods-Shows-Demos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/BlocksKit\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/DateTools\"",
+					"\"${PODS_ROOT}/Headers/Public/FLAnimatedImage\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+					"$SRCROOT/../Common/Common/**",
+				);
 				INFOPLIST_FILE = Demos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.Demos";
@@ -388,6 +431,25 @@
 			baseConfigurationReference = C3ACDF2B7326142883D1BD47 /* Pods-Shows-Demos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/BlocksKit\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/DateTools\"",
+					"\"${PODS_ROOT}/Headers/Public/FLAnimatedImage\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+					"$SRCROOT/../Common/Common/**",
+				);
 				INFOPLIST_FILE = Demos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.Demos";

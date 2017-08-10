@@ -53,6 +53,9 @@
 }
 
 - (NSIndexPath *)indexPath{
+    if (_indexPath) {
+        return _indexPath;
+    }
     _indexPath = [[self __getCollectionView] indexPathForCell:self];
     return _indexPath;
 }

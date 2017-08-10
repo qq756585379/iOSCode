@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "GCDTestVC.h"
+#import "MHGradientColorView.h"
+#import "RACViewController.h"
 
 @interface ViewController ()
 
@@ -17,16 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    MHGradientColorView *view = [[MHGradientColorView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
+    [self.view addSubview:view];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    [self.navigationController pushViewController:[GCDTestVC new] animated:YES];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//    [self.navigationController pushViewController:[GCDTestVC new] animated:YES];
+    [self.navigationController pushViewController:[RACViewController new] animated:YES];
 }
 
 

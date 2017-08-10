@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OTSNCDelegate.h"
 
 @interface OTSNC : UINavigationController
+
+@property (nonatomic, strong) OTSNCDelegate *customAnimationDelegate;
 
 @end

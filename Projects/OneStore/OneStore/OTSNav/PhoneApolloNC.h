@@ -10,6 +10,4 @@
 
 @interface PhoneApolloNC : PhoneNC
 
-- (void)switchToRootVC:(UIViewController *)aVc;
-
 @end

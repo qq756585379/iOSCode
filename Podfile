@@ -1,4 +1,3 @@
-
 platform :ios, '8.0'
 
 # 对于我们使用cocoapod引入的第三方,我们可以在podfile文件中 增加一句  inhibit_all_warnings! 来要pod的工程不显示任何警告

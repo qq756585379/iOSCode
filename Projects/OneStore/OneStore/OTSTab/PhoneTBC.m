@@ -59,7 +59,41 @@
 }
     
 - (void)updateWithVO:(NSArray *)itemsArray{
-    
+    WEAK_SELF;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_apply(self.customTabBar.items.count, dispatch_get_main_queue(), ^(size_t y) {
+            STRONG_SELF;
+            PhoneTabBarItem *tabbarItem = self.customTabBar.items[y];
+            
+            AppTabItemVO *itemVO = nil;
+            for (AppTabItemVO *tempVO in itemsArray) {
+                if ([tempVO.type isEqual:@(y + 1)]) {
+                    itemVO = tempVO;
+                    break;
+                }
+            }
+            if (itemVO.type.integerValue > 0 && itemVO.redPoint.boolValue) {
+                NSNumber *lastUpdataTime = [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:@"PhoneTabBarItemLastUpdateTime%@",itemVO.type]];
+                if (lastUpdataTime) {
+                    if (lastUpdataTime.integerValue < itemVO.updateTime.integerValue) {
+                        itemVO.redPoint = @(YES);
+                    } else {
+                        itemVO.redPoint = @(NO);
+                    }
+                }
+            }
+            if (y == 2) {
+                [tabbarItem updateWithItemVO:itemVO];
+                PhoneCustomRootNC *nc = self.viewControllers[y];
+                PhoneNC *tempNC = [nc createWithUrlString:itemVO.url];
+                tempNC.tabbarItem = tabbarItem;
+                [self updateViewController:tempNC atIndex:y];
+                [self.tabBar bringSubviewToFront:self.customTabBar];
+            } else {
+                [tabbarItem updateWithItemVO:itemVO];
+            }
+        });
+    });
 }
 
 - (void)_PhoneTBC_setup{
@@ -69,15 +103,15 @@
 }
 
 - (void)_PhoneTBC_setupVCs{
-    PhoneApolloNC *nc1 = [PhoneApolloNC new];
+    PhoneApolloNC *nc1 = [[PhoneApolloNC alloc] init];
     
-    PhoneVC *vc2 = [NSClassFromString(@"PhoneCategoryVC") new];
+    PhoneVC *vc2 = [[NSClassFromString(@"PhoneCategoryVC") alloc] init];
     PhoneNC *nc2 = [[PhoneNC alloc] initWithRootViewController:vc2];
     
     //    PhoneVC *vc3 = [NSClassFromString(@"PhoneDailyDealsVC") new];
     //    PhoneCustomRootNC *nc3 = [[PhoneCustomRootNC alloc] initWithRootViewController:vc3];
     
-    PhoneVC *vc3 = [NSClassFromString(@"OTSWebVC") new];
+    PhoneVC *vc3 = [[NSClassFromString(@"OTSWebVC") alloc] init];
     PhoneCustomRootNC *tempNC3 = [[PhoneCustomRootNC alloc] initWithRootViewController:vc3];
     PhoneCustomRootNC *nc3 = [tempNC3 createWithUrlString:@"yhd://localweb/?body={\"path\":\"yipintang\",\"fullScreen\":0}"];
     
@@ -160,6 +194,20 @@
             [self updateWithVO:self.logic.appTabVO.items];
         }
     }];
+}
+
+- (void)enterLastTab{
+    [self customTabBar:self.customTabBar didSelectItem:self.customTabBar.items[self.lastSelectedIndex]];
+    //当切换tab的时候，如果tabbar的显示状态不一样，那么tbc的显示会有问题，所以要强制刷新一下
+    [self.view setNeedsUpdateConstraints];
+    [self.view setNeedsLayout];
+}
+
+- (void)setSelectedIndex:(NSUInteger)selectedIndex{
+    [self customTabBar:self.customTabBar didSelectItem:self.customTabBar.items[selectedIndex]];
+    //当切换tab的时候，如果tabbar的显示状态不一样，那么tbc的显示会有问题，所以要强制刷新一下
+    [self.view setNeedsUpdateConstraints];
+    [self.view setNeedsLayout];
 }
 
 #pragma mark - OTSTBCDelegate

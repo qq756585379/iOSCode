@@ -30,7 +30,8 @@
 //    [self test3];
 //    [self test4];
 //    [self test5];
-    [self test6];
+//    [self test6];
+    [self test7];
 }
 
 -(void)test1{
@@ -181,9 +182,40 @@
 //        NSLog(@"队列执行完毕---------");
 //    });
     
-    // 阻塞当前线程，目前在主线程，主线程被阻塞，从上个页面跳转进来需要这个方法走完才进的来
+    // 阻塞当前线程，目前在主线程，主线程被阻塞，从上个页面跳转进来需要这个方法走完才进的来，（需要放子线程中，阻塞子线程）
     dispatch_group_wait(getDataGroup, DISPATCH_TIME_FOREVER);
     NSLog(@"dispatch_group_wait队列执行完毕---------");
+}
+
+-(void)test7{
+    dispatch_group_t getDataGroup = dispatch_group_create();
+    
+    dispatch_group_async(getDataGroup, YJGlobalQueue, ^(){
+        sleep(5);
+        NSLog(@"任务1完成%@",[NSThread currentThread]);
+    });
+    dispatch_group_async(getDataGroup, YJGlobalQueue, ^(){
+        sleep(2);
+        NSLog(@"任务2完成%@",[NSThread currentThread]);
+    });
+    dispatch_group_async(getDataGroup, YJGlobalQueue, ^(){
+        sleep(4);
+        NSLog(@"任务3完成%@",[NSThread currentThread]);
+    });
+    dispatch_group_async(getDataGroup, YJGlobalQueue, ^(){
+        sleep(3);
+        NSLog(@"任务4完成%@",[NSThread currentThread]);
+    });
+    
+    // 不阻塞当前线程，getDataGroup执行完他就执行
+    dispatch_group_notify(getDataGroup, dispatch_get_main_queue(), ^{
+        NSLog(@"队列执行完毕---------");
+    });
+    NSLog(@"没被阻塞---------");
+    
+    // 阻塞当前线程，目前在主线程，主线程被阻塞，从上个页面跳转进来需要这个方法走完才进的来，（需要放子线程中，阻塞子线程）
+//    dispatch_group_wait(getDataGroup, DISPATCH_TIME_FOREVER);
+//    NSLog(@"dispatch_group_wait队列执行完毕---------");
 }
 
 @end

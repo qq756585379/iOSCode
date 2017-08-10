@@ -10,6 +10,7 @@
 
 @implementation MHGradientColorView
 
+//绘制出彩色电视机那种的彩色竖条
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
     // draw the gradient

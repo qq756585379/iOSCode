@@ -41,6 +41,22 @@
     [super reloadData];
 }
 
+- (void)setDelegate:(id<UICollectionViewDelegate>)delegate{
+    [super setDelegate:delegate];
+    if (delegate == nil) {
+        return;
+    }
+    OTSWeakObjectDeathNotifier *wo = [OTSWeakObjectDeathNotifier new];
+    [wo setOwner:delegate];
+    WEAK_SELF;
+    [wo setBlock:^(OTSWeakObjectDeathNotifier *sender) {
+        STRONG_SELF;
+        self.delegate = nil;
+        self.dataSource = nil;
+    }];
+}
+
+
 @end
 
 

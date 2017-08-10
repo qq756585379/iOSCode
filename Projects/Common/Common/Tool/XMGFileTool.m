@@ -52,33 +52,25 @@
     }
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        
         // 获取文件夹下所有的子路径,包含子路径的子路径
         NSArray *subPaths = [mgr subpathsAtPath:directoryPath];
-        
         NSInteger totalSize = 0;
-        
         for (NSString *subPath in subPaths) {
             // 获取文件全路径
             NSString *filePath = [directoryPath stringByAppendingPathComponent:subPath];
-            
             // 判断隐藏文件
             if ([filePath containsString:@".DS"]) continue;
-            
             // 判断是否文件夹
             BOOL isDirectory;
             // 判断文件是否存在,并且判断是否是文件夹
             BOOL isExist = [mgr fileExistsAtPath:filePath isDirectory:&isDirectory];
             
             if (!isExist || isDirectory) continue;
-            
             // 获取文件属性
             // attributesOfItemAtPath:只能获取文件尺寸,获取文件夹不对,
             NSDictionary *attr = [mgr attributesOfItemAtPath:filePath error:nil];
-            
             // 获取文件尺寸
             NSInteger fileSize = (NSInteger)[attr fileSize];
-            
             totalSize += fileSize;
         }
         // 计算完成回调

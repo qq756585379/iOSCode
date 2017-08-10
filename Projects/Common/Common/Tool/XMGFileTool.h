@@ -11,7 +11,6 @@
 /*
  业务类:以后开发中用来专门处理某件事情,网络处理,缓存处理
  */
-
 @interface XMGFileTool : NSObject
 
 /**
@@ -21,11 +20,9 @@
  */
 + (void)getFileSize:(NSString *)directoryPath completion:(void(^)(NSInteger))completion;
 
-
 /**
  *  删除文件夹所有文件
  */
 + (void)removeDirectoryPath:(NSString *)directoryPath;
-
 
 @end
