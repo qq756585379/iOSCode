@@ -8,13 +8,15 @@
 
 #import "PhoneCategoryVC.h"
 #import "PhoneCategoryCVCell.h"
+#import "PhoneCategoryTVCell.h"
 
-@interface PhoneCategoryVC ()<UITableViewDataSource,UITableViewDelegate>
-@property (nonatomic,strong) OTSTableView *tableView;
+@interface PhoneCategoryVC ()<UITableViewDataSource,UITableViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+@property (nonatomic, strong) OTSTableView *tableView;
 @property (nonatomic, strong) OTSCollectionView *collectionView;
 @property (nonatomic, strong) UIView   *advertisementView;
 @property (nonatomic, strong) UIButton *adsBtnOne;//广告button
 @property (nonatomic, strong) UIButton *adsBtnTwo;
+@property (nonatomic, strong) OTSCategoryLogic * categoryLogic;
 @end
 
 @implementation PhoneCategoryVC
@@ -66,5 +68,71 @@
 }
 
 
+#pragma mark - 属性 propertys
+- (OTSCategoryLogic *)categoryLogic{
+    if(_categoryLogic == nil){
+        _categoryLogic = [OTSCategoryLogic logicWithOperationManager:self.operationManager];
+    }
+    return _categoryLogic;
+}
+
+-(UIView *)advertisementView{
+    if (!_advertisementView) {
+        //        _advertisementView = [UIView autolayoutView];
+        _advertisementView = [[UIView alloc] init];
+        _advertisementView.backgroundColor = [UIColor clearColor];
+    }
+    return _advertisementView;
+}
+
+-(UIButton *)adsBtnOne{
+    if (!_adsBtnOne) {
+        _adsBtnOne = [[UIButton alloc] init];
+        _adsBtnOne.adjustsImageWhenHighlighted = NO;
+        _adsBtnOne.titleLabel.textColor = [UIColor clearColor];
+        _adsBtnOne.tag = 1;
+        [_adsBtnOne addTarget:self action:@selector(asdTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _adsBtnOne;
+}
+
+-(UIButton *)adsBtnTwo{
+    if (!_adsBtnTwo) {
+        _adsBtnTwo = [[UIButton alloc] init];
+        _adsBtnTwo.adjustsImageWhenHighlighted = NO;
+        _adsBtnTwo.titleLabel.textColor = [UIColor clearColor];
+        _adsBtnTwo.tag = 2;
+        [_adsBtnTwo addTarget:self action:@selector(asdTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _adsBtnTwo;
+}
+
+
+- (OTSCyclePageImageView *)pageView{
+    if (!_pageView) {
+        _pageView = [[OTSCyclePageImageView alloc] init];;
+        _pageView.dataSource = self;
+        _pageView.delegate = self;
+    }
+    return _pageView;
+}
+
+
+- (OTSPageControl *)pageControl{
+    if (!_pageControl) {
+        _pageControl = [[OTSPageControl alloc]initWithFrame:CGRectMake(0, 0, 200, 20)];
+    }
+    return _pageControl;
+}
+
+//空态view
+- (PhoneDetailNilView *)nilView{
+    if (_nilView == nil) {
+        _nilView = [[PhoneDetailNilView alloc] initWithFrame:self.view.bounds];
+        self.nilView.type = PhoneNilViewType_Detail;
+        self.nilView.delegate  = self;
+    }
+    return _nilView;
+}
 
 @end

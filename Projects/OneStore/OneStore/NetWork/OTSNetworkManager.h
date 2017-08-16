@@ -24,4 +24,14 @@ AS_SINGLETON(OTSNetworkManager)
  */
 - (void)removeOperationManger:(OTSOperationManager *)aOperationManager;
 
+/**
+ *  功能:relaunch成功后执行所有暂存的operation
+ */
+- (void)performAllCachedOperationsForLaunchFail;
+
+/**
+ *  功能:relaunch失败后清除所有暂存的operation
+ */
+- (void)clearAllCachedOperationsForLaunchFail;
+
 @end

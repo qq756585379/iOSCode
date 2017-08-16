@@ -82,4 +82,6 @@ HMSingletonH
 
 @property (nonatomic, assign)BOOL firstEntry;//视频播放判断用户是否wifi状态
 
+@property (nonatomic, copy) NSString *signatureKey;//解密后的签名密钥
+
 @end

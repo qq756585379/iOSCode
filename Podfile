@@ -24,6 +24,8 @@ abstract_target 'Shows' do
     pod 'BlocksKit', '~> 2.2.5'
     pod 'Toast', '~> 3.1.0'
     pod 'FLAnimatedImage', '~> 1.0.12'
+    pod 'RegexKitLite', '~> 4.0'
+    pod 'JSONModel', '~> 1.7.0'
     
     target 'OneStore' do
         project '../iOSCode/Projects/OneStore/OneStore.xcodeproj'

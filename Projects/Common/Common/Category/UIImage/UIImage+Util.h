@@ -53,6 +53,9 @@
 // 本质：在图片生成一个透明为1的像素边框
 - (UIImage *)imageAntialias;
 
+- (UIImage *)imageTintedWithColor:(UIColor *)color;
+- (UIImage *)imageTintedWithColor:(UIColor *)color fraction:(CGFloat)fraction;
+
 @end
 
 
