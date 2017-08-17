@@ -63,7 +63,7 @@ DEPENDENCIES:
   - CocoaLumberjack (~> 3.2.0)
   - DateTools (~> 2.0.0)
   - FLAnimatedImage (~> 1.0.12)
-  - JSONModel
+  - JSONModel (~> 1.7.0)
   - Masonry (~> 1.0.2)
   - MBProgressHUD (~> 1.0.0)
   - MJExtension (~> 3.0.13)
@@ -93,6 +93,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
 
-PODFILE CHECKSUM: 7c06534e4c278423a84be5f53a0f382243f3c5e1
+PODFILE CHECKSUM: 7e5db6b6fba92a26e3f306fe0ca5c118e93813d9
 
 COCOAPODS: 1.2.1

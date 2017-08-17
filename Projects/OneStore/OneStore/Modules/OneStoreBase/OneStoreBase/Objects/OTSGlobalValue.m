@@ -18,7 +18,7 @@ NSString *const KeyChainSignatureKey = @"keychain.signatureKey";
 
 @implementation OTSGlobalValue
 
-HMSingletonM
+DEF_SINGLETON(OTSGlobalValue)
 
 - (instancetype)init{
     if (self = [super init]) {

@@ -11,8 +11,7 @@
 
 @implementation UICollectionView (safe)
 
-+ (void)load
-{
++ (void)load{
     [self exchangeMethod:@selector(selectItemAtIndexPath:animated:scrollPosition:) withMethod:@selector(safeSelectItemAtIndexPath:animated:scrollPosition:)];
     [self exchangeMethod:@selector(scrollToItemAtIndexPath:atScrollPosition:animated:) withMethod:@selector(safeScrollToItemAtIndexPath:atScrollPosition:animated:)];
     [self exchangeMethod:@selector(reloadSections:) withMethod:@selector(safeReloadSections:)];

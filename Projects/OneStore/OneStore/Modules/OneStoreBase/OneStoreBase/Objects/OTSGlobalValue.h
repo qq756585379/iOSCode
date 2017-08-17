@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger ,OTSRegionType){
 
 @interface OTSGlobalValue : NSObject
 
-HMSingletonH
+AS_SINGLETON(OTSGlobalValue)
 
 @property (nonatomic, assign) NSTimeInterval dTime;//服务器时间-客户端时间
 @property (nonatomic, copy) NSDate         *serverTime;//根据差值算出的服务器时间

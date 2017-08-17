@@ -15,7 +15,6 @@
 		F5070B5B1F2B15D2002C0ADF /* NSNumber+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070B511F2B15D2002C0ADF /* NSNumber+safe.m */; };
 		F5070B5C1F2B15D2002C0ADF /* NSString+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070B531F2B15D2002C0ADF /* NSString+safe.m */; };
 		F5070B5D1F2B15D2002C0ADF /* UICollectionView+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070B551F2B15D2002C0ADF /* UICollectionView+safe.m */; };
-		F5070B601F2B1633002C0ADF /* NSObject+swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070B5F1F2B1633002C0ADF /* NSObject+swizzle.m */; };
 		F51636631F39BDA700F47DC6 /* OTSTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F51636621F39BDA700F47DC6 /* OTSTableView.m */; };
 		F51636661F39BDC200F47DC6 /* OTSTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F51636651F39BDC200F47DC6 /* OTSTableViewCell.m */; };
 		F51EC0701F1C49F900735E7C /* NSString+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC06F1F1C49F900735E7C /* NSString+safe.m */; };
@@ -28,9 +27,6 @@
 		F51EC08A1F1C4BE400735E7C /* UIButton+util.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0891F1C4BE400735E7C /* UIButton+util.m */; };
 		F51EC08E1F1C4BFB00735E7C /* UIBarButtonItem+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC08D1F1C4BFB00735E7C /* UIBarButtonItem+Util.m */; };
 		F51EC0921F1C4C1100735E7C /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0911F1C4C1100735E7C /* UITextField+Placeholder.m */; };
-		F51EC09B1F1C4C8D00735E7C /* NSObject+BeeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0961F1C4C8D00735E7C /* NSObject+BeeNotification.m */; };
-		F51EC09C1F1C4C8D00735E7C /* NSObject+category.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0981F1C4C8D00735E7C /* NSObject+category.m */; };
-		F51EC09D1F1C4C8D00735E7C /* NSObject+PerformBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC09A1F1C4C8D00735E7C /* NSObject+PerformBlock.m */; };
 		F51EC0A11F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0A01F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.m */; };
 		F51EC0A41F1C4CC600735E7C /* XMGFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0A31F1C4CC600735E7C /* XMGFileTool.m */; };
 		F51EC0B21F1C4D1100735E7C /* OTSWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0B11F1C4D1100735E7C /* OTSWindow.m */; };
@@ -47,6 +43,21 @@
 		F51EC0EC1F1C552500735E7C /* UIViewController+dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0EB1F1C552500735E7C /* UIViewController+dealloc.m */; };
 		F51EC0F51F1C55BC00735E7C /* OTSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0F11F1C55BC00735E7C /* OTSFileManager.m */; };
 		F51EC0F61F1C55BC00735E7C /* OTSUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0F41F1C55BC00735E7C /* OTSUserDefault.m */; };
+		F5A3CFCF1F452BF6000D2F7B /* NSObject+BeeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFBE1F452BF6000D2F7B /* NSObject+BeeNotification.m */; };
+		F5A3CFD01F452BF6000D2F7B /* NSObject+category.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFC01F452BF6000D2F7B /* NSObject+category.m */; };
+		F5A3CFD11F452BF6000D2F7B /* NSObject+coder.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFC21F452BF6000D2F7B /* NSObject+coder.m */; };
+		F5A3CFD21F452BF6000D2F7B /* NSObject+JsonToVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFC41F452BF6000D2F7B /* NSObject+JsonToVO.m */; };
+		F5A3CFD31F452BF6000D2F7B /* NSObject+PerformBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFC61F452BF6000D2F7B /* NSObject+PerformBlock.m */; };
+		F5A3CFD41F452BF6000D2F7B /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFC81F452BF6000D2F7B /* NSObject+runtime.m */; };
+		F5A3CFD61F452BF6000D2F7B /* NSObject+swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFCC1F452BF6000D2F7B /* NSObject+swizzle.m */; };
+		F5A3CFEC1F452EB0000D2F7B /* UIView+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFEB1F452EB0000D2F7B /* UIView+safe.m */; };
+		F5A3CFEF1F452F45000D2F7B /* NSObject+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFEE1F452F45000D2F7B /* NSObject+safe.m */; };
+		F5A3CFF31F45305D000D2F7B /* NSNumber+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFF21F45305D000D2F7B /* NSNumber+Format.m */; };
+		F5A3CFF61F45313E000D2F7B /* UIColor+CustomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFF51F45313E000D2F7B /* UIColor+CustomColor.m */; };
+		F5A3CFF91F4531E4000D2F7B /* NSString+ConvertType.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFF81F4531E4000D2F7B /* NSString+ConvertType.m */; };
+		F5A3CFFC1F45326F000D2F7B /* NSString+tripledes.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFFB1F45326F000D2F7B /* NSString+tripledes.m */; };
+		F5A3D0021F4532DC000D2F7B /* NSDate+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFFF1F4532DC000D2F7B /* NSDate+Format.m */; };
+		F5A3D0031F4532DC000D2F7B /* NSDate+OTS.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3D0011F4532DC000D2F7B /* NSDate+OTS.m */; };
 		F5FFFE961F218ED9007B55F1 /* NSString+util.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE951F218ED9007B55F1 /* NSString+util.m */; };
 		F5FFFEB41F219DBD007B55F1 /* OTSArchiveData.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFEB31F219DBD007B55F1 /* OTSArchiveData.m */; };
 /* End PBXBuildFile section */
@@ -80,8 +91,6 @@
 		F5070B531F2B15D2002C0ADF /* NSString+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+safe.m"; sourceTree = "<group>"; };
 		F5070B541F2B15D2002C0ADF /* UICollectionView+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+safe.h"; sourceTree = "<group>"; };
 		F5070B551F2B15D2002C0ADF /* UICollectionView+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+safe.m"; sourceTree = "<group>"; };
-		F5070B5E1F2B1633002C0ADF /* NSObject+swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+swizzle.h"; sourceTree = "<group>"; };
-		F5070B5F1F2B1633002C0ADF /* NSObject+swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+swizzle.m"; sourceTree = "<group>"; };
 		F51636611F39BDA700F47DC6 /* OTSTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSTableView.h; sourceTree = "<group>"; };
 		F51636621F39BDA700F47DC6 /* OTSTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSTableView.m; sourceTree = "<group>"; };
 		F51636641F39BDC200F47DC6 /* OTSTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSTableViewCell.h; sourceTree = "<group>"; };
@@ -108,12 +117,6 @@
 		F51EC08D1F1C4BFB00735E7C /* UIBarButtonItem+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Util.m"; sourceTree = "<group>"; };
 		F51EC0901F1C4C1100735E7C /* UITextField+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Placeholder.h"; sourceTree = "<group>"; };
 		F51EC0911F1C4C1100735E7C /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
-		F51EC0951F1C4C8D00735E7C /* NSObject+BeeNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BeeNotification.h"; sourceTree = "<group>"; };
-		F51EC0961F1C4C8D00735E7C /* NSObject+BeeNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BeeNotification.m"; sourceTree = "<group>"; };
-		F51EC0971F1C4C8D00735E7C /* NSObject+category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+category.h"; sourceTree = "<group>"; };
-		F51EC0981F1C4C8D00735E7C /* NSObject+category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+category.m"; sourceTree = "<group>"; };
-		F51EC0991F1C4C8D00735E7C /* NSObject+PerformBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformBlock.h"; sourceTree = "<group>"; };
-		F51EC09A1F1C4C8D00735E7C /* NSObject+PerformBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformBlock.m"; sourceTree = "<group>"; };
 		F51EC09F1F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSWeakObjectDeathNotifier.h; sourceTree = "<group>"; };
 		F51EC0A01F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSWeakObjectDeathNotifier.m; sourceTree = "<group>"; };
 		F51EC0A21F1C4CC600735E7C /* XMGFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGFileTool.h; sourceTree = "<group>"; };
@@ -151,6 +154,36 @@
 		F51EC0F41F1C55BC00735E7C /* OTSUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSUserDefault.m; sourceTree = "<group>"; };
 		F51EC0F71F1C560700735E7C /* OTSNotificationDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNotificationDefine.h; sourceTree = "<group>"; };
 		F59446761F18A49800916A4F /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A3CFBD1F452BF6000D2F7B /* NSObject+BeeNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BeeNotification.h"; sourceTree = "<group>"; };
+		F5A3CFBE1F452BF6000D2F7B /* NSObject+BeeNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BeeNotification.m"; sourceTree = "<group>"; };
+		F5A3CFBF1F452BF6000D2F7B /* NSObject+category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+category.h"; sourceTree = "<group>"; };
+		F5A3CFC01F452BF6000D2F7B /* NSObject+category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+category.m"; sourceTree = "<group>"; };
+		F5A3CFC11F452BF6000D2F7B /* NSObject+coder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+coder.h"; sourceTree = "<group>"; };
+		F5A3CFC21F452BF6000D2F7B /* NSObject+coder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+coder.m"; sourceTree = "<group>"; };
+		F5A3CFC31F452BF6000D2F7B /* NSObject+JsonToVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JsonToVO.h"; sourceTree = "<group>"; };
+		F5A3CFC41F452BF6000D2F7B /* NSObject+JsonToVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JsonToVO.m"; sourceTree = "<group>"; };
+		F5A3CFC51F452BF6000D2F7B /* NSObject+PerformBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PerformBlock.h"; sourceTree = "<group>"; };
+		F5A3CFC61F452BF6000D2F7B /* NSObject+PerformBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PerformBlock.m"; sourceTree = "<group>"; };
+		F5A3CFC71F452BF6000D2F7B /* NSObject+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
+		F5A3CFC81F452BF6000D2F7B /* NSObject+runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
+		F5A3CFCB1F452BF6000D2F7B /* NSObject+swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+swizzle.h"; sourceTree = "<group>"; };
+		F5A3CFCC1F452BF6000D2F7B /* NSObject+swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+swizzle.m"; sourceTree = "<group>"; };
+		F5A3CFEA1F452EB0000D2F7B /* UIView+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+safe.h"; sourceTree = "<group>"; };
+		F5A3CFEB1F452EB0000D2F7B /* UIView+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+safe.m"; sourceTree = "<group>"; };
+		F5A3CFED1F452F45000D2F7B /* NSObject+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+safe.h"; sourceTree = "<group>"; };
+		F5A3CFEE1F452F45000D2F7B /* NSObject+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+safe.m"; sourceTree = "<group>"; };
+		F5A3CFF11F45305D000D2F7B /* NSNumber+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Format.h"; sourceTree = "<group>"; };
+		F5A3CFF21F45305D000D2F7B /* NSNumber+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Format.m"; sourceTree = "<group>"; };
+		F5A3CFF41F45313E000D2F7B /* UIColor+CustomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColor.h"; sourceTree = "<group>"; };
+		F5A3CFF51F45313E000D2F7B /* UIColor+CustomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColor.m"; sourceTree = "<group>"; };
+		F5A3CFF71F4531E4000D2F7B /* NSString+ConvertType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ConvertType.h"; sourceTree = "<group>"; };
+		F5A3CFF81F4531E4000D2F7B /* NSString+ConvertType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ConvertType.m"; sourceTree = "<group>"; };
+		F5A3CFFA1F45326F000D2F7B /* NSString+tripledes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+tripledes.h"; sourceTree = "<group>"; };
+		F5A3CFFB1F45326F000D2F7B /* NSString+tripledes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+tripledes.m"; sourceTree = "<group>"; };
+		F5A3CFFE1F4532DC000D2F7B /* NSDate+Format.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Format.h"; sourceTree = "<group>"; };
+		F5A3CFFF1F4532DC000D2F7B /* NSDate+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Format.m"; sourceTree = "<group>"; };
+		F5A3D0001F4532DC000D2F7B /* NSDate+OTS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+OTS.h"; sourceTree = "<group>"; };
+		F5A3D0011F4532DC000D2F7B /* NSDate+OTS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+OTS.m"; sourceTree = "<group>"; };
 		F5FFFE941F218ED9007B55F1 /* NSString+util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+util.h"; sourceTree = "<group>"; };
 		F5FFFE951F218ED9007B55F1 /* NSString+util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+util.m"; sourceTree = "<group>"; };
 		F5FFFEB21F219DBD007B55F1 /* OTSArchiveData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSArchiveData.h; sourceTree = "<group>"; };
@@ -171,6 +204,8 @@
 		F5070B451F2B15D2002C0ADF /* Safe */ = {
 			isa = PBXGroup;
 			children = (
+				F5A3CFED1F452F45000D2F7B /* NSObject+safe.h */,
+				F5A3CFEE1F452F45000D2F7B /* NSObject+safe.m */,
 				F5070B461F2B15D2002C0ADF /* NSArray+safe.h */,
 				F5070B471F2B15D2002C0ADF /* NSArray+safe.m */,
 				F5070B481F2B15D2002C0ADF /* NSDictionary+safe.h */,
@@ -187,6 +222,8 @@
 				F5070B531F2B15D2002C0ADF /* NSString+safe.m */,
 				F5070B541F2B15D2002C0ADF /* UICollectionView+safe.h */,
 				F5070B551F2B15D2002C0ADF /* UICollectionView+safe.m */,
+				F5A3CFEA1F452EB0000D2F7B /* UIView+safe.h */,
+				F5A3CFEB1F452EB0000D2F7B /* UIView+safe.m */,
 			);
 			path = Safe;
 			sourceTree = "<group>";
@@ -216,9 +253,11 @@
 		F51EC06C1F1C49D300735E7C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F5A3CFFD1F4532DC000D2F7B /* NSDate */,
+				F5A3CFF01F45305D000D2F7B /* NSNumber */,
+				F5A3CFBC1F452BF6000D2F7B /* NSObject */,
 				F5070B451F2B15D2002C0ADF /* Safe */,
 				F51EC0D61F1C4FC800735E7C /* MBProgressHUD */,
-				F51EC0941F1C4C6800735E7C /* NSObject */,
 				F51EC0931F1C4C4300735E7C /* UIViewController */,
 				F51EC08F1F1C4C0B00735E7C /* UITextField */,
 				F51EC08B1F1C4BF600735E7C /* UIBarButtonItem */,
@@ -235,6 +274,10 @@
 		F51EC06D1F1C49ED00735E7C /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				F5A3CFFA1F45326F000D2F7B /* NSString+tripledes.h */,
+				F5A3CFFB1F45326F000D2F7B /* NSString+tripledes.m */,
+				F5A3CFF71F4531E4000D2F7B /* NSString+ConvertType.h */,
+				F5A3CFF81F4531E4000D2F7B /* NSString+ConvertType.m */,
 				F51EC06E1F1C49F900735E7C /* NSString+safe.h */,
 				F51EC06F1F1C49F900735E7C /* NSString+safe.m */,
 				F5FFFE941F218ED9007B55F1 /* NSString+util.h */,
@@ -277,6 +320,8 @@
 		F51EC0831F1C4BCA00735E7C /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
+				F5A3CFF41F45313E000D2F7B /* UIColor+CustomColor.h */,
+				F5A3CFF51F45313E000D2F7B /* UIColor+CustomColor.m */,
 				F51EC0841F1C4BD000735E7C /* UIColor+Hex.h */,
 				F51EC0851F1C4BD000735E7C /* UIColor+Hex.m */,
 			);
@@ -315,21 +360,6 @@
 			children = (
 			);
 			path = UIViewController;
-			sourceTree = "<group>";
-		};
-		F51EC0941F1C4C6800735E7C /* NSObject */ = {
-			isa = PBXGroup;
-			children = (
-				F5070B5E1F2B1633002C0ADF /* NSObject+swizzle.h */,
-				F5070B5F1F2B1633002C0ADF /* NSObject+swizzle.m */,
-				F51EC0951F1C4C8D00735E7C /* NSObject+BeeNotification.h */,
-				F51EC0961F1C4C8D00735E7C /* NSObject+BeeNotification.m */,
-				F51EC0971F1C4C8D00735E7C /* NSObject+category.h */,
-				F51EC0981F1C4C8D00735E7C /* NSObject+category.m */,
-				F51EC0991F1C4C8D00735E7C /* NSObject+PerformBlock.h */,
-				F51EC09A1F1C4C8D00735E7C /* NSObject+PerformBlock.m */,
-			);
-			path = NSObject;
 			sourceTree = "<group>";
 		};
 		F51EC09E1F1C4CB300735E7C /* Tool */ = {
@@ -440,6 +470,47 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		F5A3CFBC1F452BF6000D2F7B /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				F5A3CFBD1F452BF6000D2F7B /* NSObject+BeeNotification.h */,
+				F5A3CFBE1F452BF6000D2F7B /* NSObject+BeeNotification.m */,
+				F5A3CFBF1F452BF6000D2F7B /* NSObject+category.h */,
+				F5A3CFC01F452BF6000D2F7B /* NSObject+category.m */,
+				F5A3CFC11F452BF6000D2F7B /* NSObject+coder.h */,
+				F5A3CFC21F452BF6000D2F7B /* NSObject+coder.m */,
+				F5A3CFC31F452BF6000D2F7B /* NSObject+JsonToVO.h */,
+				F5A3CFC41F452BF6000D2F7B /* NSObject+JsonToVO.m */,
+				F5A3CFC51F452BF6000D2F7B /* NSObject+PerformBlock.h */,
+				F5A3CFC61F452BF6000D2F7B /* NSObject+PerformBlock.m */,
+				F5A3CFC71F452BF6000D2F7B /* NSObject+runtime.h */,
+				F5A3CFC81F452BF6000D2F7B /* NSObject+runtime.m */,
+				F5A3CFCB1F452BF6000D2F7B /* NSObject+swizzle.h */,
+				F5A3CFCC1F452BF6000D2F7B /* NSObject+swizzle.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		F5A3CFF01F45305D000D2F7B /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				F5A3CFF11F45305D000D2F7B /* NSNumber+Format.h */,
+				F5A3CFF21F45305D000D2F7B /* NSNumber+Format.m */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		F5A3CFFD1F4532DC000D2F7B /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				F5A3CFFE1F4532DC000D2F7B /* NSDate+Format.h */,
+				F5A3CFFF1F4532DC000D2F7B /* NSDate+Format.m */,
+				F5A3D0001F4532DC000D2F7B /* NSDate+OTS.h */,
+				F5A3D0011F4532DC000D2F7B /* NSDate+OTS.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
 		F5FFFEB11F219DAC007B55F1 /* ArchiveData */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,42 +581,53 @@
 				F5070B561F2B15D2002C0ADF /* NSArray+safe.m in Sources */,
 				F51EC0771F1C4A1600735E7C /* UIView+Util.m in Sources */,
 				F5070B571F2B15D2002C0ADF /* NSDictionary+safe.m in Sources */,
+				F5A3CFD41F452BF6000D2F7B /* NSObject+runtime.m in Sources */,
 				F51EC0761F1C4A1600735E7C /* UIView+frame.m in Sources */,
 				F51EC0BB1F1C4D3400735E7C /* OTSColor.m in Sources */,
 				F51EC0A11F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.m in Sources */,
 				F51EC0F61F1C55BC00735E7C /* OTSUserDefault.m in Sources */,
 				F51EC07E1F1C4A3100735E7C /* UIImage+Util.m in Sources */,
+				F5A3CFD11F452BF6000D2F7B /* NSObject+coder.m in Sources */,
+				F5A3CFD31F452BF6000D2F7B /* NSObject+PerformBlock.m in Sources */,
 				F5FFFEB41F219DBD007B55F1 /* OTSArchiveData.m in Sources */,
 				F51EC0B81F1C4D2A00735E7C /* OTSJsonKit.m in Sources */,
 				F51EC0A41F1C4CC600735E7C /* XMGFileTool.m in Sources */,
 				F51EC0921F1C4C1100735E7C /* UITextField+Placeholder.m in Sources */,
 				F51EC0CB1F1C4EBA00735E7C /* MHGradientColorView.m in Sources */,
-				F5070B601F2B1633002C0ADF /* NSObject+swizzle.m in Sources */,
+				F5A3CFD61F452BF6000D2F7B /* NSObject+swizzle.m in Sources */,
 				F51EC0C81F1C4E5900735E7C /* MHVAlignLabel.m in Sources */,
+				F5A3CFD01F452BF6000D2F7B /* NSObject+category.m in Sources */,
 				F51EC08E1F1C4BFB00735E7C /* UIBarButtonItem+Util.m in Sources */,
 				F5070B581F2B15D2002C0ADF /* NSMutableArray+safe.m in Sources */,
 				F51636661F39BDC200F47DC6 /* OTSTableViewCell.m in Sources */,
 				F51EC0D41F1C4ED900735E7C /* OTSCollectionViewCell.m in Sources */,
 				F51EC0EC1F1C552500735E7C /* UIViewController+dealloc.m in Sources */,
 				F51EC0F51F1C55BC00735E7C /* OTSFileManager.m in Sources */,
+				F5A3CFF61F45313E000D2F7B /* UIColor+CustomColor.m in Sources */,
+				F5A3CFF31F45305D000D2F7B /* NSNumber+Format.m in Sources */,
+				F5A3CFD21F452BF6000D2F7B /* NSObject+JsonToVO.m in Sources */,
+				F5A3CFEF1F452F45000D2F7B /* NSObject+safe.m in Sources */,
 				F51EC07D1F1C4A3100735E7C /* UIImage+bundleRes.m in Sources */,
 				F51636631F39BDA700F47DC6 /* OTSTableView.m in Sources */,
 				F5070B591F2B15D2002C0ADF /* NSMutableDictionary+safe.m in Sources */,
+				F5A3CFFC1F45326F000D2F7B /* NSString+tripledes.m in Sources */,
 				F51EC0861F1C4BD000735E7C /* UIColor+Hex.m in Sources */,
+				F5A3D0031F4532DC000D2F7B /* NSDate+OTS.m in Sources */,
 				F51EC0D31F1C4ED900735E7C /* OTSCollectionView.m in Sources */,
 				F51EC08A1F1C4BE400735E7C /* UIButton+util.m in Sources */,
 				F51EC0821F1C4BA900735E7C /* UIImageView+Util.m in Sources */,
+				F5A3CFF91F4531E4000D2F7B /* NSString+ConvertType.m in Sources */,
 				F5070B5B1F2B15D2002C0ADF /* NSNumber+safe.m in Sources */,
 				F5070B5C1F2B15D2002C0ADF /* NSString+safe.m in Sources */,
 				F5070B5D1F2B15D2002C0ADF /* UICollectionView+safe.m in Sources */,
-				F51EC09B1F1C4C8D00735E7C /* NSObject+BeeNotification.m in Sources */,
-				F51EC09D1F1C4C8D00735E7C /* NSObject+PerformBlock.m in Sources */,
 				F5FFFE961F218ED9007B55F1 /* NSString+util.m in Sources */,
 				F5070B5A1F2B15D2002C0ADF /* NSMutableString+safe.m in Sources */,
 				F51EC0D21F1C4ED900735E7C /* OTSCollectionReusableView.m in Sources */,
+				F5A3D0021F4532DC000D2F7B /* NSDate+Format.m in Sources */,
 				F51EC0701F1C49F900735E7C /* NSString+safe.m in Sources */,
-				F51EC09C1F1C4C8D00735E7C /* NSObject+category.m in Sources */,
+				F5A3CFEC1F452EB0000D2F7B /* UIView+safe.m in Sources */,
 				F51EC0B51F1C4D1900735E7C /* OTSWebView.m in Sources */,
+				F5A3CFCF1F452BF6000D2F7B /* NSObject+BeeNotification.m in Sources */,
 				F51EC0C31F1C4E0500735E7C /* Foundation+Log.m in Sources */,
 				F51EC0B21F1C4D1100735E7C /* OTSWindow.m in Sources */,
 			);
@@ -648,7 +730,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREFIX_HEADER = $SRCROOT/Common/Common.pch;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Pods/Headers/**";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../Pods/Headers/**",
+					"\"$(SRCROOT)/../OneStore/OneStore/Modules/OneStoreBase/OneStoreBase\"/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -659,7 +744,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREFIX_HEADER = $SRCROOT/Common/Common.pch;
-				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Pods/Headers/**";
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../Pods/Headers/**",
+					"\"$(SRCROOT)/../OneStore/OneStore/Modules/OneStoreBase/OneStoreBase\"/**",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

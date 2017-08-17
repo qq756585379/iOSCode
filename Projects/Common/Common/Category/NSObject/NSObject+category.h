@@ -21,6 +21,7 @@
  *  @param policy 分类内存管理类型
  */
 - (void)objc_setAssociatedObject:(NSString *)propertyName value:(id)value policy:(objc_AssociationPolicy)policy;
+
 /**
  *  获取当前object某个动态增加的分类
  *
@@ -28,7 +29,9 @@
  *
  *  @return 值
  */
+
 - (id)objc_getAssociatedObject:(NSString *)propertyName;
+
 /**
  *  删除动态增加的所有分类
  */
