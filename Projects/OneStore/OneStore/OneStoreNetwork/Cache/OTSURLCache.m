@@ -8,10 +8,10 @@
 
 #import "OTSURLCache.h"
 #import "OTSFileManager.h"
+#import "OTSCurrentAddress.h"
 
 static NSString * const CustomURLCacheExpirationKey = @"CustomURLCacheExpiration";
 static NSString * const CustomURLCacheTimeKey = @"CustomURLCacheTimeKey";
-
 static NSTimeInterval const CustomURLCacheExpirationInterval = 0;
 
 @interface OTSURLCache()

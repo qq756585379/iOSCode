@@ -15,6 +15,9 @@
 		F520BFE81F4FC7070051BDA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F520BFE61F4FC7070051BDA3 /* LaunchScreen.storyboard */; };
 		F520BFFC1F4FC75F0051BDA3 /* libfaac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F520BFF51F4FC75F0051BDA3 /* libfaac.a */; };
 		F520BFFD1F4FC75F0051BDA3 /* libfaadall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F520BFFB1F4FC75F0051BDA3 /* libfaadall.a */; };
+		F520C0001F4FC9070051BDA3 /* tmp.aac in Resources */ = {isa = PBXBuildFile; fileRef = F520BFFF1F4FC9070051BDA3 /* tmp.aac */; };
+		F520C0031F4FC9500051BDA3 /* PlayAACFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0021F4FC9500051BDA3 /* PlayAACFile.m */; };
+		F520C0061F4FCA870051BDA3 /* OpenALAudioPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0051F4FCA870051BDA3 /* OpenALAudioPlay.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,11 @@
 		F520BFF81F4FC75F0051BDA3 /* faad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faad.h; sourceTree = "<group>"; };
 		F520BFF91F4FC75F0051BDA3 /* neaacdec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = neaacdec.h; sourceTree = "<group>"; };
 		F520BFFB1F4FC75F0051BDA3 /* libfaadall.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfaadall.a; sourceTree = "<group>"; };
+		F520BFFF1F4FC9070051BDA3 /* tmp.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = tmp.aac; sourceTree = "<group>"; };
+		F520C0011F4FC9500051BDA3 /* PlayAACFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayAACFile.h; sourceTree = "<group>"; };
+		F520C0021F4FC9500051BDA3 /* PlayAACFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayAACFile.m; sourceTree = "<group>"; };
+		F520C0041F4FCA870051BDA3 /* OpenALAudioPlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenALAudioPlay.h; sourceTree = "<group>"; };
+		F520C0051F4FCA870051BDA3 /* OpenALAudioPlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenALAudioPlay.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 				F520BFEF1F4FC7430051BDA3 /* Libs */,
 				F520BFDB1F4FC7070051BDA3 /* AppDelegate.h */,
 				F520BFDC1F4FC7070051BDA3 /* AppDelegate.m */,
+				F520BFFE1F4FC8BE0051BDA3 /* AACTest */,
 				F520BFDE1F4FC7070051BDA3 /* ViewController.h */,
 				F520BFDF1F4FC7070051BDA3 /* ViewController.m */,
 				F520BFE11F4FC7070051BDA3 /* Main.storyboard */,
@@ -151,6 +160,18 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		F520BFFE1F4FC8BE0051BDA3 /* AACTest */ = {
+			isa = PBXGroup;
+			children = (
+				F520BFFF1F4FC9070051BDA3 /* tmp.aac */,
+				F520C0011F4FC9500051BDA3 /* PlayAACFile.h */,
+				F520C0021F4FC9500051BDA3 /* PlayAACFile.m */,
+				F520C0041F4FCA870051BDA3 /* OpenALAudioPlay.h */,
+				F520C0051F4FCA870051BDA3 /* OpenALAudioPlay.m */,
+			);
+			path = AACTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,6 +233,7 @@
 				F520BFE81F4FC7070051BDA3 /* LaunchScreen.storyboard in Resources */,
 				F520BFE51F4FC7070051BDA3 /* Assets.xcassets in Resources */,
 				F520BFE31F4FC7070051BDA3 /* Main.storyboard in Resources */,
+				F520C0001F4FC9070051BDA3 /* tmp.aac in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +245,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F520BFE01F4FC7070051BDA3 /* ViewController.m in Sources */,
+				F520C0061F4FCA870051BDA3 /* OpenALAudioPlay.m in Sources */,
 				F520BFDD1F4FC7070051BDA3 /* AppDelegate.m in Sources */,
 				F520BFDA1F4FC7070051BDA3 /* main.m in Sources */,
+				F520C0031F4FC9500051BDA3 /* PlayAACFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

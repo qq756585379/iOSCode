@@ -11,6 +11,15 @@
 #import "OTSWeakObjectDeathNotifier.h"
 #import "OTSNetworkQuery.h"
 #import "OTSNetworkError.h"
+#import "OTSLaunchFailError.h"
+#import "OTSReachability.h"
+#import "OTSWebView.h"
+#import "OTSServerError.h"
+#import "OTSClientInfo.h"
+#import "OTSNetworkCommonError.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "OTSBatchOperaionParam.h"
+#import "OTSCurrentAddress.h"
 
 @interface OTSOperationManager()
 @property(nonatomic, strong) NSMutableArray *operationParams;//这里记录operation param，防止其释放，token过期处理会用到operation param
@@ -71,7 +80,6 @@
     if (aParam == nil) {
         return nil;
     }
-    
     //session无效
     if (self.sessionIsInvalid) {
         NSLog(@"{method name}: %@\n\nerror:\nsession invalid\n", aParam.methodName);
@@ -92,8 +100,8 @@
     if (aParam.needSignature && [OTSGlobalValue sharedInstance].signatureKey==nil) {
         BOOL runCallBack = [[OTSLaunchFailError sharedInstance] dealWithManager:self param:aParam operation:nil responseObject:nil error:nil];
         if (runCallBack) {
-            OTSLogV(@"{method name}: %@\n\nerror:\nlaunch fail\n", aParam.methodName);
-            OTSLogF(@"(%lld)接口launch fail\n接口名%@\n\n", (long long)([[OTSGlobalValue sharedInstance].serverTime timeIntervalSince1970]*1000), aParam.requestUrl);
+            NSLog(@"{method name}: %@\n\nerror:\nlaunch fail\n", aParam.methodName);
+            NSLog(@"(%lld)接口launch fail\n接口名%@\n\n", (long long)([[OTSGlobalValue sharedInstance].serverTime timeIntervalSince1970]*1000), aParam.requestUrl);
             [self performInMainThreadBlock:^{
                 NSError *error = [NSError errorWithDomain:@"launch fail" code:kLaunchFail userInfo:nil];
                 if (aParam.isNeedRacRequest) {
@@ -148,24 +156,24 @@
     NSURLSessionDataTask *requestOperation = nil;
     WEAK_SELF;
     if (aParam.requestType == kRequestPost) {//POST方式
-        requestOperation = [self POST:requestUrl parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        requestOperation = [self POST:requestUrl parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             STRONG_SELF;
             [self successWithTask:task responseObject:responseObject param:aParam];
-            OTSLogF(@"(%lld)接口返回成功\n\n接口名%@\n接口内容%@\n\n", (long long)([[OTSGlobalValue sharedInstance].serverTime timeIntervalSince1970]*1000), aParam.requestUrl, responseObject);
-        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            NSLog(@"(%lld)接口返回成功\n\n接口名%@\n接口内容%@\n\n", (long long)([[OTSGlobalValue sharedInstance].serverTime timeIntervalSince1970]*1000), aParam.requestUrl, responseObject);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             STRONG_SELF;
             [self failWithTask:task error:error param:aParam];
-            OTSLogF(@"(%lld)接口返回失败\n接口名%@\n错误信息%@\n\n", (long long)([[OTSGlobalValue sharedInstance].serverTime timeIntervalSince1970]*1000), aParam.requestUrl, error);
+            NSLog(@"(%lld)接口返回失败\n接口名%@\n错误信息%@\n\n", (long long)([[OTSGlobalValue sharedInstance].serverTime timeIntervalSince1970]*1000), aParam.requestUrl, error);
         }];
     } else {
-        requestOperation = [self GET:requestUrl parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        requestOperation = [self POST:requestUrl parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             STRONG_SELF;
             [self successWithTask:task responseObject:responseObject param:aParam];
-            OTSLogF(@"(%lld)接口返回成功\n接口名%@\n接口内容%@\n\n", (long long)([[OTSGlobalValue sharedInstance].serverTime timeIntervalSince1970]*1000), aParam.requestUrl, responseObject);
-        } failure:^(NSURLSessionDataTask *task, NSError *error) {
+            NSLog(@"(%lld)接口返回成功\n接口名%@\n接口内容%@\n\n", (long long)([[OTSGlobalValue sharedInstance].serverTime timeIntervalSince1970]*1000), aParam.requestUrl, responseObject);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             STRONG_SELF;
             [self failWithTask:task error:error param:aParam];
-            OTSLogF(@"(%lld)接口返回失败\n接口名%@\n错误信息%@\n\n", (long long)([[OTSGlobalValue sharedInstance].serverTime timeIntervalSince1970]*1000), aParam.requestUrl, error);
+            NSLog(@"(%lld)接口返回失败\n接口名%@\n错误信息%@\n\n", (long long)([[OTSGlobalValue sharedInstance].serverTime timeIntervalSince1970]*1000), aParam.requestUrl, error);
         }];
     }
     
@@ -180,15 +188,11 @@
     
     return requestOperation;
 }
+
 /**
  *  发送网络请求，创建信号
- *
- *  @param aParam
- *
- *  @return
  */
-- (RACSignal *)rac_requestWithParam:(OTSOperationParam *)aParam
-{
+- (RACSignal *)rac_requestWithParam:(OTSOperationParam *)aParam{
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         aParam.subscriber = subscriber;
         aParam.isNeedRacRequest = YES;
@@ -202,8 +206,7 @@
 /**
  *  功能:取消当前manager queue中所有网络请求
  */
-- (void)cancelAllOperations
-{
+- (void)cancelAllOperations{
     NSArray *tasks = self.tasks.copy;
     for (NSURLSessionDataTask *task in tasks) {
         [task cancel];
@@ -258,8 +261,7 @@
  */
 - (void)successWithTask:(NSURLSessionDataTask *)task
          responseObject:(id)responseObject
-                  param:(OTSOperationParam *)aParam
-{
+                  param:(OTSOperationParam *)aParam{
     //兼容接口返回的数组类型数据
     if ([responseObject isKindOfClass:[NSArray class]]) {
         NSMutableDictionary *responseDict = @{}.mutableCopy;
@@ -320,8 +322,7 @@
  */
 - (void)failWithTask:(NSURLSessionDataTask *)task
                error:(NSError *)aError
-               param:(OTSOperationParam *)aParam
-{
+               param:(OTSOperationParam *)aParam{
     //打印失败的日志
     [self printFailResponse:aParam error:aError];
     //错误处理(错误提示、token过期、密钥过期、删除缓存)
@@ -351,11 +352,9 @@
 /**
  *  功能:修改RequestSerializer
  */
-- (void)modifyRequestSerializerWithParam:(OTSOperationParam *)aParam
-{
+- (void)modifyRequestSerializerWithParam:(OTSOperationParam *)aParam{
     //超时时间
     self.requestSerializer.timeoutInterval = aParam.timeoutTime;
-    
     //Cache-control(缓存时间)
     [self.requestSerializer setValue:[NSString stringWithFormat:@"max-age=%.0f", aParam.cacheTime] forHTTPHeaderField:@"Cache-control"];
     
@@ -400,8 +399,7 @@
 /**
  *  功能:获取签名字符串
  */
-- (NSString *)getSignature:(NSDictionary *)aDict timeStamp:(NSString *)aTimeStamp
-{
+- (NSString *)getSignature:(NSDictionary *)aDict timeStamp:(NSString *)aTimeStamp{
     NSMutableDictionary *theDict = [aDict mutableCopy];
     //signature_method
     [theDict safeSetObject:@"md5" forKey:@"signature_method"];
@@ -432,20 +430,17 @@
 /**
  *  功能:获取服务器时间戳
  */
-- (NSString *)getServerTimeStamp
-{
+- (NSString *)getServerTimeStamp{
     NSTimeInterval dTime = [OTSGlobalValue sharedInstance].dTime;//服务器时间-本地时间
     NSTimeInterval serverTimeStamp = [[NSDate date] timeIntervalSince1970] + dTime;
     NSString *serverTimeStampStr = [NSString stringWithFormat:@"%0.0lf", serverTimeStamp];
-    
     return serverTimeStampStr;
 }
 
 /**
  *  功能:获取AES加密的token
  */
-- (NSString *)getAesEncodedToken
-{
+- (NSString *)getAesEncodedToken{
     NSString *token = [OTSGlobalValue sharedInstance].token;
     if (token == nil) {
         return nil;
@@ -457,7 +452,6 @@
     NSString *signatureKey = [OTSGlobalValue sharedInstance].signatureKey;
     NSError *error = nil;
     NSString *encodedStr = [totalStr encryptByAESKey:signatureKey error:&error];
-    
     return encodedStr;
 }
 
@@ -473,13 +467,9 @@
 #pragma mark - 打印Request & Response
 /**
  *  打印Request，主要是接口请求的参数描述
- *
- *  @param aParam
- *  @param requestOperation
  */
 - (void)printRequest:(OTSOperationParam *)aParam
-           operation:(NSURLSessionDataTask *)requestOperation
-{
+           operation:(NSURLSessionDataTask *)requestOperation{
 #ifdef DEBUG
     NSURLRequest *request = [requestOperation currentRequest];
     NSString *unEncodeUrl = [request.URL.absoluteString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -493,13 +483,9 @@
 
 /**
  *  打印成功的Response
- *
- *  @param aParam
- *  @param responseObject
  */
 - (void)printSuccessResponse:(OTSOperationParam *)aParam
-              responseObject:(id)aResponseObject
-{
+              responseObject:(id)aResponseObject{
 #ifdef DEBUG
     NSString *description = [aResponseObject description];
     if (description) {
@@ -516,20 +502,14 @@
 
 /**
  *  打印失败的Response
- *
- *  @param aParam
- *  @param aResponseObject
- *  @param aError
  */
 - (void)printFailResponse:(OTSOperationParam *)aParam
-                    error:(NSError *)aError
-{
+                    error:(NSError *)aError{
 #ifdef DEBUG
     NSString *errorMessage = [aError description];
     if (errorMessage) {
         errorMessage = [NSString unicodeToUtf8:errorMessage];
     }
-    
     if (errorMessage && errorMessage.length > 0) {
         OTSLogV(@"{method name}: %@\n\nerror:\n%@\n", aParam.methodName,errorMessage);
     } else {
@@ -541,12 +521,8 @@
 #pragma mark - 接口日志上传
 /**
  *  接口日志上传
- *
- *  @param aParam
- *  @param responseObject
  */
-- (void)uploadLog:(OTSOperationParam *)aParam responseObject:(id)aResponseObject
-{
+- (void)uploadLog:(OTSOperationParam *)aParam responseObject:(id)aResponseObject{
     aParam.endTimeStamp = [[NSDate date] timeIntervalSince1970] * 1000;
     NSString *rtnCode = [aResponseObject safeObjectForKey:@"rtn_code"];
     if ([rtnCode isEqualToString:@"0"]) {
@@ -559,8 +535,7 @@
 /**
  *  功能:token过期时将operation暂存
  */
-- (void)cacheOperationForTokenExpire:(OTSOperationParam *)aParam
-{
+- (void)cacheOperationForTokenExpire:(OTSOperationParam *)aParam{
     if (!aParam.rerunForTokenExpire) {
         [self.cachedParamsForTokenExpire safeAddObject:aParam];
     }
@@ -569,8 +544,7 @@
 /**
  *  功能:登录成功后执行所有暂存的operation
  */
-- (void)performCachedOperationsForTokenExpire
-{
+- (void)performCachedOperationsForTokenExpire{
     NSArray *copyArray = self.cachedParamsForTokenExpire.copy;
     for (OTSOperationParam *param in copyArray) {
         if (!param.rerunForTokenExpire) {
@@ -584,8 +558,7 @@
 /**
  *  功能:登录失败后清除所有暂存的operation
  */
-- (void)clearCachedOperationsForTokenExpire
-{
+- (void)clearCachedOperationsForTokenExpire{
     //清除之前先执行call back
     NSArray *copyArray = self.cachedParamsForTokenExpire.copy;
     for (OTSOperationParam *param in copyArray) {
@@ -597,7 +570,6 @@
                 param.callbackBlock(nil, error);
             }
         }
-        
         //发通知显示错误界面
         [self notifyShowErrorWithParam:param];
     }
@@ -609,8 +581,7 @@
 /**
  *  功能:密钥过期时将operation暂存
  */
-- (void)cacheOperationForSignKeyExpire:(OTSOperationParam *)aParam
-{
+- (void)cacheOperationForSignKeyExpire:(OTSOperationParam *)aParam{
     if (!aParam.rerunForSignKeyExpire) {
         [self.cachedParamsForSignKeyExpire safeAddObject:aParam];
     }
@@ -619,8 +590,7 @@
 /**
  *  功能:获取密钥接口成功后执行所有暂存的operation
  */
-- (void)performCachedOperationsForSignKeyExpire
-{
+- (void)performCachedOperationsForSignKeyExpire{
     NSArray *copyArray = self.cachedParamsForSignKeyExpire.copy;
     for (OTSOperationParam *param in copyArray) {
         if (!param.rerunForSignKeyExpire) {
@@ -634,8 +604,7 @@
 /**
  *  功能:获取密钥接口失败后清除所有暂存的operation
  */
-- (void)clearCachedOperationsForSignKeyExpire
-{
+- (void)clearCachedOperationsForSignKeyExpire{
     //清除之前先执行call back
     NSArray *copyArray = self.cachedParamsForSignKeyExpire.copy;
     for (OTSOperationParam *param in copyArray) {
@@ -668,8 +637,7 @@
 /**
  *  功能:relaunch成功后执行所有暂存的operation
  */
-- (void)performCachedOperationsForLaunchFail
-{
+- (void)performCachedOperationsForLaunchFail{
     NSArray *copyArray = self.cachedParamsForLaunchFail.copy;
     for (OTSOperationParam *param in copyArray) {
         if (!param.rerunForLaunchFail) {
@@ -683,8 +651,7 @@
 /**
  *  功能:relaunch失败后清除所有暂存的operation
  */
-- (void)clearCachedOperationsForLaunchFail
-{
+- (void)clearCachedOperationsForLaunchFail{
     //清除之前先执行call back
     NSArray *copyArray = self.cachedParamsForLaunchFail.copy;
     for (OTSOperationParam *param in copyArray) {
@@ -725,8 +692,7 @@
 /**
  *  功能:发notification，隐藏无网络错误界面
  */
-- (void)notifyHideNoConnectError
-{
+- (void)notifyHideNoConnectError{
     //有网络，则隐藏无网络错误界面
     if ([OTSReachability sharedInstance].currentNetStatus != kConnectToNull) {
         [self performInMainThreadBlock:^{
@@ -742,13 +708,11 @@
 /**
  *  功能:执行错误界面缓存的operation
  */
-- (void)performCachedOperationForShowErrorView
-{
+- (void)performCachedOperationForShowErrorView{
     NSArray *copyArray = self.cachedParamsForShowErrorView.copy;
     for (OTSOperationParam *param in copyArray) {
         [self requestWithParam:param];
     }
-    
     [self.cachedParamsForShowErrorView removeAllObjects];
 }
 
@@ -756,16 +720,14 @@
 /**
  *  功能:服务器错误时将operation暂存
  */
-- (void)cacheOperationForServerError:(OTSOperationParam *)aParam
-{
+- (void)cacheOperationForServerError:(OTSOperationParam *)aParam{
     [self.cachedParamsForServerError safeAddObject:aParam];
 }
 
 /**
  *  功能:服务器错误更换ip后执行所有暂存的operation
  */
-- (void)performCachedOperationsForServerError
-{
+- (void)performCachedOperationsForServerError{
     NSArray *copyArray = self.cachedParamsForServerError.copy;
     for (OTSOperationParam *param in copyArray) {
         param.needUseIp = YES;//使用ip
@@ -777,8 +739,7 @@
 /**
  *  功能:更换ip仍然失败后清除所有暂存的operation
  */
-- (void)clearCachedOperationsForServerError
-{
+- (void)clearCachedOperationsForServerError{
     //清除之前先执行call back
     NSArray *copyArray = self.cachedParamsForServerError.copy;
     for (OTSOperationParam *param in copyArray) {
@@ -786,10 +747,10 @@
         param.needUseIp = NO;
         //重置使用的ip
         param.usedIp = nil;
-        
         //回调
         if (param.callbackBlock) {
-            NSError *error = [NSError errorWithDomain:@"request fail when change ip for server error" code:kChangeIpForServerError userInfo:nil];
+            NSError *error = [NSError errorWithDomain:@"request fail when change ip for server error"
+                                                 code:kChangeIpForServerError userInfo:nil];
             param.callbackBlock(nil, error);
         }
         //发通知显示错误界面
@@ -799,56 +760,49 @@
 }
 
 #pragma mark - Property
-- (NSMutableArray *)operationParams
-{
+- (NSMutableArray *)operationParams{
     if (_operationParams == nil) {
         _operationParams = @[].mutableCopy;
     }
     return _operationParams;
 }
 
-- (NSMutableArray *)batchOperationParams
-{
+- (NSMutableArray *)batchOperationParams{
     if (_batchOperationParams == nil) {
         _batchOperationParams = @[].mutableCopy;
     }
     return _batchOperationParams;
 }
 
-- (NSMutableArray *)cachedParamsForTokenExpire
-{
+- (NSMutableArray *)cachedParamsForTokenExpire{
     if (_cachedParamsForTokenExpire == nil) {
         _cachedParamsForTokenExpire = @[].mutableCopy;
     }
     return _cachedParamsForTokenExpire;
 }
 
-- (NSMutableArray *)cachedParamsForSignKeyExpire
-{
+- (NSMutableArray *)cachedParamsForSignKeyExpire{
     if (_cachedParamsForSignKeyExpire == nil) {
         _cachedParamsForSignKeyExpire = @[].mutableCopy;
     }
     return _cachedParamsForSignKeyExpire;
 }
 
-- (NSMutableArray *)cachedParamsForLaunchFail
-{
+- (NSMutableArray *)cachedParamsForLaunchFail{
     if (_cachedParamsForLaunchFail == nil) {
         _cachedParamsForLaunchFail = @[].mutableCopy;
     }
     return _cachedParamsForLaunchFail;
 }
 
-- (NSMutableArray *)cachedParamsForShowErrorView
-{
+- (NSMutableArray *)cachedParamsForShowErrorView{
     if (_cachedParamsForShowErrorView == nil) {
         _cachedParamsForShowErrorView = @[].mutableCopy;
     }
     return _cachedParamsForShowErrorView;
 }
 
-- (NSMutableArray *)cachedParamsForServerError
-{
+- (NSMutableArray *)cachedParamsForServerError{
     if (_cachedParamsForServerError == nil) {
         _cachedParamsForServerError = @[].mutableCopy;
     }

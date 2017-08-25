@@ -10,8 +10,8 @@
 #import "CommonDefine.h"
 
 typedef NS_ENUM(NSInteger ,OTSRegionType){
-    OTSRegionTypeNormal = 0,
-    OTSRegionTypeApollo = 1,
+    OTSRegionTypeNormal  = 0,
+    OTSRegionTypeApollo  = 1,
     OTSRegionTypeWalmart = 2,
 };
 

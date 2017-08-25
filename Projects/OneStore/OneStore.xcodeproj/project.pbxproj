@@ -47,14 +47,36 @@
 		F51EC1181F1C59EF00735E7C /* NSString+router.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC1161F1C59EF00735E7C /* NSString+router.m */; };
 		F51EC11B1F1C5B8F00735E7C /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F51EC11A1F1C5B8F00735E7C /* libCommon.a */; };
 		F51EC11E1F1C5D0C00735E7C /* OTSUnionLoginWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC11D1F1C5D0C00735E7C /* OTSUnionLoginWebVC.m */; };
+		F520C0151F4FF72F0051BDA3 /* OTSNetworkAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0141F4FF72F0051BDA3 /* OTSNetworkAlert.m */; };
+		F520C0271F4FF7370051BDA3 /* OTSAntiBrushError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0181F4FF7370051BDA3 /* OTSAntiBrushError.m */; };
+		F520C0281F4FF7370051BDA3 /* OTSLaunchFailError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C01A1F4FF7370051BDA3 /* OTSLaunchFailError.m */; };
+		F520C0291F4FF7370051BDA3 /* OTSNetworkCommonError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C01C1F4FF7370051BDA3 /* OTSNetworkCommonError.m */; };
+		F520C02A1F4FF7370051BDA3 /* OTSNetworkError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C01E1F4FF7370051BDA3 /* OTSNetworkError.m */; };
+		F520C02B1F4FF7370051BDA3 /* OTSServerError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0201F4FF7370051BDA3 /* OTSServerError.m */; };
+		F520C02C1F4FF7370051BDA3 /* OTSSignKeyExpireError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0221F4FF7370051BDA3 /* OTSSignKeyExpireError.m */; };
+		F520C02D1F4FF7370051BDA3 /* OTSTimeOutError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0241F4FF7370051BDA3 /* OTSTimeOutError.m */; };
+		F520C02E1F4FF7370051BDA3 /* OTSTokenExpireError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0261F4FF7370051BDA3 /* OTSTokenExpireError.m */; };
+		F520C0321F4FF73F0051BDA3 /* OTSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0311F4FF73F0051BDA3 /* OTSReachability.m */; };
+		F520C0361F4FF7450051BDA3 /* OTSSimpleOpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0351F4FF7450051BDA3 /* OTSSimpleOpManager.m */; };
+		F520C03A1F4FF7C70051BDA3 /* OTSOperationParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0391F4FF7C70051BDA3 /* OTSOperationParam.m */; };
+		F520C03D1F4FF7D10051BDA3 /* OTSOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C03C1F4FF7D10051BDA3 /* OTSOperationManager.m */; };
+		F520C0401F4FF7DB0051BDA3 /* OTSNetworkQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C03F1F4FF7DB0051BDA3 /* OTSNetworkQuery.m */; };
+		F520C0431F4FF7EA0051BDA3 /* OTSNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0421F4FF7EA0051BDA3 /* OTSNetworkManager.m */; };
+		F520C0501F4FF8EB0051BDA3 /* OTSGlobalValue.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C04D1F4FF8EB0051BDA3 /* OTSGlobalValue.m */; };
+		F520C0511F4FF8EB0051BDA3 /* OTSValueObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C04F1F4FF8EB0051BDA3 /* OTSValueObject.m */; };
+		F520C0551F4FFBC40051BDA3 /* OTSURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0541F4FFBC40051BDA3 /* OTSURLCache.m */; };
+		F520C0581F4FFD330051BDA3 /* OTSCurrentAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0571F4FFD330051BDA3 /* OTSCurrentAddress.m */; };
+		F520C05B1F50058B0051BDA3 /* OTSClientInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C05A1F50058B0051BDA3 /* OTSClientInfo.m */; };
+		F520C0641F5005E60051BDA3 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C05F1F5005E60051BDA3 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F520C0651F5005E60051BDA3 /* OTSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0611F5005E60051BDA3 /* OTSKeychain.m */; };
+		F520C0661F5005E60051BDA3 /* OTSKeychainDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0631F5005E60051BDA3 /* OTSKeychainDefine.m */; };
+		F520C06C1F500B220051BDA3 /* OTSBatchOperaionParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0691F500B220051BDA3 /* OTSBatchOperaionParam.m */; };
+		F520C06D1F500B220051BDA3 /* OTSOperationManager+Batch.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C06B1F500B220051BDA3 /* OTSOperationManager+Batch.m */; };
+		F520C0711F500C8C0051BDA3 /* OTSConnectUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = F520C0701F500C8C0051BDA3 /* OTSConnectUrl.m */; };
 		F54881131F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F54881121F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.m */; };
 		F54A7ABE1F4BBBC9007801EE /* IMICatchCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F54A7ABD1F4BBBC9007801EE /* IMICatchCrash.m */; };
 		F56ABA361F412E9D00624672 /* PhoneCategoryTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA351F412E9D00624672 /* PhoneCategoryTVCell.m */; };
 		F56ABA391F41338E00624672 /* OTSCategoryLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA381F41338E00624672 /* OTSCategoryLogic.m */; };
-		F56ABA461F41388300624672 /* OTSOperationParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA451F41388300624672 /* OTSOperationParam.m */; };
-		F56ABA491F41396A00624672 /* OTSConnectUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA481F41396A00624672 /* OTSConnectUrl.m */; };
-		F56ABA4C1F413CE800624672 /* OTSURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA4B1F413CE800624672 /* OTSURLCache.m */; };
-		F56ABA521F413F9F00624672 /* OTSNetworkQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA511F413F9F00624672 /* OTSNetworkQuery.m */; };
 		F56ABAD01F416EBC00624672 /* OTSPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABACF1F416EBC00624672 /* OTSPredicate.m */; };
 		F56ABBD71F417B0600624672 /* OTSLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABBD61F417B0600624672 /* OTSLocalNotification.m */; };
 		F58C79381F1C5DFA00AC2928 /* car4_000.png in Resources */ = {isa = PBXBuildFile; fileRef = F58C783B1F1C5DFA00AC2928 /* car4_000.png */; };
@@ -306,7 +328,6 @@
 		F58C7A411F1C5E5500AC2928 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58C7A401F1C5E5500AC2928 /* Images.xcassets */; };
 		F58C7A441F1C5EFE00AC2928 /* OTSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C7A431F1C5EFE00AC2928 /* OTSLog.m */; };
 		F59A16A41F28709600EF7866 /* UIViewController+ots.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A16A31F28709600EF7866 /* UIViewController+ots.m */; };
-		F59A16A71F28786900EF7866 /* OTSNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A16A61F28786900EF7866 /* OTSNetworkManager.m */; };
 		F59A16AA1F287EB300EF7866 /* OTSTBC.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A16A91F287EB300EF7866 /* OTSTBC.m */; };
 		F5A3D00D1F4535E6000D2F7B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A3D00C1F4535E6000D2F7B /* libsqlite3.tbd */; };
 		F5E839851F3C6C3300B2E2A7 /* ProductVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E839841F3C6C3300B2E2A7 /* ProductVO.m */; };
@@ -320,7 +341,6 @@
 		F5FFFE931F2186C3007B55F1 /* AppTabVO.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE921F2186C3007B55F1 /* AppTabVO.m */; };
 		F5FFFE9E1F2195E2007B55F1 /* OTSCartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE9D1F2195E2007B55F1 /* OTSCartVC.m */; };
 		F5FFFEA21F21965B007B55F1 /* PhoneMyyhdIndexTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFEA11F21965B007B55F1 /* PhoneMyyhdIndexTVC.m */; };
-		F5FFFEA91F219C63007B55F1 /* OTSOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFEA81F219C63007B55F1 /* OTSOperationManager.m */; };
 		F5FFFEAD1F219CB2007B55F1 /* OTSLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFEAC1F219CB2007B55F1 /* OTSLogic.m */; };
 		F5FFFEB01F219D2B007B55F1 /* OTSTabbarLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFEAF1F219D2B007B55F1 /* OTSTabbarLogic.m */; };
 /* End PBXBuildFile section */
@@ -353,13 +373,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = F56AC3991F42A7D500624672;
 			remoteInfo = OTSCommon;
-		};
-		F5A3CFA11F45285F000D2F7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F5A3CF9D1F45285E000D2F7B /* OneStoreBase.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F5A3CF911F45285E000D2F7B;
-			remoteInfo = OneStoreBase;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -466,6 +479,63 @@
 		F51EC11A1F1C5B8F00735E7C /* libCommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCommon.a; path = "../../../../Library/Developer/Xcode/DerivedData/iOSCode-hhpvhbyexfvcpvaiejzjheorcqff/Build/Products/Debug-iphonesimulator/libCommon.a"; sourceTree = "<group>"; };
 		F51EC11C1F1C5D0C00735E7C /* OTSUnionLoginWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSUnionLoginWebVC.h; sourceTree = "<group>"; };
 		F51EC11D1F1C5D0C00735E7C /* OTSUnionLoginWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSUnionLoginWebVC.m; sourceTree = "<group>"; };
+		F520C0131F4FF72F0051BDA3 /* OTSNetworkAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkAlert.h; sourceTree = "<group>"; };
+		F520C0141F4FF72F0051BDA3 /* OTSNetworkAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkAlert.m; sourceTree = "<group>"; };
+		F520C0171F4FF7370051BDA3 /* OTSAntiBrushError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSAntiBrushError.h; sourceTree = "<group>"; };
+		F520C0181F4FF7370051BDA3 /* OTSAntiBrushError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSAntiBrushError.m; sourceTree = "<group>"; };
+		F520C0191F4FF7370051BDA3 /* OTSLaunchFailError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLaunchFailError.h; sourceTree = "<group>"; };
+		F520C01A1F4FF7370051BDA3 /* OTSLaunchFailError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLaunchFailError.m; sourceTree = "<group>"; };
+		F520C01B1F4FF7370051BDA3 /* OTSNetworkCommonError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkCommonError.h; sourceTree = "<group>"; };
+		F520C01C1F4FF7370051BDA3 /* OTSNetworkCommonError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkCommonError.m; sourceTree = "<group>"; };
+		F520C01D1F4FF7370051BDA3 /* OTSNetworkError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkError.h; sourceTree = "<group>"; };
+		F520C01E1F4FF7370051BDA3 /* OTSNetworkError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkError.m; sourceTree = "<group>"; };
+		F520C01F1F4FF7370051BDA3 /* OTSServerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSServerError.h; sourceTree = "<group>"; };
+		F520C0201F4FF7370051BDA3 /* OTSServerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSServerError.m; sourceTree = "<group>"; };
+		F520C0211F4FF7370051BDA3 /* OTSSignKeyExpireError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSignKeyExpireError.h; sourceTree = "<group>"; };
+		F520C0221F4FF7370051BDA3 /* OTSSignKeyExpireError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSignKeyExpireError.m; sourceTree = "<group>"; };
+		F520C0231F4FF7370051BDA3 /* OTSTimeOutError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSTimeOutError.h; sourceTree = "<group>"; };
+		F520C0241F4FF7370051BDA3 /* OTSTimeOutError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSTimeOutError.m; sourceTree = "<group>"; };
+		F520C0251F4FF7370051BDA3 /* OTSTokenExpireError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSTokenExpireError.h; sourceTree = "<group>"; };
+		F520C0261F4FF7370051BDA3 /* OTSTokenExpireError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSTokenExpireError.m; sourceTree = "<group>"; };
+		F520C0301F4FF73F0051BDA3 /* OTSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSReachability.h; sourceTree = "<group>"; };
+		F520C0311F4FF73F0051BDA3 /* OTSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSReachability.m; sourceTree = "<group>"; };
+		F520C0341F4FF7450051BDA3 /* OTSSimpleOpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSimpleOpManager.h; sourceTree = "<group>"; };
+		F520C0351F4FF7450051BDA3 /* OTSSimpleOpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSimpleOpManager.m; sourceTree = "<group>"; };
+		F520C0381F4FF7C70051BDA3 /* OTSOperationParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSOperationParam.h; sourceTree = "<group>"; };
+		F520C0391F4FF7C70051BDA3 /* OTSOperationParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSOperationParam.m; sourceTree = "<group>"; };
+		F520C03B1F4FF7D10051BDA3 /* OTSOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSOperationManager.h; sourceTree = "<group>"; };
+		F520C03C1F4FF7D10051BDA3 /* OTSOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSOperationManager.m; sourceTree = "<group>"; };
+		F520C03E1F4FF7DB0051BDA3 /* OTSNetworkQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkQuery.h; sourceTree = "<group>"; };
+		F520C03F1F4FF7DB0051BDA3 /* OTSNetworkQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkQuery.m; sourceTree = "<group>"; };
+		F520C0411F4FF7EA0051BDA3 /* OTSNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkManager.h; sourceTree = "<group>"; };
+		F520C0421F4FF7EA0051BDA3 /* OTSNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkManager.m; sourceTree = "<group>"; };
+		F520C0461F4FF8EB0051BDA3 /* OTSBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSBlock.h; sourceTree = "<group>"; };
+		F520C0471F4FF8EB0051BDA3 /* OTSConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSConst.h; sourceTree = "<group>"; };
+		F520C0481F4FF8EB0051BDA3 /* OTSEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSEnum.h; sourceTree = "<group>"; };
+		F520C0491F4FF8EB0051BDA3 /* OTSMacroDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSMacroDefine.h; sourceTree = "<group>"; };
+		F520C04A1F4FF8EB0051BDA3 /* OTSUserDefaultDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSUserDefaultDefine.h; sourceTree = "<group>"; };
+		F520C04C1F4FF8EB0051BDA3 /* OTSGlobalValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSGlobalValue.h; sourceTree = "<group>"; };
+		F520C04D1F4FF8EB0051BDA3 /* OTSGlobalValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSGlobalValue.m; sourceTree = "<group>"; };
+		F520C04E1F4FF8EB0051BDA3 /* OTSValueObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSValueObject.h; sourceTree = "<group>"; };
+		F520C04F1F4FF8EB0051BDA3 /* OTSValueObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSValueObject.m; sourceTree = "<group>"; };
+		F520C0531F4FFBC40051BDA3 /* OTSURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSURLCache.h; sourceTree = "<group>"; };
+		F520C0541F4FFBC40051BDA3 /* OTSURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSURLCache.m; sourceTree = "<group>"; };
+		F520C0561F4FFD330051BDA3 /* OTSCurrentAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCurrentAddress.h; sourceTree = "<group>"; };
+		F520C0571F4FFD330051BDA3 /* OTSCurrentAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCurrentAddress.m; sourceTree = "<group>"; };
+		F520C0591F50058B0051BDA3 /* OTSClientInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSClientInfo.h; sourceTree = "<group>"; };
+		F520C05A1F50058B0051BDA3 /* OTSClientInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSClientInfo.m; sourceTree = "<group>"; };
+		F520C05E1F5005E60051BDA3 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		F520C05F1F5005E60051BDA3 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		F520C0601F5005E60051BDA3 /* OTSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSKeychain.h; sourceTree = "<group>"; };
+		F520C0611F5005E60051BDA3 /* OTSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSKeychain.m; sourceTree = "<group>"; };
+		F520C0621F5005E60051BDA3 /* OTSKeychainDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSKeychainDefine.h; sourceTree = "<group>"; };
+		F520C0631F5005E60051BDA3 /* OTSKeychainDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSKeychainDefine.m; sourceTree = "<group>"; };
+		F520C0681F500B220051BDA3 /* OTSBatchOperaionParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSBatchOperaionParam.h; sourceTree = "<group>"; };
+		F520C0691F500B220051BDA3 /* OTSBatchOperaionParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSBatchOperaionParam.m; sourceTree = "<group>"; };
+		F520C06A1F500B220051BDA3 /* OTSOperationManager+Batch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OTSOperationManager+Batch.h"; sourceTree = "<group>"; };
+		F520C06B1F500B220051BDA3 /* OTSOperationManager+Batch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OTSOperationManager+Batch.m"; sourceTree = "<group>"; };
+		F520C06F1F500C8C0051BDA3 /* OTSConnectUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSConnectUrl.h; sourceTree = "<group>"; };
+		F520C0701F500C8C0051BDA3 /* OTSConnectUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSConnectUrl.m; sourceTree = "<group>"; };
 		F54881111F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCallCenterCustomStatusWindow.h; sourceTree = "<group>"; };
 		F54881121F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCallCenterCustomStatusWindow.m; sourceTree = "<group>"; };
 		F54A7ABC1F4BBBC9007801EE /* IMICatchCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMICatchCrash.h; sourceTree = "<group>"; };
@@ -474,14 +544,6 @@
 		F56ABA351F412E9D00624672 /* PhoneCategoryTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneCategoryTVCell.m; sourceTree = "<group>"; };
 		F56ABA371F41338E00624672 /* OTSCategoryLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCategoryLogic.h; sourceTree = "<group>"; };
 		F56ABA381F41338E00624672 /* OTSCategoryLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCategoryLogic.m; sourceTree = "<group>"; };
-		F56ABA441F41388300624672 /* OTSOperationParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSOperationParam.h; sourceTree = "<group>"; };
-		F56ABA451F41388300624672 /* OTSOperationParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSOperationParam.m; sourceTree = "<group>"; };
-		F56ABA471F41396A00624672 /* OTSConnectUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSConnectUrl.h; sourceTree = "<group>"; };
-		F56ABA481F41396A00624672 /* OTSConnectUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSConnectUrl.m; sourceTree = "<group>"; };
-		F56ABA4A1F413CE800624672 /* OTSURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSURLCache.h; sourceTree = "<group>"; };
-		F56ABA4B1F413CE800624672 /* OTSURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSURLCache.m; sourceTree = "<group>"; };
-		F56ABA501F413F9F00624672 /* OTSNetworkQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkQuery.h; sourceTree = "<group>"; };
-		F56ABA511F413F9F00624672 /* OTSNetworkQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkQuery.m; sourceTree = "<group>"; };
 		F56ABACE1F416EBC00624672 /* OTSPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPredicate.h; sourceTree = "<group>"; };
 		F56ABACF1F416EBC00624672 /* OTSPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPredicate.m; sourceTree = "<group>"; };
 		F56ABBD51F417B0600624672 /* OTSLocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLocalNotification.h; sourceTree = "<group>"; };
@@ -741,11 +803,8 @@
 		F58C7A431F1C5EFE00AC2928 /* OTSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLog.m; sourceTree = "<group>"; };
 		F59A16A21F28709600EF7866 /* UIViewController+ots.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ots.h"; sourceTree = "<group>"; };
 		F59A16A31F28709600EF7866 /* UIViewController+ots.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ots.m"; sourceTree = "<group>"; };
-		F59A16A51F28786900EF7866 /* OTSNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkManager.h; sourceTree = "<group>"; };
-		F59A16A61F28786900EF7866 /* OTSNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkManager.m; sourceTree = "<group>"; };
 		F59A16A81F287EB300EF7866 /* OTSTBC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSTBC.h; sourceTree = "<group>"; };
 		F59A16A91F287EB300EF7866 /* OTSTBC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSTBC.m; sourceTree = "<group>"; };
-		F5A3CF9D1F45285E000D2F7B /* OneStoreBase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OneStoreBase.xcodeproj; path = OneStoreBase/OneStoreBase.xcodeproj; sourceTree = "<group>"; };
 		F5A3D00C1F4535E6000D2F7B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F5E839831F3C6C3300B2E2A7 /* ProductVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductVO.h; sourceTree = "<group>"; };
 		F5E839841F3C6C3300B2E2A7 /* ProductVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductVO.m; sourceTree = "<group>"; };
@@ -769,8 +828,6 @@
 		F5FFFE9D1F2195E2007B55F1 /* OTSCartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCartVC.m; sourceTree = "<group>"; };
 		F5FFFEA01F21965B007B55F1 /* PhoneMyyhdIndexTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneMyyhdIndexTVC.h; sourceTree = "<group>"; };
 		F5FFFEA11F21965B007B55F1 /* PhoneMyyhdIndexTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneMyyhdIndexTVC.m; sourceTree = "<group>"; };
-		F5FFFEA71F219C63007B55F1 /* OTSOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSOperationManager.h; sourceTree = "<group>"; };
-		F5FFFEA81F219C63007B55F1 /* OTSOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSOperationManager.m; sourceTree = "<group>"; };
 		F5FFFEAB1F219CB2007B55F1 /* OTSLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLogic.h; sourceTree = "<group>"; };
 		F5FFFEAC1F219CB2007B55F1 /* OTSLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLogic.m; sourceTree = "<group>"; };
 		F5FFFEAE1F219D2B007B55F1 /* OTSTabbarLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSTabbarLogic.h; sourceTree = "<group>"; };
@@ -901,6 +958,8 @@
 		F51EC0541F1C444B00735E7C /* OneStore */ = {
 			isa = PBXGroup;
 			children = (
+				F520C0441F4FF8D90051BDA3 /* OneStoreBase */,
+				F520C00C1F4FF71D0051BDA3 /* OneStoreNetwork */,
 				F56AC3471F42A70200624672 /* Modules */,
 				F56AC32B1F42A6AE00624672 /* Libs */,
 				F56ABACD1F416EB100624672 /* Tools */,
@@ -908,7 +967,6 @@
 				F51636471F39B1A900F47DC6 /* OTSNav */,
 				F52916541F3403420097B496 /* Pad */,
 				F5FFFEAA1F219CA5007B55F1 /* OTSLogic */,
-				F5FFFEA61F219C50007B55F1 /* NetWork */,
 				F5FFFE9F1F219615007B55F1 /* MyCenter */,
 				F5FFFE9A1F2195A2007B55F1 /* OTSCartVC */,
 				F5FFFE7F1F20D014007B55F1 /* OTSHomePage */,
@@ -1034,6 +1092,173 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		F520C00C1F4FF71D0051BDA3 /* OneStoreNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				F520C06E1F500C830051BDA3 /* ConnectUrl */,
+				F520C0671F500B220051BDA3 /* Batch */,
+				F520C0521F4FFBAD0051BDA3 /* Cache */,
+				F520C0371F4FF7B10051BDA3 /* Network */,
+				F520C0331F4FF7450051BDA3 /* SimpleNetwork */,
+				F520C02F1F4FF73F0051BDA3 /* Reachability */,
+				F520C0161F4FF7370051BDA3 /* NetworkError */,
+				F520C0121F4FF72F0051BDA3 /* Alert */,
+			);
+			path = OneStoreNetwork;
+			sourceTree = "<group>";
+		};
+		F520C0121F4FF72F0051BDA3 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				F520C0131F4FF72F0051BDA3 /* OTSNetworkAlert.h */,
+				F520C0141F4FF72F0051BDA3 /* OTSNetworkAlert.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		F520C0161F4FF7370051BDA3 /* NetworkError */ = {
+			isa = PBXGroup;
+			children = (
+				F520C0171F4FF7370051BDA3 /* OTSAntiBrushError.h */,
+				F520C0181F4FF7370051BDA3 /* OTSAntiBrushError.m */,
+				F520C0191F4FF7370051BDA3 /* OTSLaunchFailError.h */,
+				F520C01A1F4FF7370051BDA3 /* OTSLaunchFailError.m */,
+				F520C01B1F4FF7370051BDA3 /* OTSNetworkCommonError.h */,
+				F520C01C1F4FF7370051BDA3 /* OTSNetworkCommonError.m */,
+				F520C01D1F4FF7370051BDA3 /* OTSNetworkError.h */,
+				F520C01E1F4FF7370051BDA3 /* OTSNetworkError.m */,
+				F520C01F1F4FF7370051BDA3 /* OTSServerError.h */,
+				F520C0201F4FF7370051BDA3 /* OTSServerError.m */,
+				F520C0211F4FF7370051BDA3 /* OTSSignKeyExpireError.h */,
+				F520C0221F4FF7370051BDA3 /* OTSSignKeyExpireError.m */,
+				F520C0231F4FF7370051BDA3 /* OTSTimeOutError.h */,
+				F520C0241F4FF7370051BDA3 /* OTSTimeOutError.m */,
+				F520C0251F4FF7370051BDA3 /* OTSTokenExpireError.h */,
+				F520C0261F4FF7370051BDA3 /* OTSTokenExpireError.m */,
+			);
+			path = NetworkError;
+			sourceTree = "<group>";
+		};
+		F520C02F1F4FF73F0051BDA3 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F520C0301F4FF73F0051BDA3 /* OTSReachability.h */,
+				F520C0311F4FF73F0051BDA3 /* OTSReachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		F520C0331F4FF7450051BDA3 /* SimpleNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				F520C0341F4FF7450051BDA3 /* OTSSimpleOpManager.h */,
+				F520C0351F4FF7450051BDA3 /* OTSSimpleOpManager.m */,
+			);
+			path = SimpleNetwork;
+			sourceTree = "<group>";
+		};
+		F520C0371F4FF7B10051BDA3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F520C0411F4FF7EA0051BDA3 /* OTSNetworkManager.h */,
+				F520C0421F4FF7EA0051BDA3 /* OTSNetworkManager.m */,
+				F520C03E1F4FF7DB0051BDA3 /* OTSNetworkQuery.h */,
+				F520C03F1F4FF7DB0051BDA3 /* OTSNetworkQuery.m */,
+				F520C03B1F4FF7D10051BDA3 /* OTSOperationManager.h */,
+				F520C03C1F4FF7D10051BDA3 /* OTSOperationManager.m */,
+				F520C0381F4FF7C70051BDA3 /* OTSOperationParam.h */,
+				F520C0391F4FF7C70051BDA3 /* OTSOperationParam.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F520C0441F4FF8D90051BDA3 /* OneStoreBase */ = {
+			isa = PBXGroup;
+			children = (
+				F520C05C1F5005DB0051BDA3 /* Keychain */,
+				F520C0451F4FF8EB0051BDA3 /* Header */,
+				F520C04B1F4FF8EB0051BDA3 /* Objects */,
+			);
+			path = OneStoreBase;
+			sourceTree = "<group>";
+		};
+		F520C0451F4FF8EB0051BDA3 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				F520C0461F4FF8EB0051BDA3 /* OTSBlock.h */,
+				F520C0471F4FF8EB0051BDA3 /* OTSConst.h */,
+				F520C0481F4FF8EB0051BDA3 /* OTSEnum.h */,
+				F520C0491F4FF8EB0051BDA3 /* OTSMacroDefine.h */,
+				F520C04A1F4FF8EB0051BDA3 /* OTSUserDefaultDefine.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		F520C04B1F4FF8EB0051BDA3 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F520C0591F50058B0051BDA3 /* OTSClientInfo.h */,
+				F520C05A1F50058B0051BDA3 /* OTSClientInfo.m */,
+				F520C0561F4FFD330051BDA3 /* OTSCurrentAddress.h */,
+				F520C0571F4FFD330051BDA3 /* OTSCurrentAddress.m */,
+				F520C04C1F4FF8EB0051BDA3 /* OTSGlobalValue.h */,
+				F520C04D1F4FF8EB0051BDA3 /* OTSGlobalValue.m */,
+				F520C04E1F4FF8EB0051BDA3 /* OTSValueObject.h */,
+				F520C04F1F4FF8EB0051BDA3 /* OTSValueObject.m */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		F520C0521F4FFBAD0051BDA3 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				F520C0531F4FFBC40051BDA3 /* OTSURLCache.h */,
+				F520C0541F4FFBC40051BDA3 /* OTSURLCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		F520C05C1F5005DB0051BDA3 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				F520C05D1F5005E60051BDA3 /* KeychainItemWrapper */,
+				F520C0601F5005E60051BDA3 /* OTSKeychain.h */,
+				F520C0611F5005E60051BDA3 /* OTSKeychain.m */,
+				F520C0621F5005E60051BDA3 /* OTSKeychainDefine.h */,
+				F520C0631F5005E60051BDA3 /* OTSKeychainDefine.m */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		F520C05D1F5005E60051BDA3 /* KeychainItemWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				F520C05E1F5005E60051BDA3 /* KeychainItemWrapper.h */,
+				F520C05F1F5005E60051BDA3 /* KeychainItemWrapper.m */,
+			);
+			path = KeychainItemWrapper;
+			sourceTree = "<group>";
+		};
+		F520C0671F500B220051BDA3 /* Batch */ = {
+			isa = PBXGroup;
+			children = (
+				F520C0681F500B220051BDA3 /* OTSBatchOperaionParam.h */,
+				F520C0691F500B220051BDA3 /* OTSBatchOperaionParam.m */,
+				F520C06A1F500B220051BDA3 /* OTSOperationManager+Batch.h */,
+				F520C06B1F500B220051BDA3 /* OTSOperationManager+Batch.m */,
+			);
+			path = Batch;
+			sourceTree = "<group>";
+		};
+		F520C06E1F500C830051BDA3 /* ConnectUrl */ = {
+			isa = PBXGroup;
+			children = (
+				F520C06F1F500C8C0051BDA3 /* OTSConnectUrl.h */,
+				F520C0701F500C8C0051BDA3 /* OTSConnectUrl.m */,
+			);
+			path = ConnectUrl;
+			sourceTree = "<group>";
+		};
 		F52916541F3403420097B496 /* Pad */ = {
 			isa = PBXGroup;
 			children = (
@@ -1116,7 +1341,6 @@
 		F56AC3471F42A70200624672 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F5A3CF9D1F45285E000D2F7B /* OneStoreBase.xcodeproj */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1470,14 +1694,6 @@
 			path = walkman6;
 			sourceTree = "<group>";
 		};
-		F5A3CF9E1F45285E000D2F7B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F5A3CFA21F45285F000D2F7B /* libOneStoreBase.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F5FFFE7F1F20D014007B55F1 /* OTSHomePage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1525,25 +1741,6 @@
 				F5FFFEA11F21965B007B55F1 /* PhoneMyyhdIndexTVC.m */,
 			);
 			path = MyCenter;
-			sourceTree = "<group>";
-		};
-		F5FFFEA61F219C50007B55F1 /* NetWork */ = {
-			isa = PBXGroup;
-			children = (
-				F5FFFEA71F219C63007B55F1 /* OTSOperationManager.h */,
-				F5FFFEA81F219C63007B55F1 /* OTSOperationManager.m */,
-				F59A16A51F28786900EF7866 /* OTSNetworkManager.h */,
-				F59A16A61F28786900EF7866 /* OTSNetworkManager.m */,
-				F56ABA441F41388300624672 /* OTSOperationParam.h */,
-				F56ABA451F41388300624672 /* OTSOperationParam.m */,
-				F56ABA471F41396A00624672 /* OTSConnectUrl.h */,
-				F56ABA481F41396A00624672 /* OTSConnectUrl.m */,
-				F56ABA4A1F413CE800624672 /* OTSURLCache.h */,
-				F56ABA4B1F413CE800624672 /* OTSURLCache.m */,
-				F56ABA501F413F9F00624672 /* OTSNetworkQuery.h */,
-				F56ABA511F413F9F00624672 /* OTSNetworkQuery.m */,
-			);
-			path = NetWork;
 			sourceTree = "<group>";
 		};
 		F5FFFEAA1F219CA5007B55F1 /* OTSLogic */ = {
@@ -1615,10 +1812,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = F5A3CF9E1F45285E000D2F7B /* Products */;
-					ProjectRef = F5A3CF9D1F45285E000D2F7B /* OneStoreBase.xcodeproj */;
-				},
-				{
 					ProductGroup = F56AC3A61F42A80500624672 /* Products */;
 					ProjectRef = F56AC3A51F42A80500624672 /* OTSCommon.xcodeproj */;
 				},
@@ -1669,13 +1862,6 @@
 			fileType = archive.ar;
 			path = libOTSCommon.a;
 			remoteRef = F56AC3A91F42A80500624672 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F5A3CFA21F45285F000D2F7B /* libOneStoreBase.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libOneStoreBase.a;
-			remoteRef = F5A3CFA11F45285F000D2F7B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1994,10 +2180,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5FFFE6C1F208095007B55F1 /* PhoneTBC.m in Sources */,
+				F520C0661F5005E60051BDA3 /* OTSKeychainDefine.m in Sources */,
 				F5FFFE9E1F2195E2007B55F1 /* OTSCartVC.m in Sources */,
 				F51636401F39A8C600F47DC6 /* UITabBarController+ots.m in Sources */,
-				F56ABA521F413F9F00624672 /* OTSNetworkQuery.m in Sources */,
+				F520C06C1F500B220051BDA3 /* OTSBatchOperaionParam.m in Sources */,
+				F520C0151F4FF72F0051BDA3 /* OTSNetworkAlert.m in Sources */,
 				F51EC0FE1F1C598A00735E7C /* OTSContainerController.m in Sources */,
+				F520C05B1F50058B0051BDA3 /* OTSClientInfo.m in Sources */,
+				F520C06D1F500B220051BDA3 /* OTSOperationManager+Batch.m in Sources */,
 				F5FFFEB01F219D2B007B55F1 /* OTSTabbarLogic.m in Sources */,
 				F51EC1181F1C59EF00735E7C /* NSString+router.m in Sources */,
 				F5FFFE931F2186C3007B55F1 /* AppTabVO.m in Sources */,
@@ -2006,8 +2196,8 @@
 				F516364A1F39B1B700F47DC6 /* OTSNC.m in Sources */,
 				F54A7ABE1F4BBBC9007801EE /* IMICatchCrash.m in Sources */,
 				F5FFFEA21F21965B007B55F1 /* PhoneMyyhdIndexTVC.m in Sources */,
+				F520C03D1F4FF7D10051BDA3 /* OTSOperationManager.m in Sources */,
 				F51636531F39B1DE00F47DC6 /* PhoneCustomRootNC.m in Sources */,
-				F56ABA491F41396A00624672 /* OTSConnectUrl.m in Sources */,
 				F516365C1F39BA2B00F47DC6 /* PhoneApolloNC.m in Sources */,
 				F51EC10B1F1C59AD00735E7C /* OTSClientInfo.m in Sources */,
 				F56ABAD01F416EBC00624672 /* OTSPredicate.m in Sources */,
@@ -2017,44 +2207,60 @@
 				F51EC10A1F1C59AD00735E7C /* OTSBIGlobalValue.m in Sources */,
 				F5076AD91F32BDE10094AEED /* OTSListSearchBar.m in Sources */,
 				F51EC1121F1C59E500735E7C /* OTSRouter.m in Sources */,
+				F520C0651F5005E60051BDA3 /* OTSKeychain.m in Sources */,
 				F5E839851F3C6C3300B2E2A7 /* ProductVO.m in Sources */,
 				F5070B411F2B1237002C0ADF /* AppFunctionSwitchVO.m in Sources */,
 				F516364D1F39B1C300F47DC6 /* PhoneNC.m in Sources */,
+				F520C0431F4FF7EA0051BDA3 /* OTSNetworkManager.m in Sources */,
 				F51EC0E41F1C550400735E7C /* UIViewController+base.m in Sources */,
 				F56ABA391F41338E00624672 /* OTSCategoryLogic.m in Sources */,
+				F520C02A1F4FF7370051BDA3 /* OTSNetworkError.m in Sources */,
+				F520C02D1F4FF7370051BDA3 /* OTSTimeOutError.m in Sources */,
+				F520C03A1F4FF7C70051BDA3 /* OTSOperationParam.m in Sources */,
 				F51EC05A1F1C444B00735E7C /* AppDelegate.m in Sources */,
 				F51636601F39BCFD00F47DC6 /* PhoneCategoryVC.m in Sources */,
 				F51EC0E71F1C551200735E7C /* UIViewController+custom.m in Sources */,
 				F54881131F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.m in Sources */,
+				F520C0291F4FF7370051BDA3 /* OTSNetworkCommonError.m in Sources */,
+				F520C0281F4FF7370051BDA3 /* OTSLaunchFailError.m in Sources */,
 				F51EC0FB1F1C598300735E7C /* OTSPresentController.m in Sources */,
+				F520C0501F4FF8EB0051BDA3 /* OTSGlobalValue.m in Sources */,
 				F5070B441F2B12A1002C0ADF /* OTSFunctionSwithLogic.m in Sources */,
 				F56ABBD71F417B0600624672 /* OTSLocalNotification.m in Sources */,
 				F51636501F39B1D100F47DC6 /* PhoneCartNC.m in Sources */,
 				F59A16AA1F287EB300EF7866 /* OTSTBC.m in Sources */,
-				F56ABA4C1F413CE800624672 /* OTSURLCache.m in Sources */,
 				F5FFFE691F207F4F007B55F1 /* OTSLaunch.m in Sources */,
 				F5076ADE1F32C0490094AEED /* OTSBadgeButton.m in Sources */,
+				F520C0511F4FF8EB0051BDA3 /* OTSValueObject.m in Sources */,
+				F520C02E1F4FF7370051BDA3 /* OTSTokenExpireError.m in Sources */,
+				F520C0271F4FF7370051BDA3 /* OTSAntiBrushError.m in Sources */,
 				F5076ADA1F32BDE10094AEED /* OTSSearchBarWordView.m in Sources */,
+				F520C0711F500C8C0051BDA3 /* OTSConnectUrl.m in Sources */,
+				F520C0401F4FF7DB0051BDA3 /* OTSNetworkQuery.m in Sources */,
 				F51EC10D1F1C59AD00735E7C /* OTSMappingVO.m in Sources */,
-				F5FFFEA91F219C63007B55F1 /* OTSOperationManager.m in Sources */,
+				F520C0641F5005E60051BDA3 /* KeychainItemWrapper.m in Sources */,
 				F5FFFEAD1F219CB2007B55F1 /* OTSLogic.m in Sources */,
 				F51EC0DF1F1C54B700735E7C /* OTSAgreementVC.m in Sources */,
 				F51636591F39B2E600F47DC6 /* UIViewController+OTSAnimation.m in Sources */,
 				F58C7A441F1C5EFE00AC2928 /* OTSLog.m in Sources */,
 				F5FFFE7E1F20CEBB007B55F1 /* PhoneVC.m in Sources */,
 				F51636561F39B1FD00F47DC6 /* OTSNCDelegate.m in Sources */,
+				F520C02C1F4FF7370051BDA3 /* OTSSignKeyExpireError.m in Sources */,
 				F5076ACF1F32BABE0094AEED /* OTSGifNilView.m in Sources */,
+				F520C0581F4FFD330051BDA3 /* OTSCurrentAddress.m in Sources */,
+				F520C0361F4FF7450051BDA3 /* OTSSimpleOpManager.m in Sources */,
 				F51EC0571F1C444B00735E7C /* main.m in Sources */,
 				F5076AD21F32BB390094AEED /* OTSFont.m in Sources */,
-				F59A16A71F28786900EF7866 /* OTSNetworkManager.m in Sources */,
 				F51EC0EA1F1C551B00735E7C /* UIViewController+router.m in Sources */,
+				F520C0321F4FF73F0051BDA3 /* OTSReachability.m in Sources */,
 				F5FFFE6F1F2080BC007B55F1 /* OTSTabBar.m in Sources */,
 				F51EC10E1F1C59AD00735E7C /* OTSNativeFuncVO.m in Sources */,
 				F5FFFE901F20D33A007B55F1 /* PhoneTabBarItemVO.m in Sources */,
 				F516366A1F39C16100F47DC6 /* PhoneCategoryCVCell.m in Sources */,
 				F51EC11E1F1C5D0C00735E7C /* OTSUnionLoginWebVC.m in Sources */,
+				F520C0551F4FFBC40051BDA3 /* OTSURLCache.m in Sources */,
+				F520C02B1F4FF7370051BDA3 /* OTSServerError.m in Sources */,
 				F59A16A41F28709600EF7866 /* UIViewController+ots.m in Sources */,
-				F56ABA461F41388300624672 /* OTSOperationParam.m in Sources */,
 				F5FFFE8D1F20D2DA007B55F1 /* PhoneTabBarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

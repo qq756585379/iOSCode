@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PlayAACFile.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIButton * button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.frame = CGRectMake(100, 100, 100, 30);
+    [button setBackgroundColor:[UIColor grayColor]];
+    [button setTitle:@"Play" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(buttonOnclick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)buttonOnclick:(UIButton *)btn{
+    dispatch_async(dispatch_get_global_queue(2, 0), ^{
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"tmp" ofType:@"aac"];
+        [[[PlayAACFile alloc] init] startPlayAudio:path];
+    });
 }
-
 
 @end

@@ -54,7 +54,7 @@ DEF_SINGLETON(OTSConnectUrl)
 }
 
 - (NSString *)getCurrentContentUrlAddress{
-    NSString*currentAddress =  [self getConnectUrlAddressWithType:self.networkEnvironmentType];
+    NSString *currentAddress =  [self getConnectUrlAddressWithType:self.networkEnvironmentType];
     if (currentAddress.length <= 0) {
         currentAddress = OTSProductConnectUrlAddress;
     }
@@ -65,7 +65,7 @@ DEF_SINGLETON(OTSConnectUrl)
 - (void)setNetworkEnvironmentType:(OTSNetworkEnvironmentType)environmentType{
     if (self.networkEnvironmentType != environmentType) {
         _networkEnvironmentType = environmentType;
-        [OTSUserDefault setValue:@(_networkEnvironmentType) forKey:(NSString*)OTSCurrentEnvironmentTypeKey];
+        [OTSUserDefault setValue:@(_networkEnvironmentType) forKey:(NSString *)OTSCurrentEnvironmentTypeKey];
     }
 }
 

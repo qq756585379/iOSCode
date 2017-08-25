@@ -12,10 +12,4 @@
 
 AS_SINGLETON(OTSLaunchFailError)
 
-- (BOOL)dealWithManager:(OTSOperationManager *)aManager
-                  param:(OTSOperationParam *)aParam
-              operation:(NSURLSessionDataTask *)aOperation
-         responseObject:(id)aResponseObject
-                  error:(NSError *)aError;
-
 @end
