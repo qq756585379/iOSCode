@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Projects/AVMedia/AVMedia.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Projects/OneStoreNetwork/OneStoreNetwork.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Projects/Common/Common.xcodeproj">
    </FileRef>
    <FileRef

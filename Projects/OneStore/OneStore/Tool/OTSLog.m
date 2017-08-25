@@ -8,6 +8,7 @@
 
 #import "OTSLog.h"
 #import "OTSFileManager.h"
+#import "IMICatchCrash.h"
 
 @implementation OTSLog
 
@@ -29,7 +30,13 @@
 #ifdef DEBUG
     //set color on
     setenv("XcodeColors", "YES", 0);
-    
+    //>检测是否开启 XcodeColors
+    char *xcode_colors = getenv("XcodeColors");
+    if (xcode_colors && (strcmp(xcode_colors, "YES") == 0)) {
+        NSLog(@"XcodeColors is installed and enabled");
+    }else{
+        NSLog(@"XcodeColors is  not installed and unabled");
+    }
     //This class provides a logger for Terminal output or Xcode console output
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     //This class provides a logger for the Apple System Log facility
@@ -41,9 +48,53 @@
         [[NSFileManager defaultManager] removeItemAtPath:logPath error:nil];
     }
     DDFileLogger *fileLogger = [[DDFileLogger alloc] init];
-    fileLogger.rollingFrequency = 0;
-    fileLogger.maximumFileSize = 0;
+    fileLogger.rollingFrequency = 60 * 60 * 24; // 24 hour rolling
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 7;
+    fileLogger.maximumFileSize = 50 * 1024 * 1024; //50MB
+    [DDLog addLogger:fileLogger withLevel:imiDDLogLevel];
     [DDLog addLogger:fileLogger withLevel:LOG_FLAG_DATA_TO_FILE];
+    //上面的代码告诉应用程序要在系统上保持一周的日志文件。
+    //如果不设置rollingFrequency和maximumNumberOfLogFiles，
+    //则默认每天1个Log文件、存5天、单个文件最大1M、总计最大20M，否则自动清理最前面的记录。
+    
+    //若crash文件存在，则写入log并上传，然后删掉crash文件
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *errorLogPath = [NSString stringWithFormat:@"%@/Documents/IMICatchCrash.log", NSHomeDirectory()];
+    if ([fileManager fileExistsAtPath:errorLogPath]) {
+        [fileLogger.logFileManager createNewLogFile];
+        //此处必须用firstObject而不能用lastObject，因为是按照日期逆序排列的，即最新的Log文件排在前面
+        NSString *newLogFilePath = [fileLogger.logFileManager sortedLogFilePaths].firstObject;
+        NSError *error = nil;
+        NSString *errorLogContent = [NSString stringWithContentsOfFile:errorLogPath encoding:NSUTF8StringEncoding error:nil];
+        BOOL isSuccess = [errorLogContent writeToFile:newLogFilePath atomically:YES encoding:NSUTF8StringEncoding error:&error];
+        if (!isSuccess) {
+            NSLog(@"crash文件写入log失败: %@", error.userInfo);
+        } else {
+            NSLog(@"crash文件写入log成功");
+            NSError *error = nil;
+            BOOL isSuccess = [fileManager removeItemAtPath:errorLogPath error:&error];
+            if (!isSuccess) {
+                NSLog(@"删除本地的crash文件失败: %@", error.userInfo);
+            }
+        }
+        //上传最近的3个log文件，
+        //至少要3个，因为最后一个是crash的记录信息，另外2个是防止其中后一个文件只写了几行代码而不够分析
+        NSArray *logFilePaths = [fileLogger.logFileManager sortedLogFilePaths];
+        NSUInteger logCounts = logFilePaths.count;
+        if (logCounts >= 3) {
+            for (NSUInteger i = 0; i < 3; i++) {
+                //NSString *logFilePath = logFilePaths[i];
+                //上传服务器
+                
+            }
+        } else {
+            for (NSUInteger i = 0; i < logCounts; i++) {
+                //NSString *logFilePath = logFilePaths[i];
+                //上传服务器
+                
+            }
+        }
+    }
     
     // And then enable colors
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
@@ -57,6 +108,11 @@
     [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor brownColor] backgroundColor:nil forFlag:DDLogFlagWarning];
     
     [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor redColor] backgroundColor:nil forFlag:DDLogFlagError];
+    
+    //注册消息处理函数的处理方法
+    //如此一来，程序崩溃时会自动进入CatchCrash.m的uncaughtExceptionHandler()方法
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
 #endif
 }
 

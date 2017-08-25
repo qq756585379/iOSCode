@@ -26,8 +26,7 @@
     [super setFrame:rc];
 }
 
-+ (NSString *)cellReuseIdentifier
-{
++ (NSString *)cellReuseIdentifier{
     return NSStringFromClass([self class]);
 }
 
@@ -76,7 +75,6 @@
             break;
         }
     }
-    
     return tableView;
 }
 

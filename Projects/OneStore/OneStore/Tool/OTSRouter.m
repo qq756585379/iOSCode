@@ -299,7 +299,6 @@
     return  [self p_switchTabAndPopToRoot:0 withParams:nil];
 }
 
-
 /**
  *  功能:route到host对应的vc
  */

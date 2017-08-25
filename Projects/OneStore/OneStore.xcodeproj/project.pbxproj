@@ -48,22 +48,13 @@
 		F51EC11B1F1C5B8F00735E7C /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F51EC11A1F1C5B8F00735E7C /* libCommon.a */; };
 		F51EC11E1F1C5D0C00735E7C /* OTSUnionLoginWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC11D1F1C5D0C00735E7C /* OTSUnionLoginWebVC.m */; };
 		F54881131F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F54881121F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.m */; };
+		F54A7ABE1F4BBBC9007801EE /* IMICatchCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F54A7ABD1F4BBBC9007801EE /* IMICatchCrash.m */; };
 		F56ABA361F412E9D00624672 /* PhoneCategoryTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA351F412E9D00624672 /* PhoneCategoryTVCell.m */; };
 		F56ABA391F41338E00624672 /* OTSCategoryLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA381F41338E00624672 /* OTSCategoryLogic.m */; };
 		F56ABA461F41388300624672 /* OTSOperationParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA451F41388300624672 /* OTSOperationParam.m */; };
 		F56ABA491F41396A00624672 /* OTSConnectUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA481F41396A00624672 /* OTSConnectUrl.m */; };
 		F56ABA4C1F413CE800624672 /* OTSURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA4B1F413CE800624672 /* OTSURLCache.m */; };
 		F56ABA521F413F9F00624672 /* OTSNetworkQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA511F413F9F00624672 /* OTSNetworkQuery.m */; };
-		F56ABA591F414A6B00624672 /* OTSNetworkError.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA581F414A6B00624672 /* OTSNetworkError.m */; };
-		F56ABA5C1F414A8300624672 /* OTSLaunchFailError.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA5B1F414A8300624672 /* OTSLaunchFailError.m */; };
-		F56ABA601F4150CB00624672 /* OTSSimpleOpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA5F1F4150CB00624672 /* OTSSimpleOpManager.m */; };
-		F56ABA641F41516800624672 /* OTSNetworkAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA631F41516800624672 /* OTSNetworkAlert.m */; };
-		F56ABA6E1F4158CA00624672 /* OTSNetworkInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA6D1F4158CA00624672 /* OTSNetworkInterface.m */; };
-		F56ABA721F41590F00624672 /* OTSNICategory.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA711F41590F00624672 /* OTSNICategory.m */; };
-		F56ABA761F41594E00624672 /* OTSNIAnniversarySale.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA751F41594E00624672 /* OTSNIAnniversarySale.m */; };
-		F56ABA7A1F4159A600624672 /* OTSNIAntiBrush.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA791F4159A600624672 /* OTSNIAntiBrush.m */; };
-		F56ABA7E1F415A2700624672 /* OTSNIBabyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA7D1F415A2700624672 /* OTSNIBabyCenter.m */; };
-		F56ABA941F4166FB00624672 /* OTSNICallCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABA931F4166FB00624672 /* OTSNICallCenter.m */; };
 		F56ABAD01F416EBC00624672 /* OTSPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABACF1F416EBC00624672 /* OTSPredicate.m */; };
 		F56ABBD71F417B0600624672 /* OTSLocalNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F56ABBD61F417B0600624672 /* OTSLocalNotification.m */; };
 		F58C79381F1C5DFA00AC2928 /* car4_000.png in Resources */ = {isa = PBXBuildFile; fileRef = F58C783B1F1C5DFA00AC2928 /* car4_000.png */; };
@@ -477,6 +468,8 @@
 		F51EC11D1F1C5D0C00735E7C /* OTSUnionLoginWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSUnionLoginWebVC.m; sourceTree = "<group>"; };
 		F54881111F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCallCenterCustomStatusWindow.h; sourceTree = "<group>"; };
 		F54881121F1EEA6D00A8416E /* OTSCallCenterCustomStatusWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCallCenterCustomStatusWindow.m; sourceTree = "<group>"; };
+		F54A7ABC1F4BBBC9007801EE /* IMICatchCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMICatchCrash.h; sourceTree = "<group>"; };
+		F54A7ABD1F4BBBC9007801EE /* IMICatchCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMICatchCrash.m; sourceTree = "<group>"; };
 		F56ABA341F412E9D00624672 /* PhoneCategoryTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneCategoryTVCell.h; sourceTree = "<group>"; };
 		F56ABA351F412E9D00624672 /* PhoneCategoryTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneCategoryTVCell.m; sourceTree = "<group>"; };
 		F56ABA371F41338E00624672 /* OTSCategoryLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCategoryLogic.h; sourceTree = "<group>"; };
@@ -489,26 +482,6 @@
 		F56ABA4B1F413CE800624672 /* OTSURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSURLCache.m; sourceTree = "<group>"; };
 		F56ABA501F413F9F00624672 /* OTSNetworkQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkQuery.h; sourceTree = "<group>"; };
 		F56ABA511F413F9F00624672 /* OTSNetworkQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkQuery.m; sourceTree = "<group>"; };
-		F56ABA571F414A6B00624672 /* OTSNetworkError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkError.h; sourceTree = "<group>"; };
-		F56ABA581F414A6B00624672 /* OTSNetworkError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkError.m; sourceTree = "<group>"; };
-		F56ABA5A1F414A8300624672 /* OTSLaunchFailError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLaunchFailError.h; sourceTree = "<group>"; };
-		F56ABA5B1F414A8300624672 /* OTSLaunchFailError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLaunchFailError.m; sourceTree = "<group>"; };
-		F56ABA5E1F4150CB00624672 /* OTSSimpleOpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSimpleOpManager.h; sourceTree = "<group>"; };
-		F56ABA5F1F4150CB00624672 /* OTSSimpleOpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSimpleOpManager.m; sourceTree = "<group>"; };
-		F56ABA621F41516800624672 /* OTSNetworkAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkAlert.h; sourceTree = "<group>"; };
-		F56ABA631F41516800624672 /* OTSNetworkAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkAlert.m; sourceTree = "<group>"; };
-		F56ABA6C1F4158CA00624672 /* OTSNetworkInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkInterface.h; sourceTree = "<group>"; };
-		F56ABA6D1F4158CA00624672 /* OTSNetworkInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkInterface.m; sourceTree = "<group>"; };
-		F56ABA701F41590F00624672 /* OTSNICategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNICategory.h; sourceTree = "<group>"; };
-		F56ABA711F41590F00624672 /* OTSNICategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNICategory.m; sourceTree = "<group>"; };
-		F56ABA741F41594E00624672 /* OTSNIAnniversarySale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNIAnniversarySale.h; sourceTree = "<group>"; };
-		F56ABA751F41594E00624672 /* OTSNIAnniversarySale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNIAnniversarySale.m; sourceTree = "<group>"; };
-		F56ABA781F4159A600624672 /* OTSNIAntiBrush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNIAntiBrush.h; sourceTree = "<group>"; };
-		F56ABA791F4159A600624672 /* OTSNIAntiBrush.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNIAntiBrush.m; sourceTree = "<group>"; };
-		F56ABA7C1F415A2700624672 /* OTSNIBabyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNIBabyCenter.h; sourceTree = "<group>"; };
-		F56ABA7D1F415A2700624672 /* OTSNIBabyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNIBabyCenter.m; sourceTree = "<group>"; };
-		F56ABA921F4166FB00624672 /* OTSNICallCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNICallCenter.h; sourceTree = "<group>"; };
-		F56ABA931F4166FB00624672 /* OTSNICallCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNICallCenter.m; sourceTree = "<group>"; };
 		F56ABACE1F416EBC00624672 /* OTSPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPredicate.h; sourceTree = "<group>"; };
 		F56ABACF1F416EBC00624672 /* OTSPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPredicate.m; sourceTree = "<group>"; };
 		F56ABBD51F417B0600624672 /* OTSLocalNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLocalNotification.h; sourceTree = "<group>"; };
@@ -931,7 +904,6 @@
 				F56AC3471F42A70200624672 /* Modules */,
 				F56AC32B1F42A6AE00624672 /* Libs */,
 				F56ABACD1F416EB100624672 /* Tools */,
-				F56ABA6B1F4158BC00624672 /* OTSNI */,
 				F516365D1F39BCDF00F47DC6 /* OTSCategory */,
 				F51636471F39B1A900F47DC6 /* OTSNav */,
 				F52916541F3403420097B496 /* Pad */,
@@ -1052,6 +1024,8 @@
 				F51EC1111F1C59E500735E7C /* OTSRouter.m */,
 				F58C7A421F1C5EFE00AC2928 /* OTSLog.h */,
 				F58C7A431F1C5EFE00AC2928 /* OTSLog.m */,
+				F54A7ABC1F4BBBC9007801EE /* IMICatchCrash.h */,
+				F54A7ABD1F4BBBC9007801EE /* IMICatchCrash.m */,
 				F5FFFE671F207F4F007B55F1 /* OTSLaunch.h */,
 				F5FFFE681F207F4F007B55F1 /* OTSLaunch.m */,
 				F5076AD01F32BB390094AEED /* OTSFont.h */,
@@ -1107,94 +1081,6 @@
 				F5FFFE921F2186C3007B55F1 /* AppTabVO.m */,
 			);
 			path = OTSTab;
-			sourceTree = "<group>";
-		};
-		F56ABA561F414A6100624672 /* NetworkError */ = {
-			isa = PBXGroup;
-			children = (
-				F56ABA5A1F414A8300624672 /* OTSLaunchFailError.h */,
-				F56ABA5B1F414A8300624672 /* OTSLaunchFailError.m */,
-				F56ABA571F414A6B00624672 /* OTSNetworkError.h */,
-				F56ABA581F414A6B00624672 /* OTSNetworkError.m */,
-			);
-			path = NetworkError;
-			sourceTree = "<group>";
-		};
-		F56ABA5D1F4150CB00624672 /* SimpleNetwork */ = {
-			isa = PBXGroup;
-			children = (
-				F56ABA5E1F4150CB00624672 /* OTSSimpleOpManager.h */,
-				F56ABA5F1F4150CB00624672 /* OTSSimpleOpManager.m */,
-			);
-			path = SimpleNetwork;
-			sourceTree = "<group>";
-		};
-		F56ABA611F41516800624672 /* Alert */ = {
-			isa = PBXGroup;
-			children = (
-				F56ABA621F41516800624672 /* OTSNetworkAlert.h */,
-				F56ABA631F41516800624672 /* OTSNetworkAlert.m */,
-			);
-			path = Alert;
-			sourceTree = "<group>";
-		};
-		F56ABA6B1F4158BC00624672 /* OTSNI */ = {
-			isa = PBXGroup;
-			children = (
-				F56ABA911F4166FB00624672 /* CallCenter */,
-				F56ABA7B1F415A2700624672 /* BabyCenter */,
-				F56ABA771F4159A600624672 /* AntiBrush */,
-				F56ABA731F41594E00624672 /* AnniversarySale */,
-				F56ABA6F1F41590400624672 /* OTSNICategory */,
-				F56ABA6C1F4158CA00624672 /* OTSNetworkInterface.h */,
-				F56ABA6D1F4158CA00624672 /* OTSNetworkInterface.m */,
-			);
-			path = OTSNI;
-			sourceTree = "<group>";
-		};
-		F56ABA6F1F41590400624672 /* OTSNICategory */ = {
-			isa = PBXGroup;
-			children = (
-				F56ABA701F41590F00624672 /* OTSNICategory.h */,
-				F56ABA711F41590F00624672 /* OTSNICategory.m */,
-			);
-			path = OTSNICategory;
-			sourceTree = "<group>";
-		};
-		F56ABA731F41594E00624672 /* AnniversarySale */ = {
-			isa = PBXGroup;
-			children = (
-				F56ABA741F41594E00624672 /* OTSNIAnniversarySale.h */,
-				F56ABA751F41594E00624672 /* OTSNIAnniversarySale.m */,
-			);
-			path = AnniversarySale;
-			sourceTree = "<group>";
-		};
-		F56ABA771F4159A600624672 /* AntiBrush */ = {
-			isa = PBXGroup;
-			children = (
-				F56ABA781F4159A600624672 /* OTSNIAntiBrush.h */,
-				F56ABA791F4159A600624672 /* OTSNIAntiBrush.m */,
-			);
-			path = AntiBrush;
-			sourceTree = "<group>";
-		};
-		F56ABA7B1F415A2700624672 /* BabyCenter */ = {
-			isa = PBXGroup;
-			children = (
-				F56ABA7C1F415A2700624672 /* OTSNIBabyCenter.h */,
-				F56ABA7D1F415A2700624672 /* OTSNIBabyCenter.m */,
-			);
-			path = BabyCenter;
-			sourceTree = "<group>";
-		};
-		F56ABA911F4166FB00624672 /* CallCenter */ = {
-			isa = PBXGroup;
-			children = (
-				F56ABA921F4166FB00624672 /* OTSNICallCenter.h */,
-				F56ABA931F4166FB00624672 /* OTSNICallCenter.m */,
-			);
-			path = CallCenter;
 			sourceTree = "<group>";
 		};
 		F56ABACD1F416EB100624672 /* Tools */ = {
@@ -1644,9 +1530,6 @@
 		F5FFFEA61F219C50007B55F1 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				F56ABA611F41516800624672 /* Alert */,
-				F56ABA5D1F4150CB00624672 /* SimpleNetwork */,
-				F56ABA561F414A6100624672 /* NetworkError */,
 				F5FFFEA71F219C63007B55F1 /* OTSOperationManager.h */,
 				F5FFFEA81F219C63007B55F1 /* OTSOperationManager.m */,
 				F59A16A51F28786900EF7866 /* OTSNetworkManager.h */,
@@ -2117,13 +2000,11 @@
 				F51EC0FE1F1C598A00735E7C /* OTSContainerController.m in Sources */,
 				F5FFFEB01F219D2B007B55F1 /* OTSTabbarLogic.m in Sources */,
 				F51EC1181F1C59EF00735E7C /* NSString+router.m in Sources */,
-				F56ABA591F414A6B00624672 /* OTSNetworkError.m in Sources */,
 				F5FFFE931F2186C3007B55F1 /* AppTabVO.m in Sources */,
-				F56ABA641F41516800624672 /* OTSNetworkAlert.m in Sources */,
 				F5FFFE721F2080E9007B55F1 /* OTSTabBarItem.m in Sources */,
-				F56ABA5C1F414A8300624672 /* OTSLaunchFailError.m in Sources */,
 				F51EC05D1F1C444B00735E7C /* ViewController.m in Sources */,
 				F516364A1F39B1B700F47DC6 /* OTSNC.m in Sources */,
+				F54A7ABE1F4BBBC9007801EE /* IMICatchCrash.m in Sources */,
 				F5FFFEA21F21965B007B55F1 /* PhoneMyyhdIndexTVC.m in Sources */,
 				F51636531F39B1DE00F47DC6 /* PhoneCustomRootNC.m in Sources */,
 				F56ABA491F41396A00624672 /* OTSConnectUrl.m in Sources */,
@@ -2131,7 +2012,6 @@
 				F51EC10B1F1C59AD00735E7C /* OTSClientInfo.m in Sources */,
 				F56ABAD01F416EBC00624672 /* OTSPredicate.m in Sources */,
 				F51636461F39AEEC00F47DC6 /* OTSVC.m in Sources */,
-				F56ABA7A1F4159A600624672 /* OTSNIAntiBrush.m in Sources */,
 				F56ABA361F412E9D00624672 /* PhoneCategoryTVCell.m in Sources */,
 				F51EC1171F1C59EF00735E7C /* NSDictionary+router.m in Sources */,
 				F51EC10A1F1C59AD00735E7C /* OTSBIGlobalValue.m in Sources */,
@@ -2141,8 +2021,6 @@
 				F5070B411F2B1237002C0ADF /* AppFunctionSwitchVO.m in Sources */,
 				F516364D1F39B1C300F47DC6 /* PhoneNC.m in Sources */,
 				F51EC0E41F1C550400735E7C /* UIViewController+base.m in Sources */,
-				F56ABA7E1F415A2700624672 /* OTSNIBabyCenter.m in Sources */,
-				F56ABA601F4150CB00624672 /* OTSSimpleOpManager.m in Sources */,
 				F56ABA391F41338E00624672 /* OTSCategoryLogic.m in Sources */,
 				F51EC05A1F1C444B00735E7C /* AppDelegate.m in Sources */,
 				F51636601F39BCFD00F47DC6 /* PhoneCategoryVC.m in Sources */,
@@ -2154,11 +2032,8 @@
 				F51636501F39B1D100F47DC6 /* PhoneCartNC.m in Sources */,
 				F59A16AA1F287EB300EF7866 /* OTSTBC.m in Sources */,
 				F56ABA4C1F413CE800624672 /* OTSURLCache.m in Sources */,
-				F56ABA721F41590F00624672 /* OTSNICategory.m in Sources */,
 				F5FFFE691F207F4F007B55F1 /* OTSLaunch.m in Sources */,
 				F5076ADE1F32C0490094AEED /* OTSBadgeButton.m in Sources */,
-				F56ABA6E1F4158CA00624672 /* OTSNetworkInterface.m in Sources */,
-				F56ABA761F41594E00624672 /* OTSNIAnniversarySale.m in Sources */,
 				F5076ADA1F32BDE10094AEED /* OTSSearchBarWordView.m in Sources */,
 				F51EC10D1F1C59AD00735E7C /* OTSMappingVO.m in Sources */,
 				F5FFFEA91F219C63007B55F1 /* OTSOperationManager.m in Sources */,
@@ -2168,7 +2043,6 @@
 				F58C7A441F1C5EFE00AC2928 /* OTSLog.m in Sources */,
 				F5FFFE7E1F20CEBB007B55F1 /* PhoneVC.m in Sources */,
 				F51636561F39B1FD00F47DC6 /* OTSNCDelegate.m in Sources */,
-				F56ABA941F4166FB00624672 /* OTSNICallCenter.m in Sources */,
 				F5076ACF1F32BABE0094AEED /* OTSGifNilView.m in Sources */,
 				F51EC0571F1C444B00735E7C /* main.m in Sources */,
 				F5076AD21F32BB390094AEED /* OTSFont.m in Sources */,

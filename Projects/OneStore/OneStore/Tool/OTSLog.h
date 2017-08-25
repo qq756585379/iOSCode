@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CocoaLumberjack.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 #define IMIDDLog(format, ...) DDLogVerbose((@"\n ******************************* \n[文件名:%s]" "\n[函数名:%s]" "\n[行号:%d]\n" format), [[NSString stringWithFormat:@"%s", __FILE__].lastPathComponent UTF8String], __FUNCTION__, __LINE__, ##__VA_ARGS__);
 
@@ -42,8 +42,13 @@ static const DDLogLevel ddLogLevel = DDLogLevelOff;
 #define OTSLogFuncE OTSLogE(@"[%@ call %@] line[%d] %s", [self class], THIS_METHOD, __LINE__, __PRETTY_FUNCTION__)
 
 @interface OTSLog : NSObject
-
+/*
+ CoCoaLumberJack配置
+ AppDelegate.h里在didFinishLaunchingWithOptions中添加如下代码:
+ */
 + (void)setupLogerStatus;
+
++ (NSArray *)getLogPath;
 
 @end
 

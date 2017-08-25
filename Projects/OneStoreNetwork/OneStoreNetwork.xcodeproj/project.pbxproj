@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F520BFB31F4FBC400051BDA3 /* OTSLaunchFailError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520BFB01F4FBC400051BDA3 /* OTSLaunchFailError.m */; };
+		F520BFB41F4FBC400051BDA3 /* OTSNetworkError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520BFB21F4FBC400051BDA3 /* OTSNetworkError.m */; };
+		F520BFC61F4FBD4A0051BDA3 /* OTSAntiBrushError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520BFBB1F4FBD4A0051BDA3 /* OTSAntiBrushError.m */; };
+		F520BFC71F4FBD4A0051BDA3 /* OTSNetworkCommonError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520BFBD1F4FBD4A0051BDA3 /* OTSNetworkCommonError.m */; };
+		F520BFC81F4FBD4A0051BDA3 /* OTSServerError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520BFBF1F4FBD4A0051BDA3 /* OTSServerError.m */; };
+		F520BFC91F4FBD4A0051BDA3 /* OTSSignKeyExpireError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520BFC11F4FBD4A0051BDA3 /* OTSSignKeyExpireError.m */; };
+		F520BFCA1F4FBD4A0051BDA3 /* OTSTimeOutError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520BFC31F4FBD4A0051BDA3 /* OTSTimeOutError.m */; };
+		F520BFCB1F4FBD4A0051BDA3 /* OTSTokenExpireError.m in Sources */ = {isa = PBXBuildFile; fileRef = F520BFC51F4FBD4A0051BDA3 /* OTSTokenExpireError.m */; };
+		F5828BA91F4ED2D5004C85D7 /* OTSNetworkAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F5828BA81F4ED2D5004C85D7 /* OTSNetworkAlert.m */; };
+		F5AB7DB81F4ED6EE00204BA4 /* OTSSimpleOpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AB7DB71F4ED6EE00204BA4 /* OTSSimpleOpManager.m */; };
+		F5AB7DC11F4ED77400204BA4 /* OTSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AB7DC01F4ED77400204BA4 /* OTSReachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5828B981F4ED2B1004C85D7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F520BFAF1F4FBC400051BDA3 /* OTSLaunchFailError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLaunchFailError.h; sourceTree = "<group>"; };
+		F520BFB01F4FBC400051BDA3 /* OTSLaunchFailError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLaunchFailError.m; sourceTree = "<group>"; };
+		F520BFB11F4FBC400051BDA3 /* OTSNetworkError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkError.h; sourceTree = "<group>"; };
+		F520BFB21F4FBC400051BDA3 /* OTSNetworkError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkError.m; sourceTree = "<group>"; };
+		F520BFBA1F4FBD4A0051BDA3 /* OTSAntiBrushError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSAntiBrushError.h; sourceTree = "<group>"; };
+		F520BFBB1F4FBD4A0051BDA3 /* OTSAntiBrushError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSAntiBrushError.m; sourceTree = "<group>"; };
+		F520BFBC1F4FBD4A0051BDA3 /* OTSNetworkCommonError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkCommonError.h; sourceTree = "<group>"; };
+		F520BFBD1F4FBD4A0051BDA3 /* OTSNetworkCommonError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkCommonError.m; sourceTree = "<group>"; };
+		F520BFBE1F4FBD4A0051BDA3 /* OTSServerError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSServerError.h; sourceTree = "<group>"; };
+		F520BFBF1F4FBD4A0051BDA3 /* OTSServerError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSServerError.m; sourceTree = "<group>"; };
+		F520BFC01F4FBD4A0051BDA3 /* OTSSignKeyExpireError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSignKeyExpireError.h; sourceTree = "<group>"; };
+		F520BFC11F4FBD4A0051BDA3 /* OTSSignKeyExpireError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSignKeyExpireError.m; sourceTree = "<group>"; };
+		F520BFC21F4FBD4A0051BDA3 /* OTSTimeOutError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSTimeOutError.h; sourceTree = "<group>"; };
+		F520BFC31F4FBD4A0051BDA3 /* OTSTimeOutError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSTimeOutError.m; sourceTree = "<group>"; };
+		F520BFC41F4FBD4A0051BDA3 /* OTSTokenExpireError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSTokenExpireError.h; sourceTree = "<group>"; };
+		F520BFC51F4FBD4A0051BDA3 /* OTSTokenExpireError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSTokenExpireError.m; sourceTree = "<group>"; };
+		F5828B9A1F4ED2B1004C85D7 /* libOneStoreNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOneStoreNetwork.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5828BA71F4ED2D5004C85D7 /* OTSNetworkAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNetworkAlert.h; sourceTree = "<group>"; };
+		F5828BA81F4ED2D5004C85D7 /* OTSNetworkAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSNetworkAlert.m; sourceTree = "<group>"; };
+		F5AB7DB41F4ED58B00204BA4 /* OneStoreNetwork.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneStoreNetwork.pch; sourceTree = "<group>"; };
+		F5AB7DB61F4ED6EE00204BA4 /* OTSSimpleOpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSimpleOpManager.h; sourceTree = "<group>"; };
+		F5AB7DB71F4ED6EE00204BA4 /* OTSSimpleOpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSimpleOpManager.m; sourceTree = "<group>"; };
+		F5AB7DBF1F4ED77400204BA4 /* OTSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSReachability.h; sourceTree = "<group>"; };
+		F5AB7DC01F4ED77400204BA4 /* OTSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSReachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5828B971F4ED2B1004C85D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F520BFAE1F4FBC400051BDA3 /* NetworkError */ = {
+			isa = PBXGroup;
+			children = (
+				F520BFBA1F4FBD4A0051BDA3 /* OTSAntiBrushError.h */,
+				F520BFBB1F4FBD4A0051BDA3 /* OTSAntiBrushError.m */,
+				F520BFBC1F4FBD4A0051BDA3 /* OTSNetworkCommonError.h */,
+				F520BFBD1F4FBD4A0051BDA3 /* OTSNetworkCommonError.m */,
+				F520BFBE1F4FBD4A0051BDA3 /* OTSServerError.h */,
+				F520BFBF1F4FBD4A0051BDA3 /* OTSServerError.m */,
+				F520BFC01F4FBD4A0051BDA3 /* OTSSignKeyExpireError.h */,
+				F520BFC11F4FBD4A0051BDA3 /* OTSSignKeyExpireError.m */,
+				F520BFC21F4FBD4A0051BDA3 /* OTSTimeOutError.h */,
+				F520BFC31F4FBD4A0051BDA3 /* OTSTimeOutError.m */,
+				F520BFC41F4FBD4A0051BDA3 /* OTSTokenExpireError.h */,
+				F520BFC51F4FBD4A0051BDA3 /* OTSTokenExpireError.m */,
+				F520BFAF1F4FBC400051BDA3 /* OTSLaunchFailError.h */,
+				F520BFB01F4FBC400051BDA3 /* OTSLaunchFailError.m */,
+				F520BFB11F4FBC400051BDA3 /* OTSNetworkError.h */,
+				F520BFB21F4FBC400051BDA3 /* OTSNetworkError.m */,
+			);
+			path = NetworkError;
+			sourceTree = "<group>";
+		};
+		F5828B911F4ED2B1004C85D7 = {
+			isa = PBXGroup;
+			children = (
+				F5828B9C1F4ED2B1004C85D7 /* OneStoreNetwork */,
+				F5828B9B1F4ED2B1004C85D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5828B9B1F4ED2B1004C85D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5828B9A1F4ED2B1004C85D7 /* libOneStoreNetwork.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5828B9C1F4ED2B1004C85D7 /* OneStoreNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				F5AB7DB41F4ED58B00204BA4 /* OneStoreNetwork.pch */,
+				F520BFAE1F4FBC400051BDA3 /* NetworkError */,
+				F5AB7DBE1F4ED77400204BA4 /* Reachability */,
+				F5AB7DB51F4ED6EE00204BA4 /* SimpleNetwork */,
+				F5828BA61F4ED2D5004C85D7 /* Alert */,
+			);
+			path = OneStoreNetwork;
+			sourceTree = "<group>";
+		};
+		F5828BA61F4ED2D5004C85D7 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				F5828BA71F4ED2D5004C85D7 /* OTSNetworkAlert.h */,
+				F5828BA81F4ED2D5004C85D7 /* OTSNetworkAlert.m */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		F5AB7DB51F4ED6EE00204BA4 /* SimpleNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				F5AB7DB61F4ED6EE00204BA4 /* OTSSimpleOpManager.h */,
+				F5AB7DB71F4ED6EE00204BA4 /* OTSSimpleOpManager.m */,
+			);
+			path = SimpleNetwork;
+			sourceTree = "<group>";
+		};
+		F5AB7DBE1F4ED77400204BA4 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F5AB7DBF1F4ED77400204BA4 /* OTSReachability.h */,
+				F5AB7DC01F4ED77400204BA4 /* OTSReachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5828B991F4ED2B1004C85D7 /* OneStoreNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5828BA31F4ED2B1004C85D7 /* Build configuration list for PBXNativeTarget "OneStoreNetwork" */;
+			buildPhases = (
+				F5828B961F4ED2B1004C85D7 /* Sources */,
+				F5828B971F4ED2B1004C85D7 /* Frameworks */,
+				F5828B981F4ED2B1004C85D7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneStoreNetwork;
+			productName = OneStoreNetwork;
+			productReference = F5828B9A1F4ED2B1004C85D7 /* libOneStoreNetwork.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5828B921F4ED2B1004C85D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Lenovo-Apple";
+				TargetAttributes = {
+					F5828B991F4ED2B1004C85D7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F5828B951F4ED2B1004C85D7 /* Build configuration list for PBXProject "OneStoreNetwork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F5828B911F4ED2B1004C85D7;
+			productRefGroup = F5828B9B1F4ED2B1004C85D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5828B991F4ED2B1004C85D7 /* OneStoreNetwork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5828B961F4ED2B1004C85D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5828BA91F4ED2D5004C85D7 /* OTSNetworkAlert.m in Sources */,
+				F5AB7DC11F4ED77400204BA4 /* OTSReachability.m in Sources */,
+				F520BFC81F4FBD4A0051BDA3 /* OTSServerError.m in Sources */,
+				F520BFCA1F4FBD4A0051BDA3 /* OTSTimeOutError.m in Sources */,
+				F520BFC61F4FBD4A0051BDA3 /* OTSAntiBrushError.m in Sources */,
+				F520BFC71F4FBD4A0051BDA3 /* OTSNetworkCommonError.m in Sources */,
+				F520BFB31F4FBC400051BDA3 /* OTSLaunchFailError.m in Sources */,
+				F5AB7DB81F4ED6EE00204BA4 /* OTSSimpleOpManager.m in Sources */,
+				F520BFB41F4FBC400051BDA3 /* OTSNetworkError.m in Sources */,
+				F520BFCB1F4FBD4A0051BDA3 /* OTSTokenExpireError.m in Sources */,
+				F520BFC91F4FBD4A0051BDA3 /* OTSSignKeyExpireError.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F5828BA11F4ED2B1004C85D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5828BA21F4ED2B1004C85D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5828BA41F4ED2B1004C85D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREFIX_HEADER = $SRCROOT/OneStoreNetwork/OneStoreNetwork.pch;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../Pods/Headers/**",
+					"\"$(SRCROOT)/../Common/Common\"/**",
+					"\"$(SRCROOT)/../OneStore/OneStore\"/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F5828BA51F4ED2B1004C85D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREFIX_HEADER = $SRCROOT/OneStoreNetwork/OneStoreNetwork.pch;
+				HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/../../Pods/Headers/**",
+					"\"$(SRCROOT)/../Common/Common\"/**",
+					"\"$(SRCROOT)/../OneStore/OneStore\"/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5828B951F4ED2B1004C85D7 /* Build configuration list for PBXProject "OneStoreNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5828BA11F4ED2B1004C85D7 /* Debug */,
+				F5828BA21F4ED2B1004C85D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5828BA31F4ED2B1004C85D7 /* Build configuration list for PBXNativeTarget "OneStoreNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5828BA41F4ED2B1004C85D7 /* Debug */,
+				F5828BA51F4ED2B1004C85D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5828B921F4ED2B1004C85D7 /* Project object */;
+}

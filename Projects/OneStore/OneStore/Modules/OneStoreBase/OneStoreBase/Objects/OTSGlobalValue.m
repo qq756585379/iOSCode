@@ -13,7 +13,7 @@
 NSString *const KeyChainSignatureKey = @"keychain.signatureKey";
 
 @interface OTSGlobalValue()
-@property (nonatomic, copy) NSString *signatureKey;                  //解密后的签名密钥
+
 @end
 
 @implementation OTSGlobalValue
