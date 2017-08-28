@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "OTSFuncDefine.h"
 #import "OTSValueObject.h"
 
 #ifndef PHONE_TRACK_TYPE
@@ -21,6 +20,7 @@
 @interface OTSClientInfo : OTSValueObject
 
 AS_SINGLETON(OTSClientInfo)
+
 @property (nonatomic, copy) NSString *clientAppVersion;// 客户端app版本号
 @property (nonatomic, copy) NSString *clientSystem;// 客户端系统
 @property (nonatomic, copy) NSString *clientVersion;// 客户端版本

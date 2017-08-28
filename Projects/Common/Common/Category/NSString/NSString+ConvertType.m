@@ -33,14 +33,11 @@
         //判断是否为英文和数字
         if (_char <= '9' && _char >= '0') {
             [s appendFormat:@"%@",[string substringWithRange:NSMakeRange(i, 1)]];
-        }else if(_char >= 'a' && _char <= 'z')
-        {
+        }else if(_char >= 'a' && _char <= 'z'){
             [s appendFormat:@"%@",[string substringWithRange:NSMakeRange(i, 1)]];
-        }else if(_char >= 'A' && _char <= 'Z')
-        {
+        }else if(_char >= 'A' && _char <= 'Z'){
             [s appendFormat:@"%@",[string substringWithRange:NSMakeRange(i, 1)]];
-        }else
-        {
+        }else{
             [s appendFormat:@"\\u%x",[string characterAtIndex:i]];
         }
     }

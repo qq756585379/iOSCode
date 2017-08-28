@@ -27,12 +27,9 @@
 		F51EC08A1F1C4BE400735E7C /* UIButton+util.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0891F1C4BE400735E7C /* UIButton+util.m */; };
 		F51EC08E1F1C4BFB00735E7C /* UIBarButtonItem+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC08D1F1C4BFB00735E7C /* UIBarButtonItem+Util.m */; };
 		F51EC0921F1C4C1100735E7C /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0911F1C4C1100735E7C /* UITextField+Placeholder.m */; };
-		F51EC0A11F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0A01F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.m */; };
 		F51EC0A41F1C4CC600735E7C /* XMGFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0A31F1C4CC600735E7C /* XMGFileTool.m */; };
 		F51EC0B21F1C4D1100735E7C /* OTSWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0B11F1C4D1100735E7C /* OTSWindow.m */; };
 		F51EC0B51F1C4D1900735E7C /* OTSWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0B41F1C4D1900735E7C /* OTSWebView.m */; };
-		F51EC0B81F1C4D2A00735E7C /* OTSJsonKit.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0B71F1C4D2A00735E7C /* OTSJsonKit.m */; };
-		F51EC0BB1F1C4D3400735E7C /* OTSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0BA1F1C4D3400735E7C /* OTSColor.m */; };
 		F51EC0C31F1C4E0500735E7C /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0C21F1C4E0500735E7C /* Foundation+Log.m */; };
 		F51EC0C81F1C4E5900735E7C /* MHVAlignLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0C71F1C4E5800735E7C /* MHVAlignLabel.m */; };
 		F51EC0CB1F1C4EBA00735E7C /* MHGradientColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0CA1F1C4EBA00735E7C /* MHGradientColorView.m */; };
@@ -58,6 +55,18 @@
 		F5A3CFFC1F45326F000D2F7B /* NSString+tripledes.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFFB1F45326F000D2F7B /* NSString+tripledes.m */; };
 		F5A3D0021F4532DC000D2F7B /* NSDate+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFFF1F4532DC000D2F7B /* NSDate+Format.m */; };
 		F5A3D0031F4532DC000D2F7B /* NSDate+OTS.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3D0011F4532DC000D2F7B /* NSDate+OTS.m */; };
+		F5E49B111F53E8C70068D3F4 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E49B101F53E8C70068D3F4 /* UIDevice+IdentifierAddition.m */; };
+		F5E49B141F53E8FF0068D3F4 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E49B131F53E8FF0068D3F4 /* NSString+MD5.m */; };
+		F5E49B211F53E9B30068D3F4 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E49B1C1F53E9B30068D3F4 /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F5E49B221F53E9B30068D3F4 /* OTSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E49B1E1F53E9B30068D3F4 /* OTSKeychain.m */; };
+		F5E49B231F53E9B30068D3F4 /* OTSKeychainDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E49B201F53E9B30068D3F4 /* OTSKeychainDefine.m */; };
+		F5E49B261F53EB540068D3F4 /* OTSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E49B251F53EB540068D3F4 /* OTSLog.m */; };
+		F5E49B291F53EB840068D3F4 /* IMICatchCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E49B281F53EB840068D3F4 /* IMICatchCrash.m */; };
+		F5E49B651F53EFE40068D3F4 /* OTSCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E49B621F53EFE40068D3F4 /* OTSCoreDataManager.m */; };
+		F5E49B661F53EFE40068D3F4 /* OTSManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E49B641F53EFE40068D3F4 /* OTSManagedObject.m */; };
+		F5E4A0231F5421C30068D3F4 /* OTSWeakObjectDeathNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4A0221F5421C30068D3F4 /* OTSWeakObjectDeathNotifier.m */; };
+		F5E4A0261F5422380068D3F4 /* UIView+create.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4A0251F5422380068D3F4 /* UIView+create.m */; };
+		F5E4A0291F5422770068D3F4 /* UIView+IB.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E4A0281F5422770068D3F4 /* UIView+IB.m */; };
 		F5FFFE961F218ED9007B55F1 /* NSString+util.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFE951F218ED9007B55F1 /* NSString+util.m */; };
 		F5FFFEB41F219DBD007B55F1 /* OTSArchiveData.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FFFEB31F219DBD007B55F1 /* OTSArchiveData.m */; };
 /* End PBXBuildFile section */
@@ -117,18 +126,12 @@
 		F51EC08D1F1C4BFB00735E7C /* UIBarButtonItem+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Util.m"; sourceTree = "<group>"; };
 		F51EC0901F1C4C1100735E7C /* UITextField+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Placeholder.h"; sourceTree = "<group>"; };
 		F51EC0911F1C4C1100735E7C /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
-		F51EC09F1F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSWeakObjectDeathNotifier.h; sourceTree = "<group>"; };
-		F51EC0A01F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSWeakObjectDeathNotifier.m; sourceTree = "<group>"; };
 		F51EC0A21F1C4CC600735E7C /* XMGFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGFileTool.h; sourceTree = "<group>"; };
 		F51EC0A31F1C4CC600735E7C /* XMGFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGFileTool.m; sourceTree = "<group>"; };
 		F51EC0B01F1C4D1100735E7C /* OTSWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSWindow.h; sourceTree = "<group>"; };
 		F51EC0B11F1C4D1100735E7C /* OTSWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSWindow.m; sourceTree = "<group>"; };
 		F51EC0B31F1C4D1900735E7C /* OTSWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSWebView.h; sourceTree = "<group>"; };
 		F51EC0B41F1C4D1900735E7C /* OTSWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSWebView.m; sourceTree = "<group>"; };
-		F51EC0B61F1C4D2A00735E7C /* OTSJsonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSJsonKit.h; sourceTree = "<group>"; };
-		F51EC0B71F1C4D2A00735E7C /* OTSJsonKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSJsonKit.m; sourceTree = "<group>"; };
-		F51EC0B91F1C4D3400735E7C /* OTSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSColor.h; sourceTree = "<group>"; };
-		F51EC0BA1F1C4D3400735E7C /* OTSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSColor.m; sourceTree = "<group>"; };
 		F51EC0C11F1C4DF700735E7C /* HMSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSingleton.h; sourceTree = "<group>"; };
 		F51EC0C21F1C4E0500735E7C /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		F51EC0C41F1C4E1A00735E7C /* ColorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDefine.h; sourceTree = "<group>"; };
@@ -184,6 +187,30 @@
 		F5A3CFFF1F4532DC000D2F7B /* NSDate+Format.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Format.m"; sourceTree = "<group>"; };
 		F5A3D0001F4532DC000D2F7B /* NSDate+OTS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+OTS.h"; sourceTree = "<group>"; };
 		F5A3D0011F4532DC000D2F7B /* NSDate+OTS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+OTS.m"; sourceTree = "<group>"; };
+		F5E49B0F1F53E8C70068D3F4 /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		F5E49B101F53E8C70068D3F4 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		F5E49B121F53E8FF0068D3F4 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		F5E49B131F53E8FF0068D3F4 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		F5E49B1B1F53E9B30068D3F4 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		F5E49B1C1F53E9B30068D3F4 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		F5E49B1D1F53E9B30068D3F4 /* OTSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSKeychain.h; sourceTree = "<group>"; };
+		F5E49B1E1F53E9B30068D3F4 /* OTSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSKeychain.m; sourceTree = "<group>"; };
+		F5E49B1F1F53E9B30068D3F4 /* OTSKeychainDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSKeychainDefine.h; sourceTree = "<group>"; };
+		F5E49B201F53E9B30068D3F4 /* OTSKeychainDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSKeychainDefine.m; sourceTree = "<group>"; };
+		F5E49B241F53EB540068D3F4 /* OTSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLog.h; sourceTree = "<group>"; };
+		F5E49B251F53EB540068D3F4 /* OTSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLog.m; sourceTree = "<group>"; };
+		F5E49B271F53EB840068D3F4 /* IMICatchCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMICatchCrash.h; sourceTree = "<group>"; };
+		F5E49B281F53EB840068D3F4 /* IMICatchCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMICatchCrash.m; sourceTree = "<group>"; };
+		F5E49B611F53EFE40068D3F4 /* OTSCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSCoreDataManager.h; sourceTree = "<group>"; };
+		F5E49B621F53EFE40068D3F4 /* OTSCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSCoreDataManager.m; sourceTree = "<group>"; };
+		F5E49B631F53EFE40068D3F4 /* OTSManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSManagedObject.h; sourceTree = "<group>"; };
+		F5E49B641F53EFE40068D3F4 /* OTSManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSManagedObject.m; sourceTree = "<group>"; };
+		F5E4A0211F5421C30068D3F4 /* OTSWeakObjectDeathNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSWeakObjectDeathNotifier.h; sourceTree = "<group>"; };
+		F5E4A0221F5421C30068D3F4 /* OTSWeakObjectDeathNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSWeakObjectDeathNotifier.m; sourceTree = "<group>"; };
+		F5E4A0241F5422380068D3F4 /* UIView+create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+create.h"; sourceTree = "<group>"; };
+		F5E4A0251F5422380068D3F4 /* UIView+create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+create.m"; sourceTree = "<group>"; };
+		F5E4A0271F5422770068D3F4 /* UIView+IB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IB.h"; sourceTree = "<group>"; };
+		F5E4A0281F5422770068D3F4 /* UIView+IB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IB.m"; sourceTree = "<group>"; };
 		F5FFFE941F218ED9007B55F1 /* NSString+util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+util.h"; sourceTree = "<group>"; };
 		F5FFFE951F218ED9007B55F1 /* NSString+util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+util.m"; sourceTree = "<group>"; };
 		F5FFFEB21F219DBD007B55F1 /* OTSArchiveData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSArchiveData.h; sourceTree = "<group>"; };
@@ -253,6 +280,7 @@
 		F51EC06C1F1C49D300735E7C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F5E49B0E1F53E8C70068D3F4 /* UIDevice */,
 				F5A3CFFD1F4532DC000D2F7B /* NSDate */,
 				F5A3CFF01F45305D000D2F7B /* NSNumber */,
 				F5A3CFBC1F452BF6000D2F7B /* NSObject */,
@@ -282,6 +310,8 @@
 				F51EC06F1F1C49F900735E7C /* NSString+safe.m */,
 				F5FFFE941F218ED9007B55F1 /* NSString+util.h */,
 				F5FFFE951F218ED9007B55F1 /* NSString+util.m */,
+				F5E49B121F53E8FF0068D3F4 /* NSString+MD5.h */,
+				F5E49B131F53E8FF0068D3F4 /* NSString+MD5.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -289,6 +319,10 @@
 		F51EC0711F1C4A0E00735E7C /* UIView */ = {
 			isa = PBXGroup;
 			children = (
+				F5E4A0271F5422770068D3F4 /* UIView+IB.h */,
+				F5E4A0281F5422770068D3F4 /* UIView+IB.m */,
+				F5E4A0241F5422380068D3F4 /* UIView+create.h */,
+				F5E4A0251F5422380068D3F4 /* UIView+create.m */,
 				F51EC0721F1C4A1600735E7C /* UIView+frame.h */,
 				F51EC0731F1C4A1600735E7C /* UIView+frame.m */,
 				F51EC0741F1C4A1600735E7C /* UIView+Util.h */,
@@ -366,14 +400,14 @@
 			isa = PBXGroup;
 			children = (
 				F51EC0EE1F1C55BC00735E7C /* DataCache */,
-				F51EC0B91F1C4D3400735E7C /* OTSColor.h */,
-				F51EC0BA1F1C4D3400735E7C /* OTSColor.m */,
-				F51EC0B61F1C4D2A00735E7C /* OTSJsonKit.h */,
-				F51EC0B71F1C4D2A00735E7C /* OTSJsonKit.m */,
+				F5E49B241F53EB540068D3F4 /* OTSLog.h */,
+				F5E49B251F53EB540068D3F4 /* OTSLog.m */,
+				F5E49B271F53EB840068D3F4 /* IMICatchCrash.h */,
+				F5E49B281F53EB840068D3F4 /* IMICatchCrash.m */,
 				F51EC0A21F1C4CC600735E7C /* XMGFileTool.h */,
 				F51EC0A31F1C4CC600735E7C /* XMGFileTool.m */,
-				F51EC09F1F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.h */,
-				F51EC0A01F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.m */,
+				F5E4A0211F5421C30068D3F4 /* OTSWeakObjectDeathNotifier.h */,
+				F5E4A0221F5421C30068D3F4 /* OTSWeakObjectDeathNotifier.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -429,6 +463,8 @@
 		F51EC0EE1F1C55BC00735E7C /* DataCache */ = {
 			isa = PBXGroup;
 			children = (
+				F5E49B601F53EFE40068D3F4 /* CoreData */,
+				F5E49B191F53E9B30068D3F4 /* Keychain */,
 				F5FFFEB11F219DAC007B55F1 /* ArchiveData */,
 				F51EC0EF1F1C55BC00735E7C /* FileManager */,
 				F51EC0F21F1C55BC00735E7C /* UserDefault */,
@@ -511,6 +547,47 @@
 			path = NSDate;
 			sourceTree = "<group>";
 		};
+		F5E49B0E1F53E8C70068D3F4 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				F5E49B0F1F53E8C70068D3F4 /* UIDevice+IdentifierAddition.h */,
+				F5E49B101F53E8C70068D3F4 /* UIDevice+IdentifierAddition.m */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		F5E49B191F53E9B30068D3F4 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				F5E49B1A1F53E9B30068D3F4 /* KeychainItemWrapper */,
+				F5E49B1D1F53E9B30068D3F4 /* OTSKeychain.h */,
+				F5E49B1E1F53E9B30068D3F4 /* OTSKeychain.m */,
+				F5E49B1F1F53E9B30068D3F4 /* OTSKeychainDefine.h */,
+				F5E49B201F53E9B30068D3F4 /* OTSKeychainDefine.m */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		F5E49B1A1F53E9B30068D3F4 /* KeychainItemWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				F5E49B1B1F53E9B30068D3F4 /* KeychainItemWrapper.h */,
+				F5E49B1C1F53E9B30068D3F4 /* KeychainItemWrapper.m */,
+			);
+			path = KeychainItemWrapper;
+			sourceTree = "<group>";
+		};
+		F5E49B601F53EFE40068D3F4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F5E49B611F53EFE40068D3F4 /* OTSCoreDataManager.h */,
+				F5E49B621F53EFE40068D3F4 /* OTSCoreDataManager.m */,
+				F5E49B631F53EFE40068D3F4 /* OTSManagedObject.h */,
+				F5E49B641F53EFE40068D3F4 /* OTSManagedObject.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		F5FFFEB11F219DAC007B55F1 /* ArchiveData */ = {
 			isa = PBXGroup;
 			children = (
@@ -579,27 +656,29 @@
 			files = (
 				F51EC0DA1F1C4FCF00735E7C /* MBProgressHUD+MJ.m in Sources */,
 				F5070B561F2B15D2002C0ADF /* NSArray+safe.m in Sources */,
+				F5E4A0231F5421C30068D3F4 /* OTSWeakObjectDeathNotifier.m in Sources */,
 				F51EC0771F1C4A1600735E7C /* UIView+Util.m in Sources */,
 				F5070B571F2B15D2002C0ADF /* NSDictionary+safe.m in Sources */,
 				F5A3CFD41F452BF6000D2F7B /* NSObject+runtime.m in Sources */,
 				F51EC0761F1C4A1600735E7C /* UIView+frame.m in Sources */,
-				F51EC0BB1F1C4D3400735E7C /* OTSColor.m in Sources */,
-				F51EC0A11F1C4CBB00735E7C /* OTSWeakObjectDeathNotifier.m in Sources */,
 				F51EC0F61F1C55BC00735E7C /* OTSUserDefault.m in Sources */,
 				F51EC07E1F1C4A3100735E7C /* UIImage+Util.m in Sources */,
+				F5E4A0291F5422770068D3F4 /* UIView+IB.m in Sources */,
 				F5A3CFD11F452BF6000D2F7B /* NSObject+coder.m in Sources */,
+				F5E49B651F53EFE40068D3F4 /* OTSCoreDataManager.m in Sources */,
 				F5A3CFD31F452BF6000D2F7B /* NSObject+PerformBlock.m in Sources */,
 				F5FFFEB41F219DBD007B55F1 /* OTSArchiveData.m in Sources */,
-				F51EC0B81F1C4D2A00735E7C /* OTSJsonKit.m in Sources */,
 				F51EC0A41F1C4CC600735E7C /* XMGFileTool.m in Sources */,
 				F51EC0921F1C4C1100735E7C /* UITextField+Placeholder.m in Sources */,
 				F51EC0CB1F1C4EBA00735E7C /* MHGradientColorView.m in Sources */,
 				F5A3CFD61F452BF6000D2F7B /* NSObject+swizzle.m in Sources */,
 				F51EC0C81F1C4E5900735E7C /* MHVAlignLabel.m in Sources */,
 				F5A3CFD01F452BF6000D2F7B /* NSObject+category.m in Sources */,
+				F5E49B211F53E9B30068D3F4 /* KeychainItemWrapper.m in Sources */,
 				F51EC08E1F1C4BFB00735E7C /* UIBarButtonItem+Util.m in Sources */,
 				F5070B581F2B15D2002C0ADF /* NSMutableArray+safe.m in Sources */,
 				F51636661F39BDC200F47DC6 /* OTSTableViewCell.m in Sources */,
+				F5E49B221F53E9B30068D3F4 /* OTSKeychain.m in Sources */,
 				F51EC0D41F1C4ED900735E7C /* OTSCollectionViewCell.m in Sources */,
 				F51EC0EC1F1C552500735E7C /* UIViewController+dealloc.m in Sources */,
 				F51EC0F51F1C55BC00735E7C /* OTSFileManager.m in Sources */,
@@ -608,25 +687,32 @@
 				F5A3CFD21F452BF6000D2F7B /* NSObject+JsonToVO.m in Sources */,
 				F5A3CFEF1F452F45000D2F7B /* NSObject+safe.m in Sources */,
 				F51EC07D1F1C4A3100735E7C /* UIImage+bundleRes.m in Sources */,
+				F5E49B291F53EB840068D3F4 /* IMICatchCrash.m in Sources */,
 				F51636631F39BDA700F47DC6 /* OTSTableView.m in Sources */,
 				F5070B591F2B15D2002C0ADF /* NSMutableDictionary+safe.m in Sources */,
+				F5E49B261F53EB540068D3F4 /* OTSLog.m in Sources */,
 				F5A3CFFC1F45326F000D2F7B /* NSString+tripledes.m in Sources */,
 				F51EC0861F1C4BD000735E7C /* UIColor+Hex.m in Sources */,
 				F5A3D0031F4532DC000D2F7B /* NSDate+OTS.m in Sources */,
 				F51EC0D31F1C4ED900735E7C /* OTSCollectionView.m in Sources */,
+				F5E49B141F53E8FF0068D3F4 /* NSString+MD5.m in Sources */,
 				F51EC08A1F1C4BE400735E7C /* UIButton+util.m in Sources */,
 				F51EC0821F1C4BA900735E7C /* UIImageView+Util.m in Sources */,
 				F5A3CFF91F4531E4000D2F7B /* NSString+ConvertType.m in Sources */,
 				F5070B5B1F2B15D2002C0ADF /* NSNumber+safe.m in Sources */,
 				F5070B5C1F2B15D2002C0ADF /* NSString+safe.m in Sources */,
+				F5E49B231F53E9B30068D3F4 /* OTSKeychainDefine.m in Sources */,
 				F5070B5D1F2B15D2002C0ADF /* UICollectionView+safe.m in Sources */,
 				F5FFFE961F218ED9007B55F1 /* NSString+util.m in Sources */,
+				F5E49B661F53EFE40068D3F4 /* OTSManagedObject.m in Sources */,
 				F5070B5A1F2B15D2002C0ADF /* NSMutableString+safe.m in Sources */,
 				F51EC0D21F1C4ED900735E7C /* OTSCollectionReusableView.m in Sources */,
+				F5E4A0261F5422380068D3F4 /* UIView+create.m in Sources */,
 				F5A3D0021F4532DC000D2F7B /* NSDate+Format.m in Sources */,
 				F51EC0701F1C49F900735E7C /* NSString+safe.m in Sources */,
 				F5A3CFEC1F452EB0000D2F7B /* UIView+safe.m in Sources */,
 				F51EC0B51F1C4D1900735E7C /* OTSWebView.m in Sources */,
+				F5E49B111F53E8C70068D3F4 /* UIDevice+IdentifierAddition.m in Sources */,
 				F5A3CFCF1F452BF6000D2F7B /* NSObject+BeeNotification.m in Sources */,
 				F51EC0C31F1C4E0500735E7C /* Foundation+Log.m in Sources */,
 				F51EC0B21F1C4D1100735E7C /* OTSWindow.m in Sources */,
@@ -730,10 +816,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREFIX_HEADER = $SRCROOT/Common/Common.pch;
-				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/../../Pods/Headers/**",
-					"\"$(SRCROOT)/../OneStore/OneStore/Modules/OneStoreBase/OneStoreBase\"/**",
-				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Pods/Headers/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -744,10 +827,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREFIX_HEADER = $SRCROOT/Common/Common.pch;
-				HEADER_SEARCH_PATHS = (
-					"${SRCROOT}/../../Pods/Headers/**",
-					"\"$(SRCROOT)/../OneStore/OneStore/Modules/OneStoreBase/OneStoreBase\"/**",
-				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../../Pods/Headers/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

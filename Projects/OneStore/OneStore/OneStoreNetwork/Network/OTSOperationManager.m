@@ -20,6 +20,10 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "OTSBatchOperaionParam.h"
 #import "OTSCurrentAddress.h"
+#import "NSString+MD5.h"
+#import "NSString+AESSecurity.h"
+#import "OTSNetworkManager.h"
+#import "OTSNetworkLog.h"
 
 @interface OTSOperationManager()
 @property(nonatomic, strong) NSMutableArray *operationParams;//这里记录operation param，防止其释放，token过期处理会用到operation param

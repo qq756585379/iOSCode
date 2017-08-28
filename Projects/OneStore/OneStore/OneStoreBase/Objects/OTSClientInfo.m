@@ -7,6 +7,7 @@
 //
 
 #import "OTSClientInfo.h"
+#import "OTSUserDefaultDefine.h"
 //category
 #import "NSObject+JsonToVO.h"
 #import "UIDevice+IdentifierAddition.h"
@@ -216,12 +217,8 @@
 #define padTrackName @"快用_ipad"
 #endif
 
-@interface OTSClientInfo ()
-
-
-@end
-
 @implementation OTSClientInfo
+
 DEF_SINGLETON(OTSClientInfo)
 
 - (id)init {
@@ -233,7 +230,7 @@ DEF_SINGLETON(OTSClientInfo)
         _unionKey = phoneTrackid;
         _iaddr = @1;
         _nettype = @"";
-
+        
         if (IS_IPHONE_DEVICE) {
             _unionKey = phoneTrackid;
             _clientSystem = @"iPhone";
@@ -242,14 +239,12 @@ DEF_SINGLETON(OTSClientInfo)
             if ([bundleIdentifier rangeOfString:@"sam"].location != NSNotFound) {
                 _traderName = @"samIosSystem";
             }
-            
         }else {
             _unionKey = padTrackid;
             _clientSystem = @"ipad";
             _traderName = @"ipadSystem";
         }
-}
-    
+    }
     return self;
 }
 

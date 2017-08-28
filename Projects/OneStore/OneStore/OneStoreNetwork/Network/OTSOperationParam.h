@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "RACSubscriber.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import "OTSBlock.h"
 
 typedef enum {

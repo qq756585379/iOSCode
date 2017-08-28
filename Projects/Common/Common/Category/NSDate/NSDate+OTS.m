@@ -8,7 +8,7 @@
 
 #import "NSDate+OTS.h"
 #import "NSString+safe.h"
-#import "OTSGlobalValue.h"
+//#import "OTSGlobalValue.h"
 
 @implementation NSDate(OTS)
 
@@ -284,10 +284,10 @@
 /**
  *  是否昨天
  */
-- (BOOL)isYesterday
-{
-    NSDate *nowDate = [OTSGlobalValue sharedInstance].serverTime;
-    NSDateFormatter *fmt = [[NSDateFormatter alloc]init];
+- (BOOL)isYesterday{
+//    NSDate *nowDate = [OTSGlobalValue sharedInstance].serverTime;
+    NSDate *nowDate = [NSDate date];
+    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
     fmt.dateFormat = @"yyyy-MM-dd";
     NSString *selStr = [fmt stringFromDate:self];
     NSDate *selfDate = [fmt dateFromString:selStr];
@@ -303,14 +303,11 @@
  */
 - (BOOL)isCurrentYearDate
 {
-    
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy"];
     NSString *today = [dateFormatter stringFromDate:[NSDate date]];
     NSString *day = [dateFormatter stringFromDate:self];
-    
-    if ([today isEqualToString:day])
-    {
+    if ([today isEqualToString:day]){
         return YES;
     }
     return NO;
@@ -325,7 +322,6 @@
     int unit = NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
     return [calendar components:unit fromDate:self toDate:[NSDate date] options:0];
 }
-
 
 /**
  *  用逗号分隔的日期字符串

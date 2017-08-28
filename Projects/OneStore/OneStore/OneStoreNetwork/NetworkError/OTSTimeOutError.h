@@ -7,8 +7,6 @@
 //
 
 #import "OTSNetworkError.h"
-//define
-#import "OTSFuncDefine.h"
 
 @interface OTSTimeOutError : OTSNetworkError
 

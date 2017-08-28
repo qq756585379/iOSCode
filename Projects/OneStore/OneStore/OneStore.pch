@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import <CoreData/CoreData.h>
 
-#import "SDWebImageManager.h"
+#import <SDWebImageManager.h>
 #import <UIImageView+WebCache.h>
 #import <PureLayout.h>
 #import <MJExtension/MJExtension.h>
@@ -19,16 +21,22 @@
 
 #import "UIView+frame.h"
 #import "UIImage+Util.h"
+
+
 #import "NSArray+safe.h"
-#import "NSString+util.h"
-#import "NSString+router.h"
-#import "NSObject+PerformBlock.h"
-#import "NSObject+BeeNotification.h"
 #import "NSArray+safe.h"
-#import "NSMutableArray+safe.h"
 #import "NSNumber+safe.h"
 #import "NSString+safe.h"
+#import "NSMutableArray+safe.h"
+#import "NSMutableString+safe.h"
 #import "NSMutableDictionary+safe.h"
+
+
+#import "NSString+util.h"
+#import "NSString+router.h"
+#import "NSString+ConvertType.h"
+#import "NSObject+PerformBlock.h"
+#import "NSObject+BeeNotification.h"
 
 #import "HMSingleton.h"
 #import "OTSOperationParam.h"
@@ -45,5 +53,14 @@
 #import "OTSJsonKit.h"
 
 #import "OTSFont.h"
+#import "OTSLog.h"
 #import "OTSTableView.h"
 #import "OTSCollectionView.h"
+
+
+
+
+
+
+
+

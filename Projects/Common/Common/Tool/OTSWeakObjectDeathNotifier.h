@@ -1,9 +1,9 @@
 //
 //  OTSWeakObjectDeathNotifier.h
-//  OneStore
+//  OneStoreFramework
 //
-//  Created by 杨俊 on 2017/7/11.
-//  Copyright © 2017年 yangjun. All rights reserved.
+//  Created by Aimy on 15/3/10.
+//  Copyright (c) 2015年 OneStore. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -14,7 +14,7 @@ typedef void(^OTSWeakObjectDeathNotifierBlock)(OTSWeakObjectDeathNotifier *sende
 
 @interface OTSWeakObjectDeathNotifier : NSObject
 
-@property (nonatomic,   weak) id owner;
+@property (nonatomic, weak) id owner;
 @property (nonatomic, strong) id data;
 
 - (void)setBlock:(OTSWeakObjectDeathNotifierBlock)block;

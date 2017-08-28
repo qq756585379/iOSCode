@@ -27,6 +27,9 @@ abstract_target 'Shows' do
     pod 'RegexKitLite', '~> 4.0'
     pod 'JSONModel', '~> 1.7.0'
     
+    #Core Data
+    pod 'MagicalRecord', '~> 2.3.2'
+    
     target 'OneStore' do
         project '../iOSCode/Projects/OneStore/OneStore.xcodeproj'
     end
