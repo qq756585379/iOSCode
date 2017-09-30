@@ -9,6 +9,8 @@
 #import "TableViewController.h"
 #import "GLKitViewController.h"
 #import "ShaderViewController.h"
+#import "RotateEarthVC.h"
+#import "RotateEarthMoonVC.h"
 
 @interface MBExample : NSObject
 @property (nonatomic,   copy) NSString *title;
@@ -36,8 +38,8 @@
     self.title = @"主页";
     self.examples = @[[MBExample exampleWithTitle:@"01-GLKit" selector:@selector(GLKitExample)],
                       [MBExample exampleWithTitle:@"02-Shader" selector:@selector(ShaderExample)],
-                      [MBExample exampleWithTitle:@"03-RotateEarth" selector:@selector(RotateEarthExample)]
-                      
+                      [MBExample exampleWithTitle:@"03-RotateEarth" selector:@selector(RotateEarthExample)],
+                      [MBExample exampleWithTitle:@"04-RotateEarthMoon" selector:@selector(RotateEarthMoonExample)]
                       ];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     [self.tableView reloadData];
@@ -54,7 +56,13 @@
 }
 
 -(void)RotateEarthExample{
-    
+    RotateEarthVC *vc = [RotateEarthVC new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)RotateEarthMoonExample{
+    RotateEarthMoonVC *vc = [RotateEarthMoonVC new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

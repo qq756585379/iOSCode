@@ -145,7 +145,6 @@
     
     //设置旋转矩阵
     glUniformMatrix4fv(rotate, 1, GL_FALSE, (GLfloat *)&zRotation[0]);
-    
     glDrawArrays(GL_TRIANGLES, 0, 6);
     
     [self.myContext presentRenderbuffer:GL_RENDERBUFFER];

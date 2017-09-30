@@ -31,7 +31,6 @@
 		F58111F21F7F7FA300B9A214 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F58111D81F7F7FA300B9A214 /* Info.plist */; };
 		F58111F31F7F7FA300B9A214 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111D91F7F7FA300B9A214 /* main.m */; };
 		F58111F41F7F7FA300B9A214 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111DB1F7F7FA300B9A214 /* TableViewController.m */; };
-		F58111F51F7F7FA300B9A214 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111DD1F7F7FA300B9A214 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,8 +70,6 @@
 		F58111D91F7F7FA300B9A214 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F58111DA1F7F7FA300B9A214 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		F58111DB1F7F7FA300B9A214 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		F58111DC1F7F7FA300B9A214 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F58111DD1F7F7FA300B9A214 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F5E8D3B81F0F22D700EF9FA5 /* OpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E8D3D61F0F282100EF9FA5 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		F5E8D3D81F0F283C00EF9FA5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -117,8 +114,6 @@
 				F58111D91F7F7FA300B9A214 /* main.m */,
 				F58111DA1F7F7FA300B9A214 /* TableViewController.h */,
 				F58111DB1F7F7FA300B9A214 /* TableViewController.m */,
-				F58111DC1F7F7FA300B9A214 /* ViewController.h */,
-				F58111DD1F7F7FA300B9A214 /* ViewController.m */,
 			);
 			path = OpenGL;
 			sourceTree = "<group>";
@@ -365,7 +360,6 @@
 				F58111DF1F7F7FA300B9A214 /* LearnView.m in Sources */,
 				F58111E41F7F7FA300B9A214 /* AGLKVertexAttribArrayBuffer.m in Sources */,
 				F58111E31F7F7FA300B9A214 /* RotateEarthVC.m in Sources */,
-				F58111F51F7F7FA300B9A214 /* ViewController.m in Sources */,
 				F58111F41F7F7FA300B9A214 /* TableViewController.m in Sources */,
 				F58111E21F7F7FA300B9A214 /* ShaderViewController.m in Sources */,
 				F58111E61F7F7FA300B9A214 /* RotateEarthMoonVC.m in Sources */,
