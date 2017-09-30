@@ -1,15 +1,14 @@
 //
-//  ViewController.m
-//  Demos
+//  TableViewController.m
+//  OpenGL
 //
-//  Created by 杨俊 on 2017/7/28.
+//  Created by 杨俊 on 2017/9/30.
 //  Copyright © 2017年 Lenovo-Apple. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "GCDTestVC.h"
-#import "MHGradientColorView.h"
-#import "RACViewController.h"
+#import "TableViewController.h"
+#import "GLKitViewController.h"
+#import "ShaderViewController.h"
 
 @interface MBExample : NSObject
 @property (nonatomic,   copy) NSString *title;
@@ -26,39 +25,47 @@
 }
 @end
 
-@interface ViewController ()
+@interface TableViewController ()
 @property (nonatomic, strong) NSArray<MBExample *>*examples;
 @end
 
-@implementation ViewController
+@implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.examples = @[[MBExample exampleWithTitle:@"Indeterminate mode" selector:@selector(indeterminateExample)],
-                      [MBExample exampleWithTitle:@"With label" selector:@selector(labelExample)],
-                      [MBExample exampleWithTitle:@"With details label" selector:@selector(detailsLabelExample)],
-          
+    self.title = @"主页";
+    self.examples = @[[MBExample exampleWithTitle:@"01-GLKit" selector:@selector(GLKitExample)],
+                      [MBExample exampleWithTitle:@"02-Shader" selector:@selector(ShaderExample)],
+                      [MBExample exampleWithTitle:@"03-RotateEarth" selector:@selector(RotateEarthExample)]
+                      
                       ];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.tableView reloadData];
+}
+
+-(void)GLKitExample{
+    GLKitViewController *vc = [GLKitViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)ShaderExample{
+    ShaderViewController *vc = [ShaderViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)RotateEarthExample{
     
-    MHGradientColorView *view = [[MHGradientColorView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
-    [self.view addSubview:view];
 }
-
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    //    [self.navigationController pushViewController:[GCDTestVC new] animated:YES];
-    [self.navigationController pushViewController:[RACViewController new] animated:YES];
-}
-
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.examples.count;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MBExample *example = self.examples[indexPath.row];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MBExampleCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     cell.textLabel.text = example.title;
-    cell.textLabel.textColor = self.view.tintColor;
+    cell.textLabel.textColor = [UIColor darkGrayColor];
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
     cell.selectedBackgroundView = [UIView new];
     cell.selectedBackgroundView.backgroundColor = [cell.textLabel.textColor colorWithAlphaComponent:0.1f];
@@ -67,7 +74,7 @@
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    MBExample *example = self.examples[indexPath.section][indexPath.row];
+    MBExample *example = self.examples[indexPath.row];
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     [self performSelector:example.selector];

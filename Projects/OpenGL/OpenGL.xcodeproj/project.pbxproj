@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25B7872FF1F814E34E95ED56 /* libPods-Shows-OpenGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52930A004A760E61B1B48621 /* libPods-Shows-OpenGL.a */; };
+		F58111DE1F7F7FA300B9A214 /* GLKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111B41F7F7FA300B9A214 /* GLKitViewController.m */; };
+		F58111DF1F7F7FA300B9A214 /* LearnView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111B71F7F7FA300B9A214 /* LearnView.m */; };
+		F58111E01F7F7FA300B9A214 /* shaderf.fsh in Resources */ = {isa = PBXBuildFile; fileRef = F58111B81F7F7FA300B9A214 /* shaderf.fsh */; };
+		F58111E11F7F7FA300B9A214 /* shaderv.vsh in Resources */ = {isa = PBXBuildFile; fileRef = F58111B91F7F7FA300B9A214 /* shaderv.vsh */; };
+		F58111E21F7F7FA300B9A214 /* ShaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111BB1F7F7FA300B9A214 /* ShaderViewController.m */; };
+		F58111E31F7F7FA300B9A214 /* RotateEarthVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111BF1F7F7FA300B9A214 /* RotateEarthVC.m */; };
+		F58111E41F7F7FA300B9A214 /* AGLKVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111C31F7F7FA300B9A214 /* AGLKVertexAttribArrayBuffer.m */; };
+		F58111E51F7F7FA300B9A214 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = F58111C61F7F7FA300B9A214 /* sphere.obj */; };
+		F58111E61F7F7FA300B9A214 /* RotateEarthMoonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111C81F7F7FA300B9A214 /* RotateEarthMoonVC.m */; };
+		F58111E71F7F7FA300B9A214 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111CA1F7F7FA300B9A214 /* AppDelegate.m */; };
+		F58111E81F7F7FA300B9A214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58111CB1F7F7FA300B9A214 /* Assets.xcassets */; };
+		F58111E91F7F7FA300B9A214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58111CC1F7F7FA300B9A214 /* LaunchScreen.storyboard */; };
+		F58111EA1F7F7FA300B9A214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F58111CE1F7F7FA300B9A214 /* Main.storyboard */; };
+		F58111EB1F7F7FA300B9A214 /* abc.png in Resources */ = {isa = PBXBuildFile; fileRef = F58111D11F7F7FA300B9A214 /* abc.png */; };
+		F58111EC1F7F7FA300B9A214 /* earth-diffuse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F58111D21F7F7FA300B9A214 /* earth-diffuse.jpg */; };
+		F58111ED1F7F7FA300B9A214 /* Earth512x256.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F58111D31F7F7FA300B9A214 /* Earth512x256.jpg */; };
+		F58111EE1F7F7FA300B9A214 /* earth_light.png in Resources */ = {isa = PBXBuildFile; fileRef = F58111D41F7F7FA300B9A214 /* earth_light.png */; };
+		F58111EF1F7F7FA300B9A214 /* for_test.png in Resources */ = {isa = PBXBuildFile; fileRef = F58111D51F7F7FA300B9A214 /* for_test.png */; };
+		F58111F01F7F7FA300B9A214 /* Moon256x128.png in Resources */ = {isa = PBXBuildFile; fileRef = F58111D61F7F7FA300B9A214 /* Moon256x128.png */; };
+		F58111F11F7F7FA300B9A214 /* solar-glare1.png in Resources */ = {isa = PBXBuildFile; fileRef = F58111D71F7F7FA300B9A214 /* solar-glare1.png */; };
+		F58111F21F7F7FA300B9A214 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F58111D81F7F7FA300B9A214 /* Info.plist */; };
+		F58111F31F7F7FA300B9A214 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111D91F7F7FA300B9A214 /* main.m */; };
+		F58111F41F7F7FA300B9A214 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111DB1F7F7FA300B9A214 /* TableViewController.m */; };
+		F58111F51F7F7FA300B9A214 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111DD1F7F7FA300B9A214 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2CA47A59FD14C2C681DDE75B /* Pods-Shows-OpenGL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shows-OpenGL.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Shows-OpenGL/Pods-Shows-OpenGL.debug.xcconfig"; sourceTree = "<group>"; };
+		52930A004A760E61B1B48621 /* libPods-Shows-OpenGL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shows-OpenGL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF39111E410B1A31D9E065AC /* Pods-Shows-OpenGL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shows-OpenGL.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Shows-OpenGL/Pods-Shows-OpenGL.release.xcconfig"; sourceTree = "<group>"; };
+		F58111B31F7F7FA300B9A214 /* GLKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLKitViewController.h; sourceTree = "<group>"; };
+		F58111B41F7F7FA300B9A214 /* GLKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLKitViewController.m; sourceTree = "<group>"; };
+		F58111B61F7F7FA300B9A214 /* LearnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LearnView.h; sourceTree = "<group>"; };
+		F58111B71F7F7FA300B9A214 /* LearnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LearnView.m; sourceTree = "<group>"; };
+		F58111B81F7F7FA300B9A214 /* shaderf.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderf.fsh; sourceTree = "<group>"; };
+		F58111B91F7F7FA300B9A214 /* shaderv.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shaderv.vsh; sourceTree = "<group>"; };
+		F58111BA1F7F7FA300B9A214 /* ShaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderViewController.h; sourceTree = "<group>"; };
+		F58111BB1F7F7FA300B9A214 /* ShaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderViewController.m; sourceTree = "<group>"; };
+		F58111BD1F7F7FA300B9A214 /* OSSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSphere.h; sourceTree = "<group>"; };
+		F58111BE1F7F7FA300B9A214 /* RotateEarthVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateEarthVC.h; sourceTree = "<group>"; };
+		F58111BF1F7F7FA300B9A214 /* RotateEarthVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateEarthVC.m; sourceTree = "<group>"; };
+		F58111C21F7F7FA300B9A214 /* AGLKVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLKVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		F58111C31F7F7FA300B9A214 /* AGLKVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLKVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+		F58111C51F7F7FA300B9A214 /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		F58111C61F7F7FA300B9A214 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		F58111C71F7F7FA300B9A214 /* RotateEarthMoonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateEarthMoonVC.h; sourceTree = "<group>"; };
+		F58111C81F7F7FA300B9A214 /* RotateEarthMoonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateEarthMoonVC.m; sourceTree = "<group>"; };
+		F58111C91F7F7FA300B9A214 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F58111CA1F7F7FA300B9A214 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F58111CB1F7F7FA300B9A214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F58111CD1F7F7FA300B9A214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F58111CF1F7F7FA300B9A214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F58111D11F7F7FA300B9A214 /* abc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abc.png; sourceTree = "<group>"; };
+		F58111D21F7F7FA300B9A214 /* earth-diffuse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earth-diffuse.jpg"; sourceTree = "<group>"; };
+		F58111D31F7F7FA300B9A214 /* Earth512x256.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth512x256.jpg; sourceTree = "<group>"; };
+		F58111D41F7F7FA300B9A214 /* earth_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth_light.png; sourceTree = "<group>"; };
+		F58111D51F7F7FA300B9A214 /* for_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = for_test.png; sourceTree = "<group>"; };
+		F58111D61F7F7FA300B9A214 /* Moon256x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Moon256x128.png; sourceTree = "<group>"; };
+		F58111D71F7F7FA300B9A214 /* solar-glare1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "solar-glare1.png"; sourceTree = "<group>"; };
+		F58111D81F7F7FA300B9A214 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F58111D91F7F7FA300B9A214 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F58111DA1F7F7FA300B9A214 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		F58111DB1F7F7FA300B9A214 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		F58111DC1F7F7FA300B9A214 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F58111DD1F7F7FA300B9A214 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5E8D3B81F0F22D700EF9FA5 /* OpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5E8D3D61F0F282100EF9FA5 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		F5E8D3D81F0F283C00EF9FA5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F5E8D3F51F0F5D2100EF9FA5 /* libCommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCommon.a; path = "../../../../../Library/Developer/Xcode/DerivedData/iOSCode-alxenavqbpizogaapmewmdffplxz/Build/Products/Debug-iphonesimulator/libCommon.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5E8D3B51F0F22D700EF9FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B7872FF1F814E34E95ED56 /* libPods-Shows-OpenGL.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEB3DF8D5610811DB1581448 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2CA47A59FD14C2C681DDE75B /* Pods-Shows-OpenGL.debug.xcconfig */,
+				CF39111E410B1A31D9E065AC /* Pods-Shows-OpenGL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F58111B11F7F7FA300B9A214 /* OpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				F58111B21F7F7FA300B9A214 /* 01-GLKit */,
+				F58111B51F7F7FA300B9A214 /* 02-Shader */,
+				F58111BC1F7F7FA300B9A214 /* 03-RotateEarth */,
+				F58111C01F7F7FA300B9A214 /* 04-RotateEarthMoon */,
+				F58111C91F7F7FA300B9A214 /* AppDelegate.h */,
+				F58111CA1F7F7FA300B9A214 /* AppDelegate.m */,
+				F58111CB1F7F7FA300B9A214 /* Assets.xcassets */,
+				F58111CC1F7F7FA300B9A214 /* LaunchScreen.storyboard */,
+				F58111CE1F7F7FA300B9A214 /* Main.storyboard */,
+				F58111D01F7F7FA300B9A214 /* images */,
+				F58111D81F7F7FA300B9A214 /* Info.plist */,
+				F58111D91F7F7FA300B9A214 /* main.m */,
+				F58111DA1F7F7FA300B9A214 /* TableViewController.h */,
+				F58111DB1F7F7FA300B9A214 /* TableViewController.m */,
+				F58111DC1F7F7FA300B9A214 /* ViewController.h */,
+				F58111DD1F7F7FA300B9A214 /* ViewController.m */,
+			);
+			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		F58111B21F7F7FA300B9A214 /* 01-GLKit */ = {
+			isa = PBXGroup;
+			children = (
+				F58111B31F7F7FA300B9A214 /* GLKitViewController.h */,
+				F58111B41F7F7FA300B9A214 /* GLKitViewController.m */,
+			);
+			path = "01-GLKit";
+			sourceTree = "<group>";
+		};
+		F58111B51F7F7FA300B9A214 /* 02-Shader */ = {
+			isa = PBXGroup;
+			children = (
+				F58111B61F7F7FA300B9A214 /* LearnView.h */,
+				F58111B71F7F7FA300B9A214 /* LearnView.m */,
+				F58111B81F7F7FA300B9A214 /* shaderf.fsh */,
+				F58111B91F7F7FA300B9A214 /* shaderv.vsh */,
+				F58111BA1F7F7FA300B9A214 /* ShaderViewController.h */,
+				F58111BB1F7F7FA300B9A214 /* ShaderViewController.m */,
+			);
+			path = "02-Shader";
+			sourceTree = "<group>";
+		};
+		F58111BC1F7F7FA300B9A214 /* 03-RotateEarth */ = {
+			isa = PBXGroup;
+			children = (
+				F58111BD1F7F7FA300B9A214 /* OSSphere.h */,
+				F58111BE1F7F7FA300B9A214 /* RotateEarthVC.h */,
+				F58111BF1F7F7FA300B9A214 /* RotateEarthVC.m */,
+			);
+			path = "03-RotateEarth";
+			sourceTree = "<group>";
+		};
+		F58111C01F7F7FA300B9A214 /* 04-RotateEarthMoon */ = {
+			isa = PBXGroup;
+			children = (
+				F58111C11F7F7FA300B9A214 /* Kit */,
+				F58111C41F7F7FA300B9A214 /* res */,
+				F58111C71F7F7FA300B9A214 /* RotateEarthMoonVC.h */,
+				F58111C81F7F7FA300B9A214 /* RotateEarthMoonVC.m */,
+			);
+			path = "04-RotateEarthMoon";
+			sourceTree = "<group>";
+		};
+		F58111C11F7F7FA300B9A214 /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				F58111C21F7F7FA300B9A214 /* AGLKVertexAttribArrayBuffer.h */,
+				F58111C31F7F7FA300B9A214 /* AGLKVertexAttribArrayBuffer.m */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		F58111C41F7F7FA300B9A214 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				F58111C51F7F7FA300B9A214 /* sphere.h */,
+				F58111C61F7F7FA300B9A214 /* sphere.obj */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		F58111D01F7F7FA300B9A214 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F58111D11F7F7FA300B9A214 /* abc.png */,
+				F58111D21F7F7FA300B9A214 /* earth-diffuse.jpg */,
+				F58111D31F7F7FA300B9A214 /* Earth512x256.jpg */,
+				F58111D41F7F7FA300B9A214 /* earth_light.png */,
+				F58111D51F7F7FA300B9A214 /* for_test.png */,
+				F58111D61F7F7FA300B9A214 /* Moon256x128.png */,
+				F58111D71F7F7FA300B9A214 /* solar-glare1.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		F5E8D3AF1F0F22D600EF9FA5 = {
+			isa = PBXGroup;
+			children = (
+				F58111B11F7F7FA300B9A214 /* OpenGL */,
+				F5E8D3B91F0F22D700EF9FA5 /* Products */,
+				F5E8D3D51F0F282100EF9FA5 /* Frameworks */,
+				EEB3DF8D5610811DB1581448 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F5E8D3B91F0F22D700EF9FA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8D3B81F0F22D700EF9FA5 /* OpenGL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5E8D3D51F0F282100EF9FA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5E8D3F51F0F5D2100EF9FA5 /* libCommon.a */,
+				F5E8D3D81F0F283C00EF9FA5 /* OpenGLES.framework */,
+				F5E8D3D61F0F282100EF9FA5 /* GLKit.framework */,
+				52930A004A760E61B1B48621 /* libPods-Shows-OpenGL.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5E8D3B71F0F22D700EF9FA5 /* OpenGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5E8D3CF1F0F22D700EF9FA5 /* Build configuration list for PBXNativeTarget "OpenGL" */;
+			buildPhases = (
+				086B776D87AC5E339C9B47C7 /* [CP] Check Pods Manifest.lock */,
+				F5E8D3B41F0F22D700EF9FA5 /* Sources */,
+				F5E8D3B61F0F22D700EF9FA5 /* Resources */,
+				F5E8D3B51F0F22D700EF9FA5 /* Frameworks */,
+				731E6AB2BE5231E12C3E9FFA /* [CP] Embed Pods Frameworks */,
+				27D09888CB666DD098E097BA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGL;
+			productName = OpenGL;
+			productReference = F5E8D3B81F0F22D700EF9FA5 /* OpenGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5E8D3B01F0F22D600EF9FA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Lenovo-Apple";
+				TargetAttributes = {
+					F5E8D3B71F0F22D700EF9FA5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4S7HJ2TM84;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F5E8D3B31F0F22D600EF9FA5 /* Build configuration list for PBXProject "OpenGL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5E8D3AF1F0F22D600EF9FA5;
+			productRefGroup = F5E8D3B91F0F22D700EF9FA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5E8D3B71F0F22D700EF9FA5 /* OpenGL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5E8D3B61F0F22D700EF9FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58111EF1F7F7FA300B9A214 /* for_test.png in Resources */,
+				F58111E01F7F7FA300B9A214 /* shaderf.fsh in Resources */,
+				F58111E51F7F7FA300B9A214 /* sphere.obj in Resources */,
+				F58111E81F7F7FA300B9A214 /* Assets.xcassets in Resources */,
+				F58111EA1F7F7FA300B9A214 /* Main.storyboard in Resources */,
+				F58111EB1F7F7FA300B9A214 /* abc.png in Resources */,
+				F58111F21F7F7FA300B9A214 /* Info.plist in Resources */,
+				F58111E91F7F7FA300B9A214 /* LaunchScreen.storyboard in Resources */,
+				F58111F01F7F7FA300B9A214 /* Moon256x128.png in Resources */,
+				F58111E11F7F7FA300B9A214 /* shaderv.vsh in Resources */,
+				F58111EE1F7F7FA300B9A214 /* earth_light.png in Resources */,
+				F58111EC1F7F7FA300B9A214 /* earth-diffuse.jpg in Resources */,
+				F58111F11F7F7FA300B9A214 /* solar-glare1.png in Resources */,
+				F58111ED1F7F7FA300B9A214 /* Earth512x256.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		086B776D87AC5E339C9B47C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		27D09888CB666DD098E097BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Shows-OpenGL/Pods-Shows-OpenGL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		731E6AB2BE5231E12C3E9FFA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Shows-OpenGL/Pods-Shows-OpenGL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5E8D3B41F0F22D700EF9FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58111DE1F7F7FA300B9A214 /* GLKitViewController.m in Sources */,
+				F58111DF1F7F7FA300B9A214 /* LearnView.m in Sources */,
+				F58111E41F7F7FA300B9A214 /* AGLKVertexAttribArrayBuffer.m in Sources */,
+				F58111E31F7F7FA300B9A214 /* RotateEarthVC.m in Sources */,
+				F58111F51F7F7FA300B9A214 /* ViewController.m in Sources */,
+				F58111F41F7F7FA300B9A214 /* TableViewController.m in Sources */,
+				F58111E21F7F7FA300B9A214 /* ShaderViewController.m in Sources */,
+				F58111E61F7F7FA300B9A214 /* RotateEarthMoonVC.m in Sources */,
+				F58111F31F7F7FA300B9A214 /* main.m in Sources */,
+				F58111E71F7F7FA300B9A214 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F58111CC1F7F7FA300B9A214 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58111CD1F7F7FA300B9A214 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F58111CE1F7F7FA300B9A214 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58111CF1F7F7FA300B9A214 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5E8D3CD1F0F22D700EF9FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5E8D3CE1F0F22D700EF9FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5E8D3D01F0F22D700EF9FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CA47A59FD14C2C681DDE75B /* Pods-Shows-OpenGL.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S7HJ2TM84;
+				INFOPLIST_FILE = OpenGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.OpenGL";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5E8D3D11F0F22D700EF9FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF39111E410B1A31D9E065AC /* Pods-Shows-OpenGL.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S7HJ2TM84;
+				INFOPLIST_FILE = OpenGL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.OpenGL";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5E8D3B31F0F22D600EF9FA5 /* Build configuration list for PBXProject "OpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5E8D3CD1F0F22D700EF9FA5 /* Debug */,
+				F5E8D3CE1F0F22D700EF9FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5E8D3CF1F0F22D700EF9FA5 /* Build configuration list for PBXNativeTarget "OpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5E8D3D01F0F22D700EF9FA5 /* Debug */,
+				F5E8D3D11F0F22D700EF9FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5E8D3B01F0F22D600EF9FA5 /* Project object */;
+}

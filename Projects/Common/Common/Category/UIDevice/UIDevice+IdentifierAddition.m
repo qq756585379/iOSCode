@@ -9,7 +9,6 @@
 #import "UIDevice+IdentifierAddition.h"
 #import "NSString+MD5.h"
 #import "NSString+safe.h"
-#import "OTSKeychain.h"
 #include <sys/socket.h> // Per msqr
 #include <sys/sysctl.h>
 #include <net/if.h>
@@ -66,17 +65,17 @@
 
 - (NSString *) uniqueDeviceIdentifier{
     NSString *code = nil;
-    NSString *keyChain_deviceCode = [OTSKeychain getKeychainValueForType:OTS_KEYCHAIN_DEVICECODE];
-    if (keyChain_deviceCode == nil || keyChain_deviceCode.length<10) {  // 若keychain里面没有或者长度因为什么原因很短的话，重新获取一次再储存
-        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
-            code = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
-        } else {
-            code = [NSString safeStringWithString:[[UIDevice currentDevice] macaddress]];
-        }
-        [OTSKeychain  setKeychainValue:code forType:OTS_KEYCHAIN_DEVICECODE];
-    } else {
-        code = keyChain_deviceCode;
-    }
+//    NSString *keyChain_deviceCode = [OTSKeychain getKeychainValueForType:OTS_KEYCHAIN_DEVICECODE];
+//    if (keyChain_deviceCode == nil || keyChain_deviceCode.length<10) {  // 若keychain里面没有或者长度因为什么原因很短的话，重新获取一次再储存
+//        if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
+//            code = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+//        } else {
+//            code = [NSString safeStringWithString:[[UIDevice currentDevice] macaddress]];
+//        }
+//        [OTSKeychain  setKeychainValue:code forType:OTS_KEYCHAIN_DEVICECODE];
+//    } else {
+//        code = keyChain_deviceCode;
+//    }
     return code;
 }
 
