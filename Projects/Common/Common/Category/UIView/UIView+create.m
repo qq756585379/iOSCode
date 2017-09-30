@@ -7,11 +7,9 @@
 //
 
 #import "UIView+create.h"
-
 #import "UINib+create.h"
 #import "OTSFont.h"
 #import "OTSSize.h"
-#import "OTSFuncDefine.h"
 
 @implementation UIView (create)
 

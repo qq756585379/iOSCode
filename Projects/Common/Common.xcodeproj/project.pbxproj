@@ -40,6 +40,10 @@
 		F51EC0EC1F1C552500735E7C /* UIViewController+dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0EB1F1C552500735E7C /* UIViewController+dealloc.m */; };
 		F51EC0F51F1C55BC00735E7C /* OTSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0F11F1C55BC00735E7C /* OTSFileManager.m */; };
 		F51EC0F61F1C55BC00735E7C /* OTSUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F51EC0F41F1C55BC00735E7C /* OTSUserDefault.m */; };
+		F58C94001F551A0F00B8281F /* UINib+create.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C93FF1F551A0F00B8281F /* UINib+create.m */; };
+		F58C94031F551A7500B8281F /* UIView+EnlargeArea.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C94021F551A7500B8281F /* UIView+EnlargeArea.m */; };
+		F58C94091F551B6000B8281F /* OTSFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C94081F551B6000B8281F /* OTSFont.m */; };
+		F58C940E1F551BD800B8281F /* OTSSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F58C940D1F551BD800B8281F /* OTSSize.m */; };
 		F5A3CFCF1F452BF6000D2F7B /* NSObject+BeeNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFBE1F452BF6000D2F7B /* NSObject+BeeNotification.m */; };
 		F5A3CFD01F452BF6000D2F7B /* NSObject+category.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFC01F452BF6000D2F7B /* NSObject+category.m */; };
 		F5A3CFD11F452BF6000D2F7B /* NSObject+coder.m in Sources */ = {isa = PBXBuildFile; fileRef = F5A3CFC21F452BF6000D2F7B /* NSObject+coder.m */; };
@@ -156,6 +160,14 @@
 		F51EC0F31F1C55BC00735E7C /* OTSUserDefault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSUserDefault.h; sourceTree = "<group>"; };
 		F51EC0F41F1C55BC00735E7C /* OTSUserDefault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSUserDefault.m; sourceTree = "<group>"; };
 		F51EC0F71F1C560700735E7C /* OTSNotificationDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNotificationDefine.h; sourceTree = "<group>"; };
+		F58C93FE1F551A0F00B8281F /* UINib+create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINib+create.h"; sourceTree = "<group>"; };
+		F58C93FF1F551A0F00B8281F /* UINib+create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINib+create.m"; sourceTree = "<group>"; };
+		F58C94011F551A7500B8281F /* UIView+EnlargeArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EnlargeArea.h"; sourceTree = "<group>"; };
+		F58C94021F551A7500B8281F /* UIView+EnlargeArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EnlargeArea.m"; sourceTree = "<group>"; };
+		F58C94071F551B6000B8281F /* OTSFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSFont.h; sourceTree = "<group>"; };
+		F58C94081F551B6000B8281F /* OTSFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSFont.m; sourceTree = "<group>"; };
+		F58C940C1F551BD800B8281F /* OTSSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSize.h; sourceTree = "<group>"; };
+		F58C940D1F551BD800B8281F /* OTSSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSize.m; sourceTree = "<group>"; };
 		F59446761F18A49800916A4F /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A3CFBD1F452BF6000D2F7B /* NSObject+BeeNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BeeNotification.h"; sourceTree = "<group>"; };
 		F5A3CFBE1F452BF6000D2F7B /* NSObject+BeeNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BeeNotification.m"; sourceTree = "<group>"; };
@@ -280,6 +292,7 @@
 		F51EC06C1F1C49D300735E7C /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F58C93FD1F551A0300B8281F /* Other */,
 				F5E49B0E1F53E8C70068D3F4 /* UIDevice */,
 				F5A3CFFD1F4532DC000D2F7B /* NSDate */,
 				F5A3CFF01F45305D000D2F7B /* NSNumber */,
@@ -327,6 +340,8 @@
 				F51EC0731F1C4A1600735E7C /* UIView+frame.m */,
 				F51EC0741F1C4A1600735E7C /* UIView+Util.h */,
 				F51EC0751F1C4A1600735E7C /* UIView+Util.m */,
+				F58C94011F551A7500B8281F /* UIView+EnlargeArea.h */,
+				F58C94021F551A7500B8281F /* UIView+EnlargeArea.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -402,6 +417,10 @@
 				F51EC0EE1F1C55BC00735E7C /* DataCache */,
 				F5E49B241F53EB540068D3F4 /* OTSLog.h */,
 				F5E49B251F53EB540068D3F4 /* OTSLog.m */,
+				F58C940C1F551BD800B8281F /* OTSSize.h */,
+				F58C940D1F551BD800B8281F /* OTSSize.m */,
+				F58C94071F551B6000B8281F /* OTSFont.h */,
+				F58C94081F551B6000B8281F /* OTSFont.m */,
 				F5E49B271F53EB840068D3F4 /* IMICatchCrash.h */,
 				F5E49B281F53EB840068D3F4 /* IMICatchCrash.m */,
 				F51EC0A21F1C4CC600735E7C /* XMGFileTool.h */,
@@ -488,6 +507,15 @@
 				F51EC0F41F1C55BC00735E7C /* OTSUserDefault.m */,
 			);
 			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		F58C93FD1F551A0300B8281F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F58C93FE1F551A0F00B8281F /* UINib+create.h */,
+				F58C93FF1F551A0F00B8281F /* UINib+create.m */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		F594466D1F18A49800916A4F = {
@@ -664,6 +692,7 @@
 				F51EC0F61F1C55BC00735E7C /* OTSUserDefault.m in Sources */,
 				F51EC07E1F1C4A3100735E7C /* UIImage+Util.m in Sources */,
 				F5E4A0291F5422770068D3F4 /* UIView+IB.m in Sources */,
+				F58C94031F551A7500B8281F /* UIView+EnlargeArea.m in Sources */,
 				F5A3CFD11F452BF6000D2F7B /* NSObject+coder.m in Sources */,
 				F5E49B651F53EFE40068D3F4 /* OTSCoreDataManager.m in Sources */,
 				F5A3CFD31F452BF6000D2F7B /* NSObject+PerformBlock.m in Sources */,
@@ -674,15 +703,18 @@
 				F5A3CFD61F452BF6000D2F7B /* NSObject+swizzle.m in Sources */,
 				F51EC0C81F1C4E5900735E7C /* MHVAlignLabel.m in Sources */,
 				F5A3CFD01F452BF6000D2F7B /* NSObject+category.m in Sources */,
+				F58C94091F551B6000B8281F /* OTSFont.m in Sources */,
 				F5E49B211F53E9B30068D3F4 /* KeychainItemWrapper.m in Sources */,
 				F51EC08E1F1C4BFB00735E7C /* UIBarButtonItem+Util.m in Sources */,
 				F5070B581F2B15D2002C0ADF /* NSMutableArray+safe.m in Sources */,
 				F51636661F39BDC200F47DC6 /* OTSTableViewCell.m in Sources */,
 				F5E49B221F53E9B30068D3F4 /* OTSKeychain.m in Sources */,
+				F58C940E1F551BD800B8281F /* OTSSize.m in Sources */,
 				F51EC0D41F1C4ED900735E7C /* OTSCollectionViewCell.m in Sources */,
 				F51EC0EC1F1C552500735E7C /* UIViewController+dealloc.m in Sources */,
 				F51EC0F51F1C55BC00735E7C /* OTSFileManager.m in Sources */,
 				F5A3CFF61F45313E000D2F7B /* UIColor+CustomColor.m in Sources */,
+				F58C94001F551A0F00B8281F /* UINib+create.m in Sources */,
 				F5A3CFF31F45305D000D2F7B /* NSNumber+Format.m in Sources */,
 				F5A3CFD21F452BF6000D2F7B /* NSObject+JsonToVO.m in Sources */,
 				F5A3CFEF1F452F45000D2F7B /* NSObject+safe.m in Sources */,

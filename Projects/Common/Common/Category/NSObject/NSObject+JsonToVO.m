@@ -99,7 +99,6 @@
  */
 - (NSArray *)getPropertyList
 {
-	//tips：原先的方法没法处理超过两层继承的类
 	 return [self getPropertyList:[self class]];
 }
 
@@ -337,8 +336,7 @@
 /**
  *  将一个VO类对象转为NSMutabileDictionary类型
  */
-- (NSMutableDictionary *)convertDictionary
-{
+- (NSMutableDictionary *)convertDictionary{
     if (!self) {
         return nil;
     }

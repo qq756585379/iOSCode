@@ -11,9 +11,6 @@
       location = "group:Projects/Demos/Demos.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Projects/OneStore/OneStore.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
