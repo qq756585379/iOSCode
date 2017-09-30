@@ -12,4 +12,6 @@
 
 - (NSString *)stringFromMD5;
 
+- (NSString *)MD5Hash;
+
 @end

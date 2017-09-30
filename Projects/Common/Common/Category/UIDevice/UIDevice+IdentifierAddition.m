@@ -7,12 +7,9 @@
 //
 
 #import "UIDevice+IdentifierAddition.h"
-//category
 #import "NSString+MD5.h"
 #import "NSString+safe.h"
-//cache
 #import "OTSKeychain.h"
-
 #include <sys/socket.h> // Per msqr
 #include <sys/sysctl.h>
 #include <net/if.h>
@@ -80,7 +77,6 @@
     } else {
         code = keyChain_deviceCode;
     }
-    
     return code;
 }
 
@@ -89,5 +85,4 @@
     NSString *uniqueIdentifier = [macaddress stringFromMD5];
     return uniqueIdentifier;
 }
-
 @end

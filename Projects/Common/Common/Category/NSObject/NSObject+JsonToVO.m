@@ -8,13 +8,11 @@
 
 #import "NSObject+JsonToVO.h"
 #import <objc/runtime.h>
-//category
 #import "NSObject+category.h"
 #import "NSString+safe.h"
 #import "NSMutableDictionary+safe.h"
 #import "NSMutableArray+safe.h"
 #import "NSArray+safe.h"
-#import <JSONModel.h>
 
 @implementation NSObject (JsonToVO)
 
@@ -44,8 +42,7 @@
 /**
  *  获取类名   voName是dictionary中标记实体类的类名的
  */
-+ (NSString *)classNameWithDictionary:(NSDictionary*)dic
-{
++ (NSString *)classNameWithDictionary:(NSDictionary*)dic{
     if (!dic) {
         return nil;
     }
@@ -68,10 +65,8 @@
 /**
  *  获取参数class类的所有属性
  */
-- (NSMutableArray *)getPropertyList:(Class)class
-{
-	if ([ NSStringFromClass(class) isEqualToString:NSStringFromClass([NSObject class])]
-		||[ NSStringFromClass(class) isEqualToString:NSStringFromClass([JSONModel class])]) {
+- (NSMutableArray *)getPropertyList:(Class)class{
+	if ([NSStringFromClass(class) isEqualToString:NSStringFromClass([NSObject class])]) {
 		return nil;
     }
     u_int count;

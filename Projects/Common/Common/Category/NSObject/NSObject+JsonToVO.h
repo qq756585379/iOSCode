@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (JsonToVO)
-
 /*
  *  通过dicdtionary获取其中的VO对象的名称
  */
