@@ -64,7 +64,6 @@
 		F581119B1F7F44FD00B9A214 /* OTSUserDefault.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111581F7F44FC00B9A214 /* OTSUserDefault.m */; };
 		F581119C1F7F44FD00B9A214 /* IMICatchCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = F581115A1F7F44FC00B9A214 /* IMICatchCrash.m */; };
 		F581119D1F7F44FD00B9A214 /* OTSFont.m in Sources */ = {isa = PBXBuildFile; fileRef = F581115C1F7F44FC00B9A214 /* OTSFont.m */; };
-		F581119E1F7F44FD00B9A214 /* OTSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = F581115E1F7F44FC00B9A214 /* OTSLog.m */; };
 		F581119F1F7F44FD00B9A214 /* OTSSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111601F7F44FC00B9A214 /* OTSSize.m */; };
 		F58111A01F7F44FD00B9A214 /* OTSWeakObjectDeathNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111621F7F44FC00B9A214 /* OTSWeakObjectDeathNotifier.m */; };
 		F58111A11F7F44FD00B9A214 /* XMGFileTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111641F7F44FC00B9A214 /* XMGFileTool.m */; };
@@ -203,8 +202,6 @@
 		F581115A1F7F44FC00B9A214 /* IMICatchCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMICatchCrash.m; sourceTree = "<group>"; };
 		F581115B1F7F44FC00B9A214 /* OTSFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSFont.h; sourceTree = "<group>"; };
 		F581115C1F7F44FC00B9A214 /* OTSFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSFont.m; sourceTree = "<group>"; };
-		F581115D1F7F44FC00B9A214 /* OTSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSLog.h; sourceTree = "<group>"; };
-		F581115E1F7F44FC00B9A214 /* OTSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSLog.m; sourceTree = "<group>"; };
 		F581115F1F7F44FC00B9A214 /* OTSSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSSize.h; sourceTree = "<group>"; };
 		F58111601F7F44FC00B9A214 /* OTSSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSSize.m; sourceTree = "<group>"; };
 		F58111611F7F44FC00B9A214 /* OTSWeakObjectDeathNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSWeakObjectDeathNotifier.h; sourceTree = "<group>"; };
@@ -503,8 +500,6 @@
 				F581115A1F7F44FC00B9A214 /* IMICatchCrash.m */,
 				F581115B1F7F44FC00B9A214 /* OTSFont.h */,
 				F581115C1F7F44FC00B9A214 /* OTSFont.m */,
-				F581115D1F7F44FC00B9A214 /* OTSLog.h */,
-				F581115E1F7F44FC00B9A214 /* OTSLog.m */,
 				F581115F1F7F44FC00B9A214 /* OTSSize.h */,
 				F58111601F7F44FC00B9A214 /* OTSSize.m */,
 				F58111611F7F44FC00B9A214 /* OTSWeakObjectDeathNotifier.h */,
@@ -653,7 +648,6 @@
 				F58111721F7F44FC00B9A214 /* NSObject+BeeNotification.m in Sources */,
 				F58111691F7F44FC00B9A214 /* OTSCollectionViewCell.m in Sources */,
 				F58111931F7F44FD00B9A214 /* UIView+EnlargeArea.m in Sources */,
-				F581119E1F7F44FD00B9A214 /* OTSLog.m in Sources */,
 				F58111971F7F44FD00B9A214 /* Foundation+Log.m in Sources */,
 				F581117B1F7F44FD00B9A214 /* NSString+safe.m in Sources */,
 				F58111831F7F44FD00B9A214 /* NSMutableString+safe.m in Sources */,

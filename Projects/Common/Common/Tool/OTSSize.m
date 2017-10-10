@@ -7,7 +7,6 @@
 //
 
 #import "OTSSize.h"
-#import "OTSLog.h"
 
 @implementation OTSSize
 
