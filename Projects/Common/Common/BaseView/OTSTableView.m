@@ -8,7 +8,6 @@
 
 #import "OTSTableView.h"
 #import "OTSTableViewCell.h"
-//category
 #import "NSObject+BeeNotification.h"
 #import "OTSWeakObjectDeathNotifier.h"
 
@@ -40,28 +39,22 @@
     }
 }
 
-- (void)selectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition
-{
+- (void)selectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated scrollPosition:(UITableViewScrollPosition)scrollPosition{
     if (indexPath.section >= self.numberOfSections) {
         return;
-    }
-    else if (indexPath.row >= [self numberOfRowsInSection:indexPath.section]) {
+    } else if (indexPath.row >= [self numberOfRowsInSection:indexPath.section]) {
         return;
-    }
-    else {
+    } else {
         return [super selectRowAtIndexPath:indexPath animated:animated scrollPosition:scrollPosition];
     }
 }
 
-- (UITableViewCell *)cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section >= self.numberOfSections) {
         return nil;
-    }
-    else if (indexPath.row >= [self numberOfRowsInSection:indexPath.section]) {
+    }else if (indexPath.row >= [self numberOfRowsInSection:indexPath.section]) {
         return nil;
-    }
-    else {
+    } else {
         return [super cellForRowAtIndexPath:indexPath];
     }
 }
@@ -89,11 +82,9 @@
     NSUInteger lastIndex = sections.lastIndex;
     if (sections == nil) {
         return ;
-    }
-    else if (lastIndex >= self.numberOfSections) {
+    }else if (lastIndex >= self.numberOfSections) {
         return ;
-    }
-    else {
+    }else {
         return [super reloadSections:sections withRowAnimation:animation];
     }
 }

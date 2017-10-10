@@ -7,7 +7,6 @@
 //
 
 #import "OTSTableViewCell.h"
-//category
 #import "NSObject+BeeNotification.h"
 
 @implementation OTSTableViewCell
@@ -22,7 +21,9 @@
 }
 
 - (void)setFrame:(CGRect)frame{
-    CGRect rc = CGRectMake(frame.origin.x + self.cellEdgeInsets.left, frame.origin.y + self.cellEdgeInsets.top, frame.size.width - self.cellEdgeInsets.left - self.cellEdgeInsets.right, frame.size.height - self.cellEdgeInsets.top - self.cellEdgeInsets.bottom);
+    CGRect rc = CGRectMake(frame.origin.x + self.cellEdgeInsets.left, frame.origin.y + self.cellEdgeInsets.top,
+                           frame.size.width - self.cellEdgeInsets.left - self.cellEdgeInsets.right,
+                           frame.size.height - self.cellEdgeInsets.top - self.cellEdgeInsets.bottom);
     [super setFrame:rc];
 }
 
@@ -52,8 +53,7 @@
     return size.height;
 }
 
-+ (CGFloat)heightForCellData:(id)aData atIndexPath:(NSIndexPath *)indexPath
-{
++ (CGFloat)heightForCellData:(id)aData atIndexPath:(NSIndexPath *)indexPath{
     return 0;
 }
 
@@ -70,8 +70,7 @@
         }
         if (view.superview) {
             view = view.superview;
-        }
-        else {
+        }else {
             break;
         }
     }

@@ -26,11 +26,15 @@ abstract_target 'Shows' do
     pod 'FLAnimatedImage', '~> 1.0.12'
     pod 'RegexKitLite', '~> 4.0'
     pod 'YYText', '~> 1.0.7'
+    pod 'KILabel', '~> 1.0.1'
     
     target 'Demos' do
         project './Projects/Demos/Demos.xcodeproj'
     end
     target 'OpenGL' do
         project './Projects/OpenGL/OpenGL.xcodeproj'
+    end
+    target 'WeiChat' do
+        project './Projects/WeiChat/WeiChat.xcodeproj'
     end
 end

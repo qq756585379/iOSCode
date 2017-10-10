@@ -37,9 +37,7 @@
     self.examples = @[[MBExample exampleWithTitle:@"Indeterminate mode" selector:@selector(indeterminateExample)],
                       [MBExample exampleWithTitle:@"With label" selector:@selector(labelExample)],
                       [MBExample exampleWithTitle:@"With details label" selector:@selector(detailsLabelExample)],
-          
                       ];
-    
     MHGradientColorView *view = [[MHGradientColorView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
     [self.view addSubview:view];
 }
@@ -48,8 +46,6 @@
     //    [self.navigationController pushViewController:[GCDTestVC new] animated:YES];
     [self.navigationController pushViewController:[RACViewController new] animated:YES];
 }
-
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.examples.count;
@@ -65,7 +61,6 @@
     return cell;
 }
 
-#pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     MBExample *example = self.examples[indexPath.section][indexPath.row];
 #pragma clang diagnostic push

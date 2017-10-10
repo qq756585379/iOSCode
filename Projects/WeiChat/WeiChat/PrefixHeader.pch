@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  WeiChat
+//
+//  Created by 杨俊 on 2017/10/10.
+//  Copyright © 2017年 Lenovo-Apple. All rights reserved.
+//
+
+#import "UIView+frame.h"
+#import "ColorDefine.h"
+#import "CommonDefine.h"
+
+
+#define BACKGROUNDCOLOR   HEXRGBCOLOR(0xf4f1f1)

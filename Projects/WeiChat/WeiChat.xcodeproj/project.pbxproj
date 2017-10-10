@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58F8FE775E15F517BD6D3637 /* libPods-Shows-WeiChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CB933DADF6F39FA4D9D85B /* libPods-Shows-WeiChat.a */; };
+		F5184A271F8C584A0031C854 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A261F8C584A0031C854 /* AppDelegate.m */; };
+		F5184A2D1F8C584A0031C854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5184A2B1F8C584A0031C854 /* Main.storyboard */; };
+		F5184A2F1F8C584A0031C854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5184A2E1F8C584A0031C854 /* Assets.xcassets */; };
+		F5184A321F8C584A0031C854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5184A301F8C584A0031C854 /* LaunchScreen.storyboard */; };
+		F5184A351F8C584A0031C854 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A341F8C584A0031C854 /* main.m */; };
+		F5184A3F1F8C7AB50031C854 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A3E1F8C7AB50031C854 /* TabBarViewController.m */; };
+		F5184A421F8C7AD00031C854 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A411F8C7AD00031C854 /* NavigationViewController.m */; };
+		F5184A471F8C7FAF0031C854 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A461F8C7FAF0031C854 /* ChatViewController.m */; };
+		F5184A4E1F8C89C10031C854 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A4D1F8C89C10031C854 /* BaseTableViewCell.m */; };
+		F5184A4F1F8CA12C0031C854 /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5184A501F8CA12C0031C854 /* libCommon.a */; };
+		F5184A571F8CA36B0031C854 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A561F8CA36B0031C854 /* MineViewController.m */; };
+		F5184A5A1F8CA37C0031C854 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A591F8CA37C0031C854 /* DiscoverViewController.m */; };
+		F5184A5D1F8CA3860031C854 /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A5C1F8CA3860031C854 /* ContactViewController.m */; };
+		F5184A611F8CABA40031C854 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A601F8CABA40031C854 /* User.m */; };
+		F5184A641F8CABC60031C854 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A631F8CABC60031C854 /* Group.m */; };
+		F52E2D0B1F8CC6890048BB01 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E2D0A1F8CC6890048BB01 /* MessageViewController.m */; };
+		F52E2D0E1F8CC9C60048BB01 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E2D0D1F8CC9C60048BB01 /* SearchTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06FFEE117DE9005F3741E3A3 /* Pods-Shows-WeiChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shows-WeiChat.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Shows-WeiChat/Pods-Shows-WeiChat.release.xcconfig"; sourceTree = "<group>"; };
+		62CB933DADF6F39FA4D9D85B /* libPods-Shows-WeiChat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shows-WeiChat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB93DCA68D48E5C948BF6695 /* Pods-Shows-WeiChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shows-WeiChat.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Shows-WeiChat/Pods-Shows-WeiChat.debug.xcconfig"; sourceTree = "<group>"; };
+		F5184A221F8C584A0031C854 /* WeiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5184A251F8C584A0031C854 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5184A261F8C584A0031C854 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5184A2C1F8C584A0031C854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5184A2E1F8C584A0031C854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5184A311F8C584A0031C854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5184A331F8C584A0031C854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5184A341F8C584A0031C854 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5184A3D1F8C7AB50031C854 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		F5184A3E1F8C7AB50031C854 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		F5184A401F8C7AD00031C854 /* NavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		F5184A411F8C7AD00031C854 /* NavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		F5184A451F8C7FAF0031C854 /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		F5184A461F8C7FAF0031C854 /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		F5184A4C1F8C89C10031C854 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		F5184A4D1F8C89C10031C854 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		F5184A501F8CA12C0031C854 /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5184A511F8CA1850031C854 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F5184A551F8CA36B0031C854 /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		F5184A561F8CA36B0031C854 /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		F5184A581F8CA37C0031C854 /* DiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		F5184A591F8CA37C0031C854 /* DiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		F5184A5B1F8CA3860031C854 /* ContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		F5184A5C1F8CA3860031C854 /* ContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
+		F5184A5F1F8CABA40031C854 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		F5184A601F8CABA40031C854 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		F5184A621F8CABC60031C854 /* Group.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		F5184A631F8CABC60031C854 /* Group.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+		F52E2D091F8CC6890048BB01 /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		F52E2D0A1F8CC6890048BB01 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		F52E2D0C1F8CC9C60048BB01 /* SearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
+		F52E2D0D1F8CC9C60048BB01 /* SearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5184A1F1F8C584A0031C854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5184A4F1F8CA12C0031C854 /* libCommon.a in Frameworks */,
+				58F8FE775E15F517BD6D3637 /* libPods-Shows-WeiChat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35D87BBEC7AAC866096470D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5184A501F8CA12C0031C854 /* libCommon.a */,
+				62CB933DADF6F39FA4D9D85B /* libPods-Shows-WeiChat.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7231CEB47027F2467375A99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB93DCA68D48E5C948BF6695 /* Pods-Shows-WeiChat.debug.xcconfig */,
+				06FFEE117DE9005F3741E3A3 /* Pods-Shows-WeiChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5184A191F8C584A0031C854 = {
+			isa = PBXGroup;
+			children = (
+				F5184A241F8C584A0031C854 /* WeiChat */,
+				F5184A231F8C584A0031C854 /* Products */,
+				D7231CEB47027F2467375A99 /* Pods */,
+				35D87BBEC7AAC866096470D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5184A231F8C584A0031C854 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5184A221F8C584A0031C854 /* WeiChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5184A241F8C584A0031C854 /* WeiChat */ = {
+			isa = PBXGroup;
+			children = (
+				F52E2D081F8CC3710048BB01 /* Message */,
+				F5184A5E1F8CAACF0031C854 /* Models */,
+				F5184A441F8C7F930031C854 /* Chat */,
+				F5184A541F8CA3550031C854 /* Mine */,
+				F5184A531F8CA3190031C854 /* Discover */,
+				F5184A521F8CA3030031C854 /* Contact */,
+				F5184A491F8C83490031C854 /* Base */,
+				F5184A431F8C7F870031C854 /* Common */,
+				F5184A3C1F8C7AA00031C854 /* Main */,
+				F5184A251F8C584A0031C854 /* AppDelegate.h */,
+				F5184A261F8C584A0031C854 /* AppDelegate.m */,
+				F5184A2B1F8C584A0031C854 /* Main.storyboard */,
+				F5184A2E1F8C584A0031C854 /* Assets.xcassets */,
+				F5184A301F8C584A0031C854 /* LaunchScreen.storyboard */,
+				F5184A331F8C584A0031C854 /* Info.plist */,
+				F5184A341F8C584A0031C854 /* main.m */,
+				F5184A511F8CA1850031C854 /* PrefixHeader.pch */,
+			);
+			path = WeiChat;
+			sourceTree = "<group>";
+		};
+		F5184A3C1F8C7AA00031C854 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F5184A3D1F8C7AB50031C854 /* TabBarViewController.h */,
+				F5184A3E1F8C7AB50031C854 /* TabBarViewController.m */,
+				F5184A401F8C7AD00031C854 /* NavigationViewController.h */,
+				F5184A411F8C7AD00031C854 /* NavigationViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F5184A431F8C7F870031C854 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F5184A441F8C7F930031C854 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F5184A451F8C7FAF0031C854 /* ChatViewController.h */,
+				F5184A461F8C7FAF0031C854 /* ChatViewController.m */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		F5184A491F8C83490031C854 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F5184A4B1F8C836F0031C854 /* BaseVC */,
+				F5184A4A1F8C83660031C854 /* BaseView */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F5184A4A1F8C83660031C854 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				F5184A4C1F8C89C10031C854 /* BaseTableViewCell.h */,
+				F5184A4D1F8C89C10031C854 /* BaseTableViewCell.m */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		F5184A4B1F8C836F0031C854 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		F5184A521F8CA3030031C854 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				F5184A5B1F8CA3860031C854 /* ContactViewController.h */,
+				F5184A5C1F8CA3860031C854 /* ContactViewController.m */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		F5184A531F8CA3190031C854 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F5184A581F8CA37C0031C854 /* DiscoverViewController.h */,
+				F5184A591F8CA37C0031C854 /* DiscoverViewController.m */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		F5184A541F8CA3550031C854 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F5184A551F8CA36B0031C854 /* MineViewController.h */,
+				F5184A561F8CA36B0031C854 /* MineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		F5184A5E1F8CAACF0031C854 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5184A5F1F8CABA40031C854 /* User.h */,
+				F5184A601F8CABA40031C854 /* User.m */,
+				F5184A621F8CABC60031C854 /* Group.h */,
+				F5184A631F8CABC60031C854 /* Group.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F52E2D081F8CC3710048BB01 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				F52E2D091F8CC6890048BB01 /* MessageViewController.h */,
+				F52E2D0A1F8CC6890048BB01 /* MessageViewController.m */,
+				F52E2D0C1F8CC9C60048BB01 /* SearchTableViewController.h */,
+				F52E2D0D1F8CC9C60048BB01 /* SearchTableViewController.m */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5184A211F8C584A0031C854 /* WeiChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5184A381F8C584A0031C854 /* Build configuration list for PBXNativeTarget "WeiChat" */;
+			buildPhases = (
+				1B06881A90CFCCD0CF902EB8 /* [CP] Check Pods Manifest.lock */,
+				F5184A1E1F8C584A0031C854 /* Sources */,
+				F5184A1F1F8C584A0031C854 /* Frameworks */,
+				F5184A201F8C584A0031C854 /* Resources */,
+				80211763032EC27563AA50DC /* [CP] Embed Pods Frameworks */,
+				87BCF03BDAE9C763F843F1EB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeiChat;
+			productName = WeiChat;
+			productReference = F5184A221F8C584A0031C854 /* WeiChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5184A1A1F8C584A0031C854 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Lenovo-Apple";
+				TargetAttributes = {
+					F5184A211F8C584A0031C854 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F5184A1D1F8C584A0031C854 /* Build configuration list for PBXProject "WeiChat" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5184A191F8C584A0031C854;
+			productRefGroup = F5184A231F8C584A0031C854 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5184A211F8C584A0031C854 /* WeiChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5184A201F8C584A0031C854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5184A321F8C584A0031C854 /* LaunchScreen.storyboard in Resources */,
+				F5184A2F1F8C584A0031C854 /* Assets.xcassets in Resources */,
+				F5184A2D1F8C584A0031C854 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B06881A90CFCCD0CF902EB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80211763032EC27563AA50DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Shows-WeiChat/Pods-Shows-WeiChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87BCF03BDAE9C763F843F1EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Shows-WeiChat/Pods-Shows-WeiChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5184A1E1F8C584A0031C854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5184A641F8CABC60031C854 /* Group.m in Sources */,
+				F5184A611F8CABA40031C854 /* User.m in Sources */,
+				F5184A4E1F8C89C10031C854 /* BaseTableViewCell.m in Sources */,
+				F5184A5A1F8CA37C0031C854 /* DiscoverViewController.m in Sources */,
+				F5184A571F8CA36B0031C854 /* MineViewController.m in Sources */,
+				F5184A3F1F8C7AB50031C854 /* TabBarViewController.m in Sources */,
+				F52E2D0B1F8CC6890048BB01 /* MessageViewController.m in Sources */,
+				F5184A5D1F8CA3860031C854 /* ContactViewController.m in Sources */,
+				F5184A471F8C7FAF0031C854 /* ChatViewController.m in Sources */,
+				F52E2D0E1F8CC9C60048BB01 /* SearchTableViewController.m in Sources */,
+				F5184A421F8C7AD00031C854 /* NavigationViewController.m in Sources */,
+				F5184A351F8C584A0031C854 /* main.m in Sources */,
+				F5184A271F8C584A0031C854 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5184A2B1F8C584A0031C854 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5184A2C1F8C584A0031C854 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5184A301F8C584A0031C854 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5184A311F8C584A0031C854 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5184A361F8C584A0031C854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5184A371F8C584A0031C854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5184A391F8C584A0031C854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB93DCA68D48E5C948BF6695 /* Pods-Shows-WeiChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4S7HJ2TM84;
+				GCC_PREFIX_HEADER = $SRCROOT/WeiChat/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/BlocksKit\"",
+					"\"${PODS_ROOT}/Headers/Public/DateTools\"",
+					"\"${PODS_ROOT}/Headers/Public/FLAnimatedImage\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/RegexKitLite\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+					"\"${PODS_ROOT}/Headers/Public/YYText\"",
+					"$SRCROOT/../Common/Common/**",
+				);
+				INFOPLIST_FILE = WeiChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.WeiChat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F5184A3A1F8C584A0031C854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06FFEE117DE9005F3741E3A3 /* Pods-Shows-WeiChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4S7HJ2TM84;
+				GCC_PREFIX_HEADER = $SRCROOT/WeiChat/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/BlocksKit\"",
+					"\"${PODS_ROOT}/Headers/Public/DateTools\"",
+					"\"${PODS_ROOT}/Headers/Public/FLAnimatedImage\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/RegexKitLite\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SVProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+					"\"${PODS_ROOT}/Headers/Public/YYText\"",
+					"$SRCROOT/../Common/Common/**",
+				);
+				INFOPLIST_FILE = WeiChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.WeiChat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5184A1D1F8C584A0031C854 /* Build configuration list for PBXProject "WeiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5184A361F8C584A0031C854 /* Debug */,
+				F5184A371F8C584A0031C854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5184A381F8C584A0031C854 /* Build configuration list for PBXNativeTarget "WeiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5184A391F8C584A0031C854 /* Debug */,
+				F5184A3A1F8C584A0031C854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5184A1A1F8C584A0031C854 /* Project object */;
+}

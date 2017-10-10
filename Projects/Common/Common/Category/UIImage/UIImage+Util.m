@@ -61,6 +61,21 @@
     return img;
 }
 
++ (UIImage *)image:(UIImage *)image WithTintColor:(UIColor *)tintColor{
+    //We want to keep alpha, set opaque to NO; Use 0.0f for scale to use the scale factor of the device’s main screen.
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, 0.0f);
+    [tintColor setFill];
+    CGRect bounds = CGRectMake(0, 0, image.size.width, image.size.height);
+    UIRectFill(bounds);
+    //Draw the tinted image in context
+    [image drawInRect:bounds blendMode:kCGBlendModeDestinationIn alpha:1.0f];
+    
+    UIImage *tintedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return tintedImage;
+}
+
 + (UIImage *)imageWithColor:(UIColor *)aColor cornerRadius:(float)cornerRadius{
     CGFloat minSize = cornerRadius * 2 + 1;;
     CGRect rect = CGRectMake(0, 0, minSize, minSize);
@@ -86,20 +101,7 @@
     return image;
 }
 
-+ (UIImage *)image:(UIImage *)image WithTintColor:(UIColor *)tintColor{
-    //We want to keep alpha, set opaque to NO; Use 0.0f for scale to use the scale factor of the device’s main screen.
-    UIGraphicsBeginImageContextWithOptions(image.size, NO, 0.0f);
-    [tintColor setFill];
-    CGRect bounds = CGRectMake(0, 0, image.size.width, image.size.height);
-    UIRectFill(bounds);
-    //Draw the tinted image in context
-    [image drawInRect:bounds blendMode:kCGBlendModeDestinationIn alpha:1.0f];
-    
-    UIImage *tintedImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return tintedImage;
-}
+
 
 //设置图片透明度
 - (UIImage *)imageByApplyingAlpha:(CGFloat)alpha{
@@ -231,7 +233,6 @@
     
     return antiImage;
 }
-
 
 - (UIImage *)imageTintedWithColor:(UIColor *)color{
     // This method is designed for use with template images, i.e. solid-coloured mask-like images.
