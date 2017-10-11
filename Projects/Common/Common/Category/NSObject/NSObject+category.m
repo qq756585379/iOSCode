@@ -9,6 +9,7 @@
 #import "NSObject+category.h"
 #import <objc/runtime.h>
 #import "CommonDefine.h"
+#import "LogDefine.h"
 
 @implementation NSObject (category)
 

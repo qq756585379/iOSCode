@@ -37,13 +37,6 @@ return __singleton__; \
 #define WEAK_SELF    __weak typeof(self)weakSelf = self;
 #define STRONG_SELF  __strong typeof(weakSelf)self = weakSelf;
 
-/**打印,能打印到是哪个类和哪一行*/
-#ifdef DEBUG
-#define DLog(...) printf("%s 第%d行: %s\n\n",[[NSString stringWithFormat:@"%s", __FILE__].lastPathComponent UTF8String],__LINE__, \
-[[NSString stringWithFormat:__VA_ARGS__] UTF8String]);
-#else
-#define DLog(...)
-#endif
 
 #define kAppDelegate            [[UIApplication sharedApplication] delegate]
 #define kWindow                 [[UIApplication sharedApplication] keyWindow]
@@ -54,6 +47,15 @@ return __singleton__; \
 //判断设备
 #define IS_IPAD_DEVICE 		(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_IPHONE_DEVICE 	(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+
+#define kDEVICE_MODEL  		 [[UIDevice currentDevice] model]
+#define kAPP_NAME            [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
+#define kAPP_VERSION         [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define kAPP_SUB_VERSION     [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+#define IOS_VERSION 		 [[[UIDevice currentDevice] systemVersion] floatValue]
+#define CurrentSystemVersion ([[UIDevice currentDevice] systemVersion])
+#define CurrentLanguage 	 ([[NSLocale preferredLanguages] objectAtIndex:0])
 
 //判断ios版本
 #define IOS_SDK_MORE_THAN_OR_EQUAL(__num) [UIDevice currentDevice].systemVersion.floatValue >= (__num)

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LogDefine.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    DLog(@"1231");
     return YES;
 }
 

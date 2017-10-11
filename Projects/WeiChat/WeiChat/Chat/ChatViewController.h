@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Group.h"
 
 @interface ChatViewController : UIViewController
+
+@property (nonatomic, strong) Group *group;
 
 @end

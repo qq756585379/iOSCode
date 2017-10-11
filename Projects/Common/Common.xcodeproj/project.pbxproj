@@ -209,6 +209,7 @@
 		F58111631F7F44FC00B9A214 /* XMGFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGFileTool.h; sourceTree = "<group>"; };
 		F58111641F7F44FC00B9A214 /* XMGFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGFileTool.m; sourceTree = "<group>"; };
 		F59446761F18A49800916A4F /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5ACF3951F8DF756008A1956 /* LogDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -473,6 +474,7 @@
 		F58111441F7F44FC00B9A214 /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				F5ACF3951F8DF756008A1956 /* LogDefine.h */,
 				F58111451F7F44FC00B9A214 /* ColorDefine.h */,
 				F58111461F7F44FC00B9A214 /* CommonDefine.h */,
 				F58111471F7F44FC00B9A214 /* Foundation+Log.m */,

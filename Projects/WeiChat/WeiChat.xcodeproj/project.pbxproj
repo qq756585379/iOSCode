@@ -25,6 +25,7 @@
 		F5184A641F8CABC60031C854 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = F5184A631F8CABC60031C854 /* Group.m */; };
 		F52E2D0B1F8CC6890048BB01 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E2D0A1F8CC6890048BB01 /* MessageViewController.m */; };
 		F52E2D0E1F8CC9C60048BB01 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52E2D0D1F8CC9C60048BB01 /* SearchTableViewController.m */; };
+		F5ACF39C1F8E0394008A1956 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5ACF39B1F8E0394008A1956 /* MessageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,10 @@
 		F52E2D0A1F8CC6890048BB01 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		F52E2D0C1F8CC9C60048BB01 /* SearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
 		F52E2D0D1F8CC9C60048BB01 /* SearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		F5ACF39A1F8E0394008A1956 /* MessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		F5ACF39B1F8E0394008A1956 /* MessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		F5ACF39E1F8E1DE0008A1956 /* UIImage+RandomImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RandomImage.h"; sourceTree = "<group>"; };
+		F5ACF39F1F8E1DE0008A1956 /* UIImage+RandomImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RandomImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +157,7 @@
 		F5184A431F8C7F870031C854 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F5ACF39D1F8E1DC5008A1956 /* Category */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -231,12 +237,31 @@
 		F52E2D081F8CC3710048BB01 /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				F5ACF3991F8E030B008A1956 /* View */,
 				F52E2D091F8CC6890048BB01 /* MessageViewController.h */,
 				F52E2D0A1F8CC6890048BB01 /* MessageViewController.m */,
 				F52E2D0C1F8CC9C60048BB01 /* SearchTableViewController.h */,
 				F52E2D0D1F8CC9C60048BB01 /* SearchTableViewController.m */,
 			);
 			path = Message;
+			sourceTree = "<group>";
+		};
+		F5ACF3991F8E030B008A1956 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5ACF39A1F8E0394008A1956 /* MessageCell.h */,
+				F5ACF39B1F8E0394008A1956 /* MessageCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5ACF39D1F8E1DC5008A1956 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F5ACF39E1F8E1DE0008A1956 /* UIImage+RandomImage.h */,
+				F5ACF39F1F8E1DE0008A1956 /* UIImage+RandomImage.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +391,7 @@
 				F5184A4E1F8C89C10031C854 /* BaseTableViewCell.m in Sources */,
 				F5184A5A1F8CA37C0031C854 /* DiscoverViewController.m in Sources */,
 				F5184A571F8CA36B0031C854 /* MineViewController.m in Sources */,
+				F5ACF39C1F8E0394008A1956 /* MessageCell.m in Sources */,
 				F5184A3F1F8C7AB50031C854 /* TabBarViewController.m in Sources */,
 				F52E2D0B1F8CC6890048BB01 /* MessageViewController.m in Sources */,
 				F5184A5D1F8CA3860031C854 /* ContactViewController.m in Sources */,

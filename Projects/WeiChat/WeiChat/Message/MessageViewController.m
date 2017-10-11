@@ -8,6 +8,8 @@
 
 #import "MessageViewController.h"
 #import "SearchTableViewController.h"
+#import "ChatViewController.h"
+#import "MessageCell.h"
 #import "Group.h"
 #import "User.h"
 
@@ -38,29 +40,40 @@
     searchController.hidesNavigationBarDuringPresentation = YES;
 
     self.tableView.tableHeaderView = searchController.searchBar;
-    self.tableView.frame  = CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT - searchController.searchBar.bottom-8-49);
+//    self.tableView.frame  = CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT - searchController.searchBar.bottom-8-49);
+    self.tableView.frame  = CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT);
     self.definesPresentationContext = YES;
 }
 
 - (void)loadDataSource{
-    Group *group = [[Group alloc] init];
-    group.unReadCount = 2;
-    group.gName = @"马云";
-    group.lastMsgString = @"马化腾你等着!";
-    
-    
-    [self.dataArray addObject:group];
+    NSArray *dataArr = @[@{@"name":@"吴正祥",@"content":@"*本应用集成了图灵机器人的自动聊天功能"},
+                         @{@"name":@"陈维",@"content":@"*麻麻再也不怕进来之后没有事干了..."},
+                         @{@"name":@"吴正祥",@"content":@"您已添加了Darui Li，现在可以开始聊天了。"},
+                         @{@"name":@"吴正祥",@"content":@"您已添加了Darui Li，现在可以开始聊天了。"},
+                         @{@"name":@"吴正祥",@"content":@"您已添加了Darui Li，现在可以开始聊天了。"},
+                         @{@"name":@"吴正祥",@"content":@"您已添加了Darui Li，现在可以开始聊天了。"},
+                         @{@"name":@"吴正祥",@"content":@"您已添加了Darui Li，现在可以开始聊天了。"},
+                         @{@"name":@"吴正祥",@"content":@"您已添加了Darui Li，现在可以开始聊天了。"}];
+    for (NSDictionary *dict in dataArr) {
+        Group *group = [[Group alloc] init];
+        group.unReadCount = 2;
+        group.gName = dict[@"name"];
+        group.lastMsgString = dict[@"content"];
+        [self.dataArray addObject:group];
+    }
+    [self.tableView reloadData];
 }
 
 #pragma mark - tableViewDelegate
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    XZMessageCell *cell = [XZMessageCell cellWithTableView:tableView];
+    MessageCell *cell = [MessageCell cellWithTableView:tableView];
     if (indexPath.row == self.dataArray.count - 1) {
         [cell setBottomLineStyle:CellLineStyleNone];
     } else {
         [cell setBottomLineStyle:CellLineStyleDefault];
     }
     cell.group = self.dataArray[indexPath.row];
+    
     return cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -74,6 +87,37 @@
 }
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
     return YES;
+}
+- (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSString *topTitle ,*readTitle;
+    Group *group  = self.dataArray[indexPath.row];
+    topTitle  = group.isTop ? @"取消置顶" : @"置顶";
+    readTitle = group.unReadCount ? @"标为已读" : @"标为未读";
+    //设置删除按钮
+    UITableViewRowAction *deleteRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        //        [self deleteLocalGroup:indexPath];
+    }];
+    //置顶
+    UITableViewRowAction *topRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:topTitle handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        //        [self setTopCellWithIndexPath:indexPath currentTop:group.isTop];
+    }];
+    //标记已读
+    UITableViewRowAction *collectRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:readTitle handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        //        [self markerReadWithIndexPath:indexPath currentUnReadCount:group.unReadCount];
+    }];
+    collectRowAction.backgroundColor = [UIColor grayColor];
+    topRowAction.backgroundColor     = [UIColor orangeColor];
+    return  @[deleteRowAction,topRowAction,collectRowAction];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    Group *group               = self.dataArray[indexPath.row];
+    ChatViewController *chatVc = [[ChatViewController alloc] init];
+    chatVc.group                 = group;
+    [self.navigationController pushViewController:chatVc animated:YES];
+}
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    [self.view endEditing:YES];
 }
 
 - (UITableView *)tableView{

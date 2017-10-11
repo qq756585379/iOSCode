@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 #import "CommonDefine.h"
+#import "LogDefine.h"
 
 @implementation UIViewController (dealloc)
 
