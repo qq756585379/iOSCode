@@ -16,33 +16,18 @@
 @interface MessageViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray *dataArray;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UISearchController *searchController;
 @end
 
 @implementation MessageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupUI];
-    [self loadDataSource];
-}
-
-- (void)setupUI{
     self.view.backgroundColor = HEXRGBCOLOR(0xf4f1f1);
-    
-    SearchTableViewController *searchVC  = [[SearchTableViewController alloc] init];
-    UISearchController *searchController = [[UISearchController alloc] initWithSearchResultsController:searchVC];
-    [searchController.searchBar sizeToFit];
-    [searchController.searchBar setBarTintColor:BACKGROUNDCOLOR];
-    [searchController.searchBar.layer setBorderWidth:0.5f];
-    [searchController.searchBar.layer setBorderColor:BACKGROUNDCOLOR.CGColor];
-    searchController.dimsBackgroundDuringPresentation = YES;
-    searchController.view.backgroundColor = [UIColor whiteColor];
-    searchController.hidesNavigationBarDuringPresentation = YES;
-
-    self.tableView.tableHeaderView = searchController.searchBar;
-//    self.tableView.frame  = CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT - searchController.searchBar.bottom-8-49);
+    self.tableView.tableHeaderView = self.searchController.searchBar;
     self.tableView.frame  = CGRectMake(0,0, SCREEN_WIDTH, SCREEN_HEIGHT);
     self.definesPresentationContext = YES;
+    [self loadDataSource];
 }
 
 - (void)loadDataSource{
@@ -95,15 +80,15 @@
     readTitle = group.unReadCount ? @"标为已读" : @"标为未读";
     //设置删除按钮
     UITableViewRowAction *deleteRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        //        [self deleteLocalGroup:indexPath];
+        
     }];
     //置顶
     UITableViewRowAction *topRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:topTitle handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        //        [self setTopCellWithIndexPath:indexPath currentTop:group.isTop];
+        
     }];
     //标记已读
     UITableViewRowAction *collectRowAction = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDefault title:readTitle handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        //        [self markerReadWithIndexPath:indexPath currentUnReadCount:group.unReadCount];
+        
     }];
     collectRowAction.backgroundColor = [UIColor grayColor];
     topRowAction.backgroundColor     = [UIColor orangeColor];
@@ -116,10 +101,25 @@
     chatVc.group                 = group;
     [self.navigationController pushViewController:chatVc animated:YES];
 }
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     [self.view endEditing:YES];
 }
 
+-(UISearchController *)searchController{
+    if (!_searchController) {
+        SearchTableViewController *searchVC  = [[SearchTableViewController alloc] init];
+        _searchController = [[UISearchController alloc] initWithSearchResultsController:searchVC];
+        [_searchController.searchBar sizeToFit];
+        [_searchController.searchBar setBarTintColor:BACKGROUNDCOLOR];
+        [_searchController.searchBar.layer setBorderWidth:0.5f];
+        [_searchController.searchBar.layer setBorderColor:BACKGROUNDCOLOR.CGColor];
+        _searchController.dimsBackgroundDuringPresentation = YES;
+        _searchController.view.backgroundColor = [UIColor whiteColor];
+        _searchController.hidesNavigationBarDuringPresentation = YES;
+    }
+    return _searchController;
+}
 - (UITableView *)tableView{
     if (nil == _tableView) {
         UITableView * tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];

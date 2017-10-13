@@ -22,15 +22,12 @@
 -(void)tosubvc{
     RACSecondViewController *twoVc = [[RACSecondViewController alloc] init];
     twoVc.delegateSignal = [RACSubject subject];
-    // 订阅代理信号
     [twoVc.delegateSignal subscribeNext:^(id x) {
         NSLog(@"点击了通知按钮");
     }];
-    
     [[twoVc rac_signalForSelector:@selector(callBack)] subscribeNext:^(id x) {
         NSLog(@"点击红色按钮");
     }];
-    
     [self.navigationController pushViewController:twoVc animated:YES];
 }
 

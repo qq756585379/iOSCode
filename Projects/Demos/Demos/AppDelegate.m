@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "LogDefine.h"
+#import "TableViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    DLog(@"1231");
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[TableViewController new]];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

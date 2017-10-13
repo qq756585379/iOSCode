@@ -17,6 +17,8 @@
 		F5070ABE1F2ACECA002C0ADF /* GCDTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070ABD1F2ACECA002C0ADF /* GCDTestVC.m */; };
 		F5070AC11F2ADEB9002C0ADF /* NSOperationTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070AC01F2ADEB9002C0ADF /* NSOperationTestVC.m */; };
 		F5070AC41F2ADF7C002C0ADF /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5070AC31F2ADF7C002C0ADF /* DownloadOperation.m */; };
+		F52C01711F8F6463005C6FF0 /* ZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C01701F8F6463005C6FF0 /* ZoomViewController.m */; };
+		F52C01741F8F6914005C6FF0 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C01731F8F6914005C6FF0 /* TableViewController.m */; };
 		F5E8391F1F3C54A200B2E2A7 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */; };
 		F5E839221F3C54B600B2E2A7 /* RACSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E839211F3C54B600B2E2A7 /* RACSecondViewController.m */; };
 		F5FA078D1F3AE4B90048954F /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FA078C1F3AE4B90048954F /* libCommon.a */; };
@@ -42,6 +44,13 @@
 		F5070AC01F2ADEB9002C0ADF /* NSOperationTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationTestVC.m; sourceTree = "<group>"; };
 		F5070AC21F2ADF7C002C0ADF /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
 		F5070AC31F2ADF7C002C0ADF /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
+		F52C016B1F8F60CB005C6FF0 /* UIImagePickerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImagePickerVC.h; sourceTree = "<group>"; };
+		F52C016C1F8F60CB005C6FF0 /* UIImagePickerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImagePickerVC.m; sourceTree = "<group>"; };
+		F52C016D1F8F60CB005C6FF0 /* UIImagePickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIImagePickerVC.xib; sourceTree = "<group>"; };
+		F52C016F1F8F6463005C6FF0 /* ZoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZoomViewController.h; sourceTree = "<group>"; };
+		F52C01701F8F6463005C6FF0 /* ZoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZoomViewController.m; sourceTree = "<group>"; };
+		F52C01721F8F6914005C6FF0 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		F52C01731F8F6914005C6FF0 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		F5E8391D1F3C54A200B2E2A7 /* RACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
 		F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
 		F5E839201F3C54B600B2E2A7 /* RACSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSecondViewController.h; sourceTree = "<group>"; };
@@ -101,10 +110,14 @@
 		F5070AA31F2ACE31002C0ADF /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				F52C016E1F8F641A005C6FF0 /* ZoomView */,
+				F52C016A1F8F60CB005C6FF0 /* UIImagePickerController */,
 				F5E8391C1F3C549100B2E2A7 /* RAC */,
 				F5070ABB1F2ACEAD002C0ADF /* 多线程 */,
 				F5070AA71F2ACE31002C0ADF /* AppDelegate.h */,
 				F5070AA81F2ACE31002C0ADF /* AppDelegate.m */,
+				F52C01721F8F6914005C6FF0 /* TableViewController.h */,
+				F52C01731F8F6914005C6FF0 /* TableViewController.m */,
 				F5070AAA1F2ACE31002C0ADF /* ViewController.h */,
 				F5070AAB1F2ACE31002C0ADF /* ViewController.m */,
 				F5070AAD1F2ACE31002C0ADF /* Main.storyboard */,
@@ -135,6 +148,25 @@
 				F5070AC31F2ADF7C002C0ADF /* DownloadOperation.m */,
 			);
 			path = "多线程";
+			sourceTree = "<group>";
+		};
+		F52C016A1F8F60CB005C6FF0 /* UIImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				F52C016B1F8F60CB005C6FF0 /* UIImagePickerVC.h */,
+				F52C016C1F8F60CB005C6FF0 /* UIImagePickerVC.m */,
+				F52C016D1F8F60CB005C6FF0 /* UIImagePickerVC.xib */,
+			);
+			path = UIImagePickerController;
+			sourceTree = "<group>";
+		};
+		F52C016E1F8F641A005C6FF0 /* ZoomView */ = {
+			isa = PBXGroup;
+			children = (
+				F52C016F1F8F6463005C6FF0 /* ZoomViewController.h */,
+				F52C01701F8F6463005C6FF0 /* ZoomViewController.m */,
+			);
+			path = ZoomView;
 			sourceTree = "<group>";
 		};
 		F5E8391C1F3C549100B2E2A7 /* RAC */ = {
@@ -182,6 +214,7 @@
 				TargetAttributes = {
 					F5070AA01F2ACE31002C0ADF = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4S7HJ2TM84;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -270,8 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52C01711F8F6463005C6FF0 /* ZoomViewController.m in Sources */,
 				F5070AAC1F2ACE31002C0ADF /* ViewController.m in Sources */,
 				F5070AC41F2ADF7C002C0ADF /* DownloadOperation.m in Sources */,
+				F52C01741F8F6914005C6FF0 /* TableViewController.m in Sources */,
 				F5070AC11F2ADEB9002C0ADF /* NSOperationTestVC.m in Sources */,
 				F5E8391F1F3C54A200B2E2A7 /* RACViewController.m in Sources */,
 				F5070ABE1F2ACECA002C0ADF /* GCDTestVC.m in Sources */,
@@ -400,6 +435,7 @@
 			baseConfigurationReference = 6E28065135F411A8DAA3E8D4 /* Pods-Shows-Demos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S7HJ2TM84;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -431,6 +467,7 @@
 			baseConfigurationReference = C3ACDF2B7326142883D1BD47 /* Pods-Shows-Demos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4S7HJ2TM84;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
