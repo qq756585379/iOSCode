@@ -10,5 +10,6 @@
 #import <Foundation/Foundation.h>
 
 #import "CommonDefine.h"
+#import "ColorDefine.h"
 #import "OTSWeakObjectDeathNotifier.h"
 

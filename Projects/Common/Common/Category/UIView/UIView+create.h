@@ -24,15 +24,13 @@
 /**
  *  快捷创建UIView及其子类
  *
- *  @param aNibName nib名称 = self.class
- *
  *  @return kind of UIView
  */
 + (instancetype)createWithNib;
 /**
  *  快捷创建UIView及其子类
  *
- *  @param aNibName nib名称
+ *  @param aXibName nib名称
  *
  *  @return kind of UIView
  */
@@ -48,7 +46,7 @@
 /**
  *  快捷创建UIView及其子类
  *
- *  @param aNibName nib名称
+ *  @param aXibName nib名称
  *  @param aBundleName bundle名称
  *
  *  @return kind of UIView

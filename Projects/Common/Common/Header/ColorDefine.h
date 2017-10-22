@@ -34,3 +34,19 @@ alpha:1.0]
 #define OTSBLUECOLOR 			[UIColor colorWithRed:104.0/255 green:144.0/255 blue:223.0/255 alpha:1]
 #define OTSDISABLEGRAYCOLOR 	[UIColor colorWithRed:189.0/255 green:189/255 blue:189/255 alpha:1]
 #define SHOPPING_ORANGE_COLOR 	[UIColor colorWithRed:246.0/255 green:60/255 blue:45/255 alpha:1]
+
+#define kF5F5F5                 HEXRGBCOLOR(0xf5f5f5)
+#define kECECEC                 HEXRGBCOLOR(0xececec)
+#define kEDEDED                 HEXRGBCOLOR(0xededed)
+#define kDCDCDC                 HEXRGBCOLOR(0xdcdcdc)
+#define kFAFAFA                 HEXRGBCOLOR(0xfafafa)
+
+#define kWhiteColor             [UIColor whiteColor]
+#define kClearColor             [UIColor clearColor]
+#define kRedColor               [UIColor redColor]
+#define kGreenColor             [UIColor greenColor]
+#define kBlackColor             [UIColor blackColor]
+
+
+
+

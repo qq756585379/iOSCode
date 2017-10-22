@@ -20,7 +20,6 @@ abstract_target 'Shows' do
     pod 'SVProgressHUD', '~> 2.1.2'
     pod 'MBProgressHUD', '~> 1.0.0'
     pod 'DateTools', '~> 2.0.0'
-#    pod 'CocoaLumberjack', '~> 3.2.0'
     pod 'BlocksKit', '~> 2.2.5'
     pod 'Toast', '~> 3.1.0'
     pod 'FLAnimatedImage', '~> 1.0.12'
@@ -30,6 +29,9 @@ abstract_target 'Shows' do
     
     target 'Demos' do
         project './Projects/Demos/Demos.xcodeproj'
+    end
+    target 'TZTV' do
+        project './Projects/TZTV/TZTV.xcodeproj'
     end
     target 'OpenGL' do
         project './Projects/OpenGL/OpenGL.xcodeproj'

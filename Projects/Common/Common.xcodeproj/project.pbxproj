@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4186CCC1F9CEE4000204FB1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CC91F9CEE4000204FB1 /* BaseViewController.m */; };
+		D4186CCD1F9CEE4000204FB1 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CCB1F9CEE4000204FB1 /* BaseTableViewController.m */; };
+		D4186CD01F9CEF0B00204FB1 /* OTSTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CCF1F9CEF0B00204FB1 /* OTSTableViewHeaderFooterView.m */; };
+		D4186CD31F9CEF6200204FB1 /* OTSPlaceholderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CD21F9CEF6200204FB1 /* OTSPlaceholderImageView.m */; };
+		D4186CD61F9CEF7A00204FB1 /* OTSBlockImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CD51F9CEF7A00204FB1 /* OTSBlockImageView.m */; };
+		D4186CD91F9CEF8500204FB1 /* OTSBlockBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CD71F9CEF8400204FB1 /* OTSBlockBtn.m */; };
+		D4186CDE1F9CEF9600204FB1 /* OTSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CDA1F9CEF9500204FB1 /* OTSActionSheet.m */; };
+		D4186CDF1F9CEF9600204FB1 /* OTSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CDB1F9CEF9500204FB1 /* OTSAlertView.m */; };
+		D4186CE21F9CEFA400204FB1 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CE01F9CEFA300204FB1 /* BaseView.m */; };
+		D4186CE51F9CEFB000204FB1 /* BaseBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CE31F9CEFAF00204FB1 /* BaseBtn.m */; };
+		D4186CEA1F9CF00F00204FB1 /* ActionSheetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CE81F9CF00E00204FB1 /* ActionSheetManager.m */; };
+		D4186CEB1F9CF00F00204FB1 /* AlertViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CE91F9CF00E00204FB1 /* AlertViewManager.m */; };
+		D4186D091F9CF24100204FB1 /* OTSPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186D071F9CF24100204FB1 /* OTSPageControl.m */; };
+		D4186DD41F9CF3ED00204FB1 /* TableSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186DD31F9CF3ED00204FB1 /* TableSectionHeader.m */; };
 		F58111651F7F44FC00B9A214 /* MHGradientColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58110CF1F7F44FC00B9A214 /* MHGradientColorView.m */; };
 		F58111661F7F44FC00B9A214 /* MHVAlignLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F58110D11F7F44FC00B9A214 /* MHVAlignLabel.m */; };
 		F58111671F7F44FC00B9A214 /* OTSCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58110D31F7F44FC00B9A214 /* OTSCollectionReusableView.m */; };
@@ -82,6 +96,34 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D4186CC81F9CEE3F00204FB1 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D4186CC91F9CEE4000204FB1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D4186CCA1F9CEE4000204FB1 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		D4186CCB1F9CEE4000204FB1 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		D4186CCE1F9CEF0B00204FB1 /* OTSTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		D4186CCF1F9CEF0B00204FB1 /* OTSTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		D4186CD11F9CEF6100204FB1 /* OTSPlaceholderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPlaceholderImageView.h; sourceTree = "<group>"; };
+		D4186CD21F9CEF6200204FB1 /* OTSPlaceholderImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPlaceholderImageView.m; sourceTree = "<group>"; };
+		D4186CD41F9CEF7900204FB1 /* OTSBlockImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSBlockImageView.h; sourceTree = "<group>"; };
+		D4186CD51F9CEF7A00204FB1 /* OTSBlockImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSBlockImageView.m; sourceTree = "<group>"; };
+		D4186CD71F9CEF8400204FB1 /* OTSBlockBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSBlockBtn.m; sourceTree = "<group>"; };
+		D4186CD81F9CEF8500204FB1 /* OTSBlockBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSBlockBtn.h; sourceTree = "<group>"; };
+		D4186CDA1F9CEF9500204FB1 /* OTSActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSActionSheet.m; sourceTree = "<group>"; };
+		D4186CDB1F9CEF9500204FB1 /* OTSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSAlertView.m; sourceTree = "<group>"; };
+		D4186CDC1F9CEF9500204FB1 /* OTSActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSActionSheet.h; sourceTree = "<group>"; };
+		D4186CDD1F9CEF9600204FB1 /* OTSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSAlertView.h; sourceTree = "<group>"; };
+		D4186CE01F9CEFA300204FB1 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		D4186CE11F9CEFA400204FB1 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		D4186CE31F9CEFAF00204FB1 /* BaseBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseBtn.m; sourceTree = "<group>"; };
+		D4186CE41F9CEFAF00204FB1 /* BaseBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseBtn.h; sourceTree = "<group>"; };
+		D4186CE61F9CF00D00204FB1 /* AlertViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewManager.h; sourceTree = "<group>"; };
+		D4186CE71F9CF00E00204FB1 /* ActionSheetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetManager.h; sourceTree = "<group>"; };
+		D4186CE81F9CF00E00204FB1 /* ActionSheetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetManager.m; sourceTree = "<group>"; };
+		D4186CE91F9CF00E00204FB1 /* AlertViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewManager.m; sourceTree = "<group>"; };
+		D4186D071F9CF24100204FB1 /* OTSPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPageControl.m; sourceTree = "<group>"; };
+		D4186D081F9CF24100204FB1 /* OTSPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPageControl.h; sourceTree = "<group>"; };
+		D4186DD21F9CF3ED00204FB1 /* TableSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionHeader.h; sourceTree = "<group>"; };
+		D4186DD31F9CF3ED00204FB1 /* TableSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSectionHeader.m; sourceTree = "<group>"; };
 		F58110CE1F7F44FC00B9A214 /* MHGradientColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHGradientColorView.h; sourceTree = "<group>"; };
 		F58110CF1F7F44FC00B9A214 /* MHGradientColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHGradientColorView.m; sourceTree = "<group>"; };
 		F58110D01F7F44FC00B9A214 /* MHVAlignLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHVAlignLabel.h; sourceTree = "<group>"; };
@@ -223,9 +265,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4186CC71F9CEE3100204FB1 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				D4186CCA1F9CEE4000204FB1 /* BaseTableViewController.h */,
+				D4186CCB1F9CEE4000204FB1 /* BaseTableViewController.m */,
+				D4186CC81F9CEE3F00204FB1 /* BaseViewController.h */,
+				D4186CC91F9CEE4000204FB1 /* BaseViewController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
 		F58110CC1F7F44FC00B9A214 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D4186CC71F9CEE3100204FB1 /* BaseVC */,
 				F58110CD1F7F44FC00B9A214 /* BaseView */,
 				F58110E01F7F44FC00B9A214 /* Category */,
 				F58111431F7F44FC00B9A214 /* Common.pch */,
@@ -239,6 +293,30 @@
 		F58110CD1F7F44FC00B9A214 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
+				D4186DD21F9CF3ED00204FB1 /* TableSectionHeader.h */,
+				D4186DD31F9CF3ED00204FB1 /* TableSectionHeader.m */,
+				D4186D081F9CF24100204FB1 /* OTSPageControl.h */,
+				D4186D071F9CF24100204FB1 /* OTSPageControl.m */,
+				D4186CE71F9CF00E00204FB1 /* ActionSheetManager.h */,
+				D4186CE81F9CF00E00204FB1 /* ActionSheetManager.m */,
+				D4186CE61F9CF00D00204FB1 /* AlertViewManager.h */,
+				D4186CE91F9CF00E00204FB1 /* AlertViewManager.m */,
+				D4186CE41F9CEFAF00204FB1 /* BaseBtn.h */,
+				D4186CE31F9CEFAF00204FB1 /* BaseBtn.m */,
+				D4186CE11F9CEFA400204FB1 /* BaseView.h */,
+				D4186CE01F9CEFA300204FB1 /* BaseView.m */,
+				D4186CDC1F9CEF9500204FB1 /* OTSActionSheet.h */,
+				D4186CDA1F9CEF9500204FB1 /* OTSActionSheet.m */,
+				D4186CDD1F9CEF9600204FB1 /* OTSAlertView.h */,
+				D4186CDB1F9CEF9500204FB1 /* OTSAlertView.m */,
+				D4186CD81F9CEF8500204FB1 /* OTSBlockBtn.h */,
+				D4186CD71F9CEF8400204FB1 /* OTSBlockBtn.m */,
+				D4186CD41F9CEF7900204FB1 /* OTSBlockImageView.h */,
+				D4186CD51F9CEF7A00204FB1 /* OTSBlockImageView.m */,
+				D4186CD11F9CEF6100204FB1 /* OTSPlaceholderImageView.h */,
+				D4186CD21F9CEF6200204FB1 /* OTSPlaceholderImageView.m */,
+				D4186CCE1F9CEF0B00204FB1 /* OTSTableViewHeaderFooterView.h */,
+				D4186CCF1F9CEF0B00204FB1 /* OTSTableViewHeaderFooterView.m */,
 				F58110CE1F7F44FC00B9A214 /* MHGradientColorView.h */,
 				F58110CF1F7F44FC00B9A214 /* MHGradientColorView.m */,
 				F58110D01F7F44FC00B9A214 /* MHVAlignLabel.h */,
@@ -591,7 +669,7 @@
 		F594466E1F18A49800916A4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Lenovo-Apple";
 				TargetAttributes = {
 					F59446751F18A49800916A4F = {
@@ -623,25 +701,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				F58111921F7F44FD00B9A214 /* UIView+create.m in Sources */,
+				D4186CEA1F9CF00F00204FB1 /* ActionSheetManager.m in Sources */,
 				F58111671F7F44FC00B9A214 /* OTSCollectionReusableView.m in Sources */,
+				D4186CE21F9CEFA400204FB1 /* BaseView.m in Sources */,
+				D4186CDF1F9CEF9600204FB1 /* OTSAlertView.m in Sources */,
 				F58111A01F7F44FD00B9A214 /* OTSWeakObjectDeathNotifier.m in Sources */,
 				F581116D1F7F44FC00B9A214 /* OTSWindow.m in Sources */,
 				F581119D1F7F44FD00B9A214 /* OTSFont.m in Sources */,
 				F58111771F7F44FD00B9A214 /* NSObject+runtime.m in Sources */,
 				F58111951F7F44FD00B9A214 /* UIView+IB.m in Sources */,
+				D4186CE51F9CEFB000204FB1 /* BaseBtn.m in Sources */,
 				F58111881F7F44FD00B9A214 /* UIView+safe.m in Sources */,
 				F58111801F7F44FD00B9A214 /* NSDictionary+safe.m in Sources */,
 				F58111821F7F44FD00B9A214 /* NSMutableDictionary+safe.m in Sources */,
 				F581119B1F7F44FD00B9A214 /* OTSUserDefault.m in Sources */,
+				D4186CD31F9CEF6200204FB1 /* OTSPlaceholderImageView.m in Sources */,
 				F58111901F7F44FD00B9A214 /* UIImageView+Util.m in Sources */,
 				F58111661F7F44FC00B9A214 /* MHVAlignLabel.m in Sources */,
 				F581117A1F7F44FD00B9A214 /* NSString+MD5.m in Sources */,
+				D4186CCC1F9CEE4000204FB1 /* BaseViewController.m in Sources */,
 				F58111851F7F44FD00B9A214 /* NSObject+safe.m in Sources */,
 				F581119C1F7F44FD00B9A214 /* IMICatchCrash.m in Sources */,
 				F58111781F7F44FD00B9A214 /* NSObject+swizzle.m in Sources */,
 				F581117C1F7F44FD00B9A214 /* NSString+tripledes.m in Sources */,
 				F581116A1F7F44FC00B9A214 /* OTSTableView.m in Sources */,
 				F58111651F7F44FC00B9A214 /* MHGradientColorView.m in Sources */,
+				D4186CDE1F9CEF9600204FB1 /* OTSActionSheet.m in Sources */,
+				D4186CD01F9CEF0B00204FB1 /* OTSTableViewHeaderFooterView.m in Sources */,
 				F58111731F7F44FD00B9A214 /* NSObject+category.m in Sources */,
 				F581116B1F7F44FC00B9A214 /* OTSTableViewCell.m in Sources */,
 				F58111761F7F44FD00B9A214 /* NSObject+PerformBlock.m in Sources */,
@@ -653,10 +739,12 @@
 				F58111971F7F44FD00B9A214 /* Foundation+Log.m in Sources */,
 				F581117B1F7F44FD00B9A214 /* NSString+safe.m in Sources */,
 				F58111831F7F44FD00B9A214 /* NSMutableString+safe.m in Sources */,
+				D4186CCD1F9CEE4000204FB1 /* BaseTableViewController.m in Sources */,
 				F58111941F7F44FD00B9A214 /* UIView+frame.m in Sources */,
 				F581118C1F7F44FD00B9A214 /* UIColor+Hex.m in Sources */,
 				F581117F1F7F44FD00B9A214 /* NSArray+safe.m in Sources */,
 				F58111751F7F44FD00B9A214 /* NSObject+JsonToVO.m in Sources */,
+				D4186CD61F9CEF7A00204FB1 /* OTSBlockImageView.m in Sources */,
 				F581118E1F7F44FD00B9A214 /* UIImage+bundleRes.m in Sources */,
 				F581116C1F7F44FC00B9A214 /* OTSWebView.m in Sources */,
 				F58111811F7F44FD00B9A214 /* NSMutableArray+safe.m in Sources */,
@@ -668,6 +756,9 @@
 				F58111861F7F44FD00B9A214 /* NSString+safe.m in Sources */,
 				F58111911F7F44FD00B9A214 /* UITextField+Placeholder.m in Sources */,
 				F581118A1F7F44FD00B9A214 /* UIButton+util.m in Sources */,
+				D4186CD91F9CEF8500204FB1 /* OTSBlockBtn.m in Sources */,
+				D4186DD41F9CF3ED00204FB1 /* TableSectionHeader.m in Sources */,
+				D4186D091F9CF24100204FB1 /* OTSPageControl.m in Sources */,
 				F58111711F7F44FC00B9A214 /* NSNumber+Format.m in Sources */,
 				F581119F1F7F44FD00B9A214 /* OTSSize.m in Sources */,
 				F58111961F7F44FD00B9A214 /* UIView+Util.m in Sources */,
@@ -678,6 +769,7 @@
 				F58111681F7F44FC00B9A214 /* OTSCollectionView.m in Sources */,
 				F58111841F7F44FD00B9A214 /* NSNumber+safe.m in Sources */,
 				F58111891F7F44FD00B9A214 /* UIBarButtonItem+Util.m in Sources */,
+				D4186CEB1F9CF00F00204FB1 /* AlertViewManager.m in Sources */,
 				F58111981F7F44FD00B9A214 /* UIViewController+dealloc.m in Sources */,
 				F58111701F7F44FC00B9A214 /* NSDate+OTS.m in Sources */,
 				F581118F1F7F44FD00B9A214 /* UIImage+Util.m in Sources */,
@@ -698,7 +790,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -706,7 +800,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -746,7 +844,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -754,7 +854,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
