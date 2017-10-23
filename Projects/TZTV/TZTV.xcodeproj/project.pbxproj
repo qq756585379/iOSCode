@@ -573,7 +573,6 @@
 			isa = PBXGroup;
 			children = (
 				D4186DFC1F9CF4DE00204FB1 /* VC */,
-				D4186DBE1F9CF30F00204FB1 /* Logic */,
 				D4186DBD1F9CF30200204FB1 /* Views */,
 				D4186DBC1F9CF2EC00204FB1 /* Model */,
 				D4186BF21F9CE9E500204FB1 /* Main */,
@@ -680,13 +679,6 @@
 				D4186DBF1F9CF34C00204FB1 /* Home */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		D4186DBE1F9CF30F00204FB1 /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Logic;
 			sourceTree = "<group>";
 		};
 		D4186DBF1F9CF34C00204FB1 /* Home */ = {
