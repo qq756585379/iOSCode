@@ -7,6 +7,7 @@
 //
 
 #import "BaseViewController.h"
+#import "MBProgressHUD+MJ.h"
 
 @implementation BaseViewController
 

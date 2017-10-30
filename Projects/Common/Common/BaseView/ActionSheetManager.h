@@ -15,8 +15,8 @@ typedef void(^ActionSheetBlock)(NSString *title,NSInteger index);
 + (void)actionSheetWithTitle:(NSString *)aTitle
                      message:(NSString *)aMessage
                      buttons:(NSArray *)buttons
+                 selectIndex:(NSInteger)index
            cancelButtonTitle:(NSString *)aCancelButtonTitle
             andCompleteBlock:(ActionSheetBlock)aBlock;
-
 
 @end

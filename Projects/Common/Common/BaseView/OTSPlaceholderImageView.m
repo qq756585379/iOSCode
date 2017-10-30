@@ -7,6 +7,7 @@
 //
 
 #import "OTSPlaceholderImageView.h"
+#import "UIView+create.h"
 
 @interface OTSPlaceholderImageView ()
 @property (nonatomic, strong) UIImageView *placeholder;

@@ -7,6 +7,7 @@
 //
 
 #import "OTSTableViewHeaderFooterView.h"
+#import "NSObject+BeeNotification.h"
 
 @implementation OTSTableViewHeaderFooterView
 

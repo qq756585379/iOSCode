@@ -11,21 +11,40 @@
 @implementation ActionSheetManager
 
 + (void)actionSheetWithTitle:(NSString *)aTitle
-                    message:(NSString *)aMessage
+                     message:(NSString *)aMessage
                      buttons:(NSArray *)buttons
+                 selectIndex:(NSInteger)index
            cancelButtonTitle:(NSString *)aCancelButtonTitle
             andCompleteBlock:(ActionSheetBlock)aBlock{
+    
+    if (!aTitle)    aTitle=@"";
+    if (!aMessage)  aMessage=@"";
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:aTitle
                                                                    message:aMessage
                                                             preferredStyle:UIAlertControllerStyleActionSheet];
     for (int i=0; i<buttons.count; i++) {
-        [alert addAction:[UIAlertAction actionWithTitle:buttons[i] style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        UIAlertActionStyle style = UIAlertActionStyleDefault;
+        if (index == i) {
+            style = UIAlertActionStyleDestructive;
+        }
+        [alert addAction:[UIAlertAction actionWithTitle:buttons[i] style:style handler:^(UIAlertAction *action) {
             aBlock(buttons[i],i);
         }]];
     }
+    
     [alert addAction:[UIAlertAction actionWithTitle:aCancelButtonTitle style:UIAlertActionStyleCancel handler:nil]];
-    [[[self window] rootViewController] presentViewController:alert animated:YES completion:nil];
+    
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
+        [[[self window] rootViewController] presentViewController:alert animated:YES completion:nil];
+    }else{
+        UIViewController *root = [self window].rootViewController;
+        UIPopoverPresentationController *ppc = [alert popoverPresentationController];
+        ppc.sourceView = root.view;
+        ppc.sourceRect = CGRectMake((CGRectGetWidth(ppc.sourceView.bounds)-2)*0.5f,CGRectGetHeight(ppc.sourceView.bounds), 2, 2);
+        ppc.permittedArrowDirections = UIPopoverArrowDirectionUp;
+        [root presentViewController:alert animated:YES completion:nil];
+    }
 }
 
 + (UIWindow *) window {

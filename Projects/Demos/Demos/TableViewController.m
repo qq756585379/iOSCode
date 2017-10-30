@@ -10,6 +10,7 @@
 #import "MHGradientColorView.h"
 #import "CommonDefine.h"
 #import "ZoomViewController.h"
+#import "JavaScriptCoreVC.h"
 
 @interface MBExample : NSObject
 @property (nonatomic,   copy) NSString *title;
@@ -37,7 +38,8 @@
     self.examples = @[[MBExample exampleWithTitle:@"Indeterminate mode" selector:@"indeterminateExample"],
                       [MBExample exampleWithTitle:@"With label" selector:@"labelExample"],
                       [MBExample exampleWithTitle:@"With details label" selector:@"detailsLabelExample"],
-                      [MBExample exampleWithTitle:@"Zoom View" selector:@"zoomViewExample"]
+                      [MBExample exampleWithTitle:@"Zoom View" selector:@"zoomViewExample"],
+                      [MBExample exampleWithTitle:@"JavaScriptCore" selector:@"JavaScriptCore"]
                       ];
     MHGradientColorView *view = [[MHGradientColorView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
     self.tableView.tableHeaderView = view;
@@ -60,6 +62,10 @@
 
 -(void)zoomViewExample{
     [self.navigationController pushViewController:[ZoomViewController new] animated:YES];
+}
+
+-(void)JavaScriptCore{
+    [self.navigationController pushViewController:[JavaScriptCoreVC new] animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

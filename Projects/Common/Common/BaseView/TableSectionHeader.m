@@ -7,6 +7,7 @@
 //
 
 #import "TableSectionHeader.h"
+#import "NSObject+BeeNotification.h"
 
 @implementation TableSectionHeader
 
