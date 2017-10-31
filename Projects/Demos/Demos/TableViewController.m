@@ -39,6 +39,7 @@
                       [MBExample exampleWithTitle:@"With label" selector:@"labelExample"],
                       [MBExample exampleWithTitle:@"With details label" selector:@"detailsLabelExample"],
                       [MBExample exampleWithTitle:@"Zoom View" selector:@"zoomViewExample"],
+                      [MBExample exampleWithTitle:@"JavaScriptCore" selector:@"JavaScriptCore"],
                       [MBExample exampleWithTitle:@"JavaScriptCore" selector:@"JavaScriptCore"]
                       ];
     MHGradientColorView *view = [[MHGradientColorView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];

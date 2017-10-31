@@ -69,8 +69,8 @@
 
 #pragma mark  打开本地照片
 - (void) localPhoto{
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc]init];
-    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    imagePicker.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
     imagePicker.delegate = self;
     [self presentViewController:imagePicker animated:YES completion:nil];
 }

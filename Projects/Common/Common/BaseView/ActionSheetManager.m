@@ -36,14 +36,18 @@
     [alert addAction:[UIAlertAction actionWithTitle:aCancelButtonTitle style:UIAlertActionStyleCancel handler:nil]];
     
     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
-        [[[self window] rootViewController] presentViewController:alert animated:YES completion:nil];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [[[self window] rootViewController] presentViewController:alert animated:YES completion:nil];
+        });
     }else{
         UIViewController *root = [self window].rootViewController;
         UIPopoverPresentationController *ppc = [alert popoverPresentationController];
         ppc.sourceView = root.view;
         ppc.sourceRect = CGRectMake((CGRectGetWidth(ppc.sourceView.bounds)-2)*0.5f,CGRectGetHeight(ppc.sourceView.bounds), 2, 2);
         ppc.permittedArrowDirections = UIPopoverArrowDirectionUp;
-        [root presentViewController:alert animated:YES completion:nil];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [root presentViewController:alert animated:YES completion:nil];
+        });
     }
 }
 
