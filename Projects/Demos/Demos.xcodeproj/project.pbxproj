@@ -24,6 +24,8 @@
 		F53700981FA708EB00E055F3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F53700971FA708EB00E055F3 /* index.html */; };
 		F5E8391F1F3C54A200B2E2A7 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */; };
 		F5E839221F3C54B600B2E2A7 /* RACSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E839211F3C54B600B2E2A7 /* RACSecondViewController.m */; };
+		F5F2B2AE1FAC3CCE004E5260 /* YJDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F2B2AD1FAC3CCE004E5260 /* YJDownloadManager.m */; };
+		F5F2B2B21FAC3CFA004E5260 /* YJDownloadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F2B2B11FAC3CFA004E5260 /* YJDownloadInfo.m */; };
 		F5FA078D1F3AE4B90048954F /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FA078C1F3AE4B90048954F /* libCommon.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,11 @@
 		F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
 		F5E839201F3C54B600B2E2A7 /* RACSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSecondViewController.h; sourceTree = "<group>"; };
 		F5E839211F3C54B600B2E2A7 /* RACSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSecondViewController.m; sourceTree = "<group>"; };
+		F5F2B2AC1FAC3CCE004E5260 /* YJDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJDownloadManager.h; sourceTree = "<group>"; };
+		F5F2B2AD1FAC3CCE004E5260 /* YJDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJDownloadManager.m; sourceTree = "<group>"; };
+		F5F2B2AF1FAC3CE0004E5260 /* YJDownload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJDownload.h; sourceTree = "<group>"; };
+		F5F2B2B01FAC3CFA004E5260 /* YJDownloadInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJDownloadInfo.h; sourceTree = "<group>"; };
+		F5F2B2B11FAC3CFA004E5260 /* YJDownloadInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJDownloadInfo.m; sourceTree = "<group>"; };
 		F5FA078C1F3AE4B90048954F /* libCommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCommon.a; path = "../Common/build/Release-iphoneos/libCommon.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +125,7 @@
 		F5070AA31F2ACE31002C0ADF /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				F5F2B2AB1FAC3C8B004E5260 /* YJDownload */,
 				F53700901FA7034100E055F3 /* JS_OC_JavaScriptCore */,
 				F52C016E1F8F641A005C6FF0 /* ZoomView */,
 				F52C016A1F8F60CB005C6FF0 /* UIImagePickerController */,
@@ -199,6 +207,18 @@
 				F5E839211F3C54B600B2E2A7 /* RACSecondViewController.m */,
 			);
 			path = RAC;
+			sourceTree = "<group>";
+		};
+		F5F2B2AB1FAC3C8B004E5260 /* YJDownload */ = {
+			isa = PBXGroup;
+			children = (
+				F5F2B2AF1FAC3CE0004E5260 /* YJDownload.h */,
+				F5F2B2AC1FAC3CCE004E5260 /* YJDownloadManager.h */,
+				F5F2B2AD1FAC3CCE004E5260 /* YJDownloadManager.m */,
+				F5F2B2B01FAC3CFA004E5260 /* YJDownloadInfo.h */,
+				F5F2B2B11FAC3CFA004E5260 /* YJDownloadInfo.m */,
+			);
+			path = YJDownload;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,9 +345,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5F2B2AE1FAC3CCE004E5260 /* YJDownloadManager.m in Sources */,
 				F52C01711F8F6463005C6FF0 /* ZoomViewController.m in Sources */,
 				F5070AAC1F2ACE31002C0ADF /* ViewController.m in Sources */,
 				F5070AC41F2ADF7C002C0ADF /* DownloadOperation.m in Sources */,
+				F5F2B2B21FAC3CFA004E5260 /* YJDownloadInfo.m in Sources */,
 				F52C01741F8F6914005C6FF0 /* TableViewController.m in Sources */,
 				F5070AC11F2ADEB9002C0ADF /* NSOperationTestVC.m in Sources */,
 				F5E8391F1F3C54A200B2E2A7 /* RACViewController.m in Sources */,
