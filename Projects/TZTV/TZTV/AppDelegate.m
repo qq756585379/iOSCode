@@ -15,7 +15,6 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[UITextField appearance] setTintColor:[UIColor lightGrayColor]];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

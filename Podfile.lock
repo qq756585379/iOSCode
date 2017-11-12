@@ -37,13 +37,7 @@ PODS:
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
   - PureLayout (3.0.2)
-  - ReactiveCocoa (2.5):
-    - ReactiveCocoa/UI (= 2.5)
-  - ReactiveCocoa/Core (2.5):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.5)
-  - ReactiveCocoa/UI (2.5):
-    - ReactiveCocoa/Core
+  - ReactiveObjC (3.0.0)
   - RegexKitLite (4.0)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
@@ -63,7 +57,7 @@ DEPENDENCIES:
   - MJExtension (~> 3.0.13)
   - MJRefresh (~> 3.1.12)
   - PureLayout (~> 3.0.2)
-  - ReactiveCocoa (~> 2.5)
+  - ReactiveObjC (~> 3.0.0)
   - RegexKitLite (~> 4.0)
   - SDWebImage (~> 4.0.0)
   - SVProgressHUD (~> 2.1.2)
@@ -81,13 +75,13 @@ SPEC CHECKSUMS:
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
-  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   RegexKitLite: c0e4c12e6e7de0769f3a3ed679f0f61604170661
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: db80da1b04060a4243cd3efd20a3013f90ff6f2b
+PODFILE CHECKSUM: f0087144e8fce3e451576cec8a9b5c6e0092aaec
 
 COCOAPODS: 1.2.1
