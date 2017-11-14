@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ReactiveCocoa.h"
+#import <ReactiveObjC/ReactiveObjC.h>
 
 @interface RACSecondViewController : UIViewController
 

@@ -21,6 +21,7 @@
 		D4186CEB1F9CF00F00204FB1 /* AlertViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CE91F9CF00E00204FB1 /* AlertViewManager.m */; };
 		D4186D091F9CF24100204FB1 /* OTSPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186D071F9CF24100204FB1 /* OTSPageControl.m */; };
 		D4186DD41F9CF3ED00204FB1 /* TableSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186DD31F9CF3ED00204FB1 /* TableSectionHeader.m */; };
+		F55D02E01FBAE819005758F8 /* MHNavBarMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D02DE1FBAE819005758F8 /* MHNavBarMenu.m */; };
 		F58111651F7F44FC00B9A214 /* MHGradientColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58110CF1F7F44FC00B9A214 /* MHGradientColorView.m */; };
 		F58111661F7F44FC00B9A214 /* MHVAlignLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F58110D11F7F44FC00B9A214 /* MHVAlignLabel.m */; };
 		F58111671F7F44FC00B9A214 /* OTSCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58110D31F7F44FC00B9A214 /* OTSCollectionReusableView.m */; };
@@ -124,6 +125,9 @@
 		D4186D081F9CF24100204FB1 /* OTSPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPageControl.h; sourceTree = "<group>"; };
 		D4186DD21F9CF3ED00204FB1 /* TableSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionHeader.h; sourceTree = "<group>"; };
 		D4186DD31F9CF3ED00204FB1 /* TableSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSectionHeader.m; sourceTree = "<group>"; };
+		F55D02DE1FBAE819005758F8 /* MHNavBarMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNavBarMenu.m; sourceTree = "<group>"; };
+		F55D02DF1FBAE819005758F8 /* MHNavBarMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNavBarMenu.h; sourceTree = "<group>"; };
+		F55D02E11FBAEE77005758F8 /* MiHomeUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MiHomeUI.bundle; sourceTree = "<group>"; };
 		F58110CE1F7F44FC00B9A214 /* MHGradientColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHGradientColorView.h; sourceTree = "<group>"; };
 		F58110CF1F7F44FC00B9A214 /* MHGradientColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHGradientColorView.m; sourceTree = "<group>"; };
 		F58110D01F7F44FC00B9A214 /* MHVAlignLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHVAlignLabel.h; sourceTree = "<group>"; };
@@ -276,9 +280,20 @@
 			path = BaseVC;
 			sourceTree = "<group>";
 		};
+		F55D02DA1FBAE54E005758F8 /* MiHomeUI */ = {
+			isa = PBXGroup;
+			children = (
+				F55D02E11FBAEE77005758F8 /* MiHomeUI.bundle */,
+				F55D02DF1FBAE819005758F8 /* MHNavBarMenu.h */,
+				F55D02DE1FBAE819005758F8 /* MHNavBarMenu.m */,
+			);
+			path = MiHomeUI;
+			sourceTree = "<group>";
+		};
 		F58110CC1F7F44FC00B9A214 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F55D02DA1FBAE54E005758F8 /* MiHomeUI */,
 				D4186CC71F9CEE3100204FB1 /* BaseVC */,
 				F58110CD1F7F44FC00B9A214 /* BaseView */,
 				F58110E01F7F44FC00B9A214 /* Category */,
@@ -744,6 +759,7 @@
 				F581118C1F7F44FD00B9A214 /* UIColor+Hex.m in Sources */,
 				F581117F1F7F44FD00B9A214 /* NSArray+safe.m in Sources */,
 				F58111751F7F44FD00B9A214 /* NSObject+JsonToVO.m in Sources */,
+				F55D02E01FBAE819005758F8 /* MHNavBarMenu.m in Sources */,
 				D4186CD61F9CEF7A00204FB1 /* OTSBlockImageView.m in Sources */,
 				F581118E1F7F44FD00B9A214 /* UIImage+bundleRes.m in Sources */,
 				F581116C1F7F44FC00B9A214 /* OTSWebView.m in Sources */,
