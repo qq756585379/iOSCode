@@ -11,7 +11,7 @@
 #import "CommonDefine.h"
 #import "ZoomViewController.h"
 #import "JavaScriptCoreVC.h"
-#import "MHNavBarMenu.h"
+#import "MHTopPullMenu.h"
 
 @interface MBExample : NSObject
 @property (nonatomic,   copy) NSString *title;
@@ -72,7 +72,7 @@
 }
 
 -(void)MiHomeUI{
-    MHTopPullMenu *menu = [[MHTopPullMenu alloc] initWithMenu];
+    MHTopPullMenu *menu = [[MHTopPullMenu alloc] init];
     menu.rowHeight = 50.0f;
     MHNavBarMenuItem *item1 = [[MHNavBarMenuItem alloc] initWithImage:nil title:@"开关"];
     MHNavBarMenuItem *item2 = [[MHNavBarMenuItem alloc] initWithImage:nil title:@"开关"];

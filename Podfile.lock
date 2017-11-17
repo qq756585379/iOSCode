@@ -53,12 +53,12 @@ DEPENDENCIES:
   - DateTools (~> 2.0.0)
   - FLAnimatedImage (~> 1.0.12)
   - KILabel (~> 1.0.1)
-  - Masonry (~> 1.0.2)
+  - Masonry
   - MBProgressHUD (~> 1.0.0)
   - MJExtension (~> 3.0.13)
   - MJRefresh (~> 3.1.12)
   - pop (~> 1.0.10)
-  - PureLayout (~> 3.0.2)
+  - PureLayout
   - ReactiveObjC (~> 3.0.0)
   - RegexKitLite (~> 4.0)
   - SDWebImage (~> 4.0.0)
@@ -85,6 +85,6 @@ SPEC CHECKSUMS:
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: d8e261d773cae4d62f27df2d71be4fd0aad0b20a
+PODFILE CHECKSUM: 9cb28e9ab0d7e6adda2bba718fdf5731254ff111
 
 COCOAPODS: 1.2.1

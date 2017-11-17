@@ -10,12 +10,12 @@ workspace 'iOSCode'
 # There are no targets called "Shows" in any Xcode project
 abstract_target 'Shows' do
     
+    pod 'Masonry'
+    pod 'PureLayout'
     pod 'AFNetworking', '~> 3.1.0'
     pod 'SDWebImage', '~> 4.0.0'
-    pod 'Masonry', '~> 1.0.2'
     pod 'ReactiveObjC', '~> 3.0.0'
     pod 'pop', '~> 1.0.10'
-    pod 'PureLayout', '~> 3.0.2'
     pod 'MJExtension', '~> 3.0.13'
     pod 'MJRefresh', '~> 3.1.12'
     pod 'SVProgressHUD', '~> 2.1.2'
