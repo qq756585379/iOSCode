@@ -164,14 +164,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     WEAK_SELF
-    [self dismiss:^{
-        STRONG_SELF
-        if (self.didSelectMenuItem) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                self.didSelectMenuItem(self, self.items[indexPath.row]);
-            });
-        }
-    }];
+//    [self dismiss:^{
+//        STRONG_SELF
+//        if (self.didSelectMenuItem) {
+//            dispatch_async(dispatch_get_main_queue(), ^{
+//                self.didSelectMenuItem(self, self.items[indexPath.row]);
+//            });
+//        }
+//    }];
 }
 
 -(UITableView *)tableView{
