@@ -21,7 +21,11 @@
 		D4186CEB1F9CF00F00204FB1 /* AlertViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CE91F9CF00E00204FB1 /* AlertViewManager.m */; };
 		D4186D091F9CF24100204FB1 /* OTSPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186D071F9CF24100204FB1 /* OTSPageControl.m */; };
 		D4186DD41F9CF3ED00204FB1 /* TableSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186DD31F9CF3ED00204FB1 /* TableSectionHeader.m */; };
-		F55D02E01FBAE819005758F8 /* MHNavBarMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D02DE1FBAE819005758F8 /* MHNavBarMenu.m */; };
+		F5523A3D1FC2E803004C78EA /* MHNavigationBarMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F5523A331FC2E803004C78EA /* MHNavigationBarMenu.m */; };
+		F5523A3E1FC2E803004C78EA /* MHNavBarMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F5523A371FC2E803004C78EA /* MHNavBarMenuItem.m */; };
+		F5523A3F1FC2E803004C78EA /* MHTopPullMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F5523A391FC2E803004C78EA /* MHTopPullMenu.m */; };
+		F5523A401FC2E803004C78EA /* MHBottomTipMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F5523A3A1FC2E803004C78EA /* MHBottomTipMenu.m */; };
+		F5523A411FC2E803004C78EA /* MHNavigationBarMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5523A3C1FC2E803004C78EA /* MHNavigationBarMenuCell.m */; };
 		F58111651F7F44FC00B9A214 /* MHGradientColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58110CF1F7F44FC00B9A214 /* MHGradientColorView.m */; };
 		F58111661F7F44FC00B9A214 /* MHVAlignLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F58110D11F7F44FC00B9A214 /* MHVAlignLabel.m */; };
 		F58111671F7F44FC00B9A214 /* OTSCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F58110D31F7F44FC00B9A214 /* OTSCollectionReusableView.m */; };
@@ -125,9 +129,19 @@
 		D4186D081F9CF24100204FB1 /* OTSPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPageControl.h; sourceTree = "<group>"; };
 		D4186DD21F9CF3ED00204FB1 /* TableSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionHeader.h; sourceTree = "<group>"; };
 		D4186DD31F9CF3ED00204FB1 /* TableSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSectionHeader.m; sourceTree = "<group>"; };
-		F55D02DE1FBAE819005758F8 /* MHNavBarMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNavBarMenu.m; sourceTree = "<group>"; };
-		F55D02DF1FBAE819005758F8 /* MHNavBarMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNavBarMenu.h; sourceTree = "<group>"; };
-		F55D02E11FBAEE77005758F8 /* MiHomeUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MiHomeUI.bundle; sourceTree = "<group>"; };
+		F5523A301FC2E803004C78EA /* MHNavBarMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNavBarMenuItem.h; sourceTree = "<group>"; };
+		F5523A311FC2E803004C78EA /* MHBottomTipMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHBottomTipMenu.h; sourceTree = "<group>"; };
+		F5523A321FC2E803004C78EA /* MHTopPullMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTopPullMenu.h; sourceTree = "<group>"; };
+		F5523A331FC2E803004C78EA /* MHNavigationBarMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNavigationBarMenu.m; sourceTree = "<group>"; };
+		F5523A341FC2E803004C78EA /* navi_closed_black@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_closed_black@3x.png"; sourceTree = "<group>"; };
+		F5523A351FC2E803004C78EA /* navi_closed_black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navi_closed_black@2x.png"; sourceTree = "<group>"; };
+		F5523A361FC2E803004C78EA /* MHNavigationBarMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNavigationBarMenuCell.h; sourceTree = "<group>"; };
+		F5523A371FC2E803004C78EA /* MHNavBarMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNavBarMenuItem.m; sourceTree = "<group>"; };
+		F5523A381FC2E803004C78EA /* MiHomeUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MiHomeUI.bundle; sourceTree = "<group>"; };
+		F5523A391FC2E803004C78EA /* MHTopPullMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTopPullMenu.m; sourceTree = "<group>"; };
+		F5523A3A1FC2E803004C78EA /* MHBottomTipMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHBottomTipMenu.m; sourceTree = "<group>"; };
+		F5523A3B1FC2E803004C78EA /* MHNavigationBarMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNavigationBarMenu.h; sourceTree = "<group>"; };
+		F5523A3C1FC2E803004C78EA /* MHNavigationBarMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNavigationBarMenuCell.m; sourceTree = "<group>"; };
 		F58110CE1F7F44FC00B9A214 /* MHGradientColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHGradientColorView.h; sourceTree = "<group>"; };
 		F58110CF1F7F44FC00B9A214 /* MHGradientColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHGradientColorView.m; sourceTree = "<group>"; };
 		F58110D01F7F44FC00B9A214 /* MHVAlignLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHVAlignLabel.h; sourceTree = "<group>"; };
@@ -280,20 +294,38 @@
 			path = BaseVC;
 			sourceTree = "<group>";
 		};
-		F55D02DA1FBAE54E005758F8 /* MiHomeUI */ = {
+		F5523A2E1FC2E803004C78EA /* MiHomeUI */ = {
 			isa = PBXGroup;
 			children = (
-				F55D02E11FBAEE77005758F8 /* MiHomeUI.bundle */,
-				F55D02DF1FBAE819005758F8 /* MHNavBarMenu.h */,
-				F55D02DE1FBAE819005758F8 /* MHNavBarMenu.m */,
+				F5523A2F1FC2E803004C78EA /* MiHomeBarMenu */,
 			);
 			path = MiHomeUI;
+			sourceTree = "<group>";
+		};
+		F5523A2F1FC2E803004C78EA /* MiHomeBarMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F5523A301FC2E803004C78EA /* MHNavBarMenuItem.h */,
+				F5523A311FC2E803004C78EA /* MHBottomTipMenu.h */,
+				F5523A321FC2E803004C78EA /* MHTopPullMenu.h */,
+				F5523A331FC2E803004C78EA /* MHNavigationBarMenu.m */,
+				F5523A341FC2E803004C78EA /* navi_closed_black@3x.png */,
+				F5523A351FC2E803004C78EA /* navi_closed_black@2x.png */,
+				F5523A361FC2E803004C78EA /* MHNavigationBarMenuCell.h */,
+				F5523A371FC2E803004C78EA /* MHNavBarMenuItem.m */,
+				F5523A381FC2E803004C78EA /* MiHomeUI.bundle */,
+				F5523A391FC2E803004C78EA /* MHTopPullMenu.m */,
+				F5523A3A1FC2E803004C78EA /* MHBottomTipMenu.m */,
+				F5523A3B1FC2E803004C78EA /* MHNavigationBarMenu.h */,
+				F5523A3C1FC2E803004C78EA /* MHNavigationBarMenuCell.m */,
+			);
+			path = MiHomeBarMenu;
 			sourceTree = "<group>";
 		};
 		F58110CC1F7F44FC00B9A214 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F55D02DA1FBAE54E005758F8 /* MiHomeUI */,
+				F5523A2E1FC2E803004C78EA /* MiHomeUI */,
 				D4186CC71F9CEE3100204FB1 /* BaseVC */,
 				F58110CD1F7F44FC00B9A214 /* BaseView */,
 				F58110E01F7F44FC00B9A214 /* Category */,
@@ -726,6 +758,8 @@
 				F58111771F7F44FD00B9A214 /* NSObject+runtime.m in Sources */,
 				F58111951F7F44FD00B9A214 /* UIView+IB.m in Sources */,
 				D4186CE51F9CEFB000204FB1 /* BaseBtn.m in Sources */,
+				F5523A3F1FC2E803004C78EA /* MHTopPullMenu.m in Sources */,
+				F5523A401FC2E803004C78EA /* MHBottomTipMenu.m in Sources */,
 				F58111881F7F44FD00B9A214 /* UIView+safe.m in Sources */,
 				F58111801F7F44FD00B9A214 /* NSDictionary+safe.m in Sources */,
 				F58111821F7F44FD00B9A214 /* NSMutableDictionary+safe.m in Sources */,
@@ -739,6 +773,7 @@
 				F581119C1F7F44FD00B9A214 /* IMICatchCrash.m in Sources */,
 				F58111781F7F44FD00B9A214 /* NSObject+swizzle.m in Sources */,
 				F581117C1F7F44FD00B9A214 /* NSString+tripledes.m in Sources */,
+				F5523A3E1FC2E803004C78EA /* MHNavBarMenuItem.m in Sources */,
 				F581116A1F7F44FC00B9A214 /* OTSTableView.m in Sources */,
 				F58111651F7F44FC00B9A214 /* MHGradientColorView.m in Sources */,
 				D4186CDE1F9CEF9600204FB1 /* OTSActionSheet.m in Sources */,
@@ -759,7 +794,7 @@
 				F581118C1F7F44FD00B9A214 /* UIColor+Hex.m in Sources */,
 				F581117F1F7F44FD00B9A214 /* NSArray+safe.m in Sources */,
 				F58111751F7F44FD00B9A214 /* NSObject+JsonToVO.m in Sources */,
-				F55D02E01FBAE819005758F8 /* MHNavBarMenu.m in Sources */,
+				F5523A3D1FC2E803004C78EA /* MHNavigationBarMenu.m in Sources */,
 				D4186CD61F9CEF7A00204FB1 /* OTSBlockImageView.m in Sources */,
 				F581118E1F7F44FD00B9A214 /* UIImage+bundleRes.m in Sources */,
 				F581116C1F7F44FC00B9A214 /* OTSWebView.m in Sources */,
@@ -771,6 +806,7 @@
 				F58111991F7F44FD00B9A214 /* OTSArchiveData.m in Sources */,
 				F58111861F7F44FD00B9A214 /* NSString+safe.m in Sources */,
 				F58111911F7F44FD00B9A214 /* UITextField+Placeholder.m in Sources */,
+				F5523A411FC2E803004C78EA /* MHNavigationBarMenuCell.m in Sources */,
 				F581118A1F7F44FD00B9A214 /* UIButton+util.m in Sources */,
 				D4186CD91F9CEF8500204FB1 /* OTSBlockBtn.m in Sources */,
 				D4186DD41F9CF3ED00204FB1 /* TableSectionHeader.m in Sources */,

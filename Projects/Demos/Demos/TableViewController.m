@@ -12,6 +12,7 @@
 #import "ZoomViewController.h"
 #import "JavaScriptCoreVC.h"
 #import "MHTopPullMenu.h"
+#import "TestVC.h"
 
 @interface MBExample : NSObject
 @property (nonatomic,   copy) NSString *title;
@@ -42,7 +43,8 @@
                       [MBExample exampleWithTitle:@"Zoom View" selector:@"zoomViewExample"],
                       [MBExample exampleWithTitle:@"JavaScriptCore" selector:@"JavaScriptCore"],
                       [MBExample exampleWithTitle:@"JavaScriptCore" selector:@"JavaScriptCore"],
-                      [MBExample exampleWithTitle:@"MiHome" selector:@"MiHomeUI"]
+                      [MBExample exampleWithTitle:@"MiHome" selector:@"MiHomeUI"],
+                      [MBExample exampleWithTitle:@"X" selector:@"___X"]
                       ];
     MHGradientColorView *view = [[MHGradientColorView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 200)];
     self.tableView.tableHeaderView = view;
@@ -72,16 +74,20 @@
 }
 
 -(void)MiHomeUI{
-    MHTopPullMenu *menu = [[MHTopPullMenu alloc] init];
-    menu.rowHeight = 50.0f;
-    MHNavBarMenuItem *item1 = [[MHNavBarMenuItem alloc] initWithImage:nil title:@"开关"];
-    MHNavBarMenuItem *item2 = [[MHNavBarMenuItem alloc] initWithImage:nil title:@"开关"];
-    MHNavBarMenuItem *item3 = [[MHNavBarMenuItem alloc] initWithImage:nil title:@"开关"];
-    menu.items = @[item1, item2, item3];
-    [menu setDidSelectMenuItem:^(MHTopPullMenu *menu, MHNavBarMenuItem *item) {
-        
-    }];
-    [menu show];
+//    MHTopPullMenu *menu = [[MHTopPullMenu alloc] init];
+//    menu.rowHeight = 50.0f;
+//    MHNavBarMenuItem *item1 = [[MHNavBarMenuItem alloc] initWithImage:nil title:@"开关"];
+//    MHNavBarMenuItem *item2 = [[MHNavBarMenuItem alloc] initWithImage:nil title:@"开关"];
+//    MHNavBarMenuItem *item3 = [[MHNavBarMenuItem alloc] initWithImage:nil title:@"开关"];
+//    menu.items = @[item1, item2, item3];
+//    [menu setDidSelectMenuItem:^(MHTopPullMenu *menu, MHNavBarMenuItem *item) {
+//
+//    }];
+//    [menu show];
+}
+
+-(void)___X{
+    [self.navigationController pushViewController:[TestVC new] animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

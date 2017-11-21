@@ -22,6 +22,7 @@
 		F53700931FA703E000E055F3 /* JavaScriptCoreVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F53700921FA703E000E055F3 /* JavaScriptCoreVC.m */; };
 		F53700961FA7073200E055F3 /* SaveImage_Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F53700951FA7073200E055F3 /* SaveImage_Util.m */; };
 		F53700981FA708EB00E055F3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F53700971FA708EB00E055F3 /* index.html */; };
+		F5523A441FC2E88F004C78EA /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5523A431FC2E88F004C78EA /* TestVC.m */; };
 		F5E8391F1F3C54A200B2E2A7 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */; };
 		F5E839221F3C54B600B2E2A7 /* RACSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E839211F3C54B600B2E2A7 /* RACSecondViewController.m */; };
 		F5FA078D1F3AE4B90048954F /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FA078C1F3AE4B90048954F /* libCommon.a */; };
@@ -59,6 +60,8 @@
 		F53700941FA7073200E055F3 /* SaveImage_Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveImage_Util.h; sourceTree = "<group>"; };
 		F53700951FA7073200E055F3 /* SaveImage_Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveImage_Util.m; sourceTree = "<group>"; };
 		F53700971FA708EB00E055F3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		F5523A421FC2E88F004C78EA /* TestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		F5523A431FC2E88F004C78EA /* TestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
 		F5E8391D1F3C54A200B2E2A7 /* RACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
 		F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
 		F5E839201F3C54B600B2E2A7 /* RACSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSecondViewController.h; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				F5070AA81F2ACE31002C0ADF /* AppDelegate.m */,
 				F52C01721F8F6914005C6FF0 /* TableViewController.h */,
 				F52C01731F8F6914005C6FF0 /* TableViewController.m */,
+				F5523A421FC2E88F004C78EA /* TestVC.h */,
+				F5523A431FC2E88F004C78EA /* TestVC.m */,
 				F5070AAA1F2ACE31002C0ADF /* ViewController.h */,
 				F5070AAB1F2ACE31002C0ADF /* ViewController.m */,
 				F5070AAD1F2ACE31002C0ADF /* Main.storyboard */,
@@ -337,6 +342,7 @@
 				F5070AA91F2ACE31002C0ADF /* AppDelegate.m in Sources */,
 				F53700961FA7073200E055F3 /* SaveImage_Util.m in Sources */,
 				F5070AA61F2ACE31002C0ADF /* main.m in Sources */,
+				F5523A441FC2E88F004C78EA /* TestVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
