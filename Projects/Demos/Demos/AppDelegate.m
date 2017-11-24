@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Bugtags/Bugtags.h>
 #import "TableViewController.h"
 
 @interface AppDelegate ()
@@ -15,8 +16,8 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self setupUniversalBugTag];
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[TableViewController new]];
@@ -25,6 +26,11 @@
     return YES;
 }
 
+- (void)setupUniversalBugTag{
+    BugtagsOptions *bugtagsOptions = [[BugtagsOptions alloc] init];
+    bugtagsOptions.trackingCrashes = YES;
+    [Bugtags startWithAppKey:@"adfd2c57eb346c6ecc1c4f5e24645b6c" invocationEvent:BTGInvocationEventBubble options:bugtagsOptions];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

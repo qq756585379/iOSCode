@@ -29,6 +29,9 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - Bugtags (2.3.2):
+    - Bugtags/Core (= 2.3.2)
+  - Bugtags/Core (2.3.2)
   - DateTools (2.0.0)
   - FLAnimatedImage (1.0.12)
   - KILabel (1.0.1)
@@ -50,6 +53,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - BlocksKit (~> 2.2.5)
+  - Bugtags
   - DateTools (~> 2.0.0)
   - FLAnimatedImage (~> 1.0.12)
   - KILabel (~> 1.0.1)
@@ -69,6 +73,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Bugtags: 2ec94ad18b279ce00073ccc7a42cbd4870704882
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
   KILabel: 4797807cdc0b4992dad8bf91175ddc973c3b569b
@@ -85,6 +90,6 @@ SPEC CHECKSUMS:
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 9cb28e9ab0d7e6adda2bba718fdf5731254ff111
+PODFILE CHECKSUM: fbacacdbe13bc9b3c684950279d3c6567be633b3
 
 COCOAPODS: 1.2.1

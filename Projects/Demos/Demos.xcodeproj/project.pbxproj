@@ -25,6 +25,8 @@
 		F5523A441FC2E88F004C78EA /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5523A431FC2E88F004C78EA /* TestVC.m */; };
 		F5E8391F1F3C54A200B2E2A7 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */; };
 		F5E839221F3C54B600B2E2A7 /* RACSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E839211F3C54B600B2E2A7 /* RACSecondViewController.m */; };
+		F5F936661FC814410014A5BE /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5F936651FC814400014A5BE /* win.wav */; };
+		F5F936681FC814480014A5BE /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5F936671FC814480014A5BE /* crunch.wav */; };
 		F5FA078D1F3AE4B90048954F /* libCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FA078C1F3AE4B90048954F /* libCommon.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,8 @@
 		F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
 		F5E839201F3C54B600B2E2A7 /* RACSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSecondViewController.h; sourceTree = "<group>"; };
 		F5E839211F3C54B600B2E2A7 /* RACSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSecondViewController.m; sourceTree = "<group>"; };
+		F5F936651FC814400014A5BE /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		F5F936671FC814480014A5BE /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
 		F5FA078C1F3AE4B90048954F /* libCommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCommon.a; path = "../Common/build/Release-iphoneos/libCommon.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +150,8 @@
 		F5070AA41F2ACE31002C0ADF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F5F936651FC814400014A5BE /* win.wav */,
+				F5F936671FC814480014A5BE /* crunch.wav */,
 				F5070AA51F2ACE31002C0ADF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -269,8 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5070AB41F2ACE31002C0ADF /* LaunchScreen.storyboard in Resources */,
+				F5F936681FC814480014A5BE /* crunch.wav in Resources */,
 				F53700981FA708EB00E055F3 /* index.html in Resources */,
 				F5070AB11F2ACE31002C0ADF /* Assets.xcassets in Resources */,
+				F5F936661FC814410014A5BE /* win.wav in Resources */,
 				F5070AAF1F2ACE31002C0ADF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

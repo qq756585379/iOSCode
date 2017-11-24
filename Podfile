@@ -10,6 +10,7 @@ workspace 'iOSCode'
 # There are no targets called "Shows" in any Xcode project
 abstract_target 'Shows' do
     
+    pod 'Bugtags'
     pod 'Masonry'
     pod 'PureLayout'
     pod 'AFNetworking', '~> 3.1.0'
