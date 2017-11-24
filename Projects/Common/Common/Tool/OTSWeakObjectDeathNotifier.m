@@ -10,9 +10,7 @@
 #import "NSObject+category.h"
 
 @interface OTSWeakObjectDeathNotifier ()
-
 @property (nonatomic, copy) OTSWeakObjectDeathNotifierBlock aBlock;
-
 @end
 
 @implementation OTSWeakObjectDeathNotifier
@@ -31,10 +29,8 @@
     self.aBlock = nil;
 }
 
-- (void)setOwner:(id)owner
-{
+- (void)setOwner:(id)owner{
     _owner = owner;
-    
     [owner objc_setAssociatedObject:[NSString stringWithFormat:@"observerOwner_%p",self] value:self policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
 }
 
