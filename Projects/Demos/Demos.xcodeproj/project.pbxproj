@@ -23,6 +23,27 @@
 		F53700961FA7073200E055F3 /* SaveImage_Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F53700951FA7073200E055F3 /* SaveImage_Util.m */; };
 		F53700981FA708EB00E055F3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = F53700971FA708EB00E055F3 /* index.html */; };
 		F5523A441FC2E88F004C78EA /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5523A431FC2E88F004C78EA /* TestVC.m */; };
+		F5DB6A621FE382C20039D5B4 /* AVPlayerTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB6A611FE382C20039D5B4 /* AVPlayerTestVC.m */; };
+		F5DB6A6A1FE383F30039D5B4 /* IMIVideoContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB6A631FE383F20039D5B4 /* IMIVideoContainer.m */; };
+		F5DB6A6B1FE383F30039D5B4 /* IMIVideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB6A641FE383F20039D5B4 /* IMIVideoPlayView.m */; };
+		F5DB6A6C1FE383F30039D5B4 /* IMIPlayerBottomBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A681FE383F30039D5B4 /* IMIPlayerBottomBar.xib */; };
+		F5DB6A6D1FE383F30039D5B4 /* IMIPlayerBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB6A691FE383F30039D5B4 /* IMIPlayerBottomBar.m */; };
+		F5DB6A7D1FE385020039D5B4 /* IMI003_全屏icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A701FE384FE0039D5B4 /* IMI003_全屏icon@3x.png */; };
+		F5DB6A7E1FE385020039D5B4 /* IMI003_声音@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A711FE384FE0039D5B4 /* IMI003_声音@2x.png */; };
+		F5DB6A7F1FE385020039D5B4 /* IMI003_缩屏@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A721FE384FE0039D5B4 /* IMI003_缩屏@2x.png */; };
+		F5DB6A801FE385020039D5B4 /* IMI003_dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A731FE384FE0039D5B4 /* IMI003_dot@2x.png */; };
+		F5DB6A811FE385020039D5B4 /* IMI003_声音静音@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A741FE384FF0039D5B4 /* IMI003_声音静音@2x.png */; };
+		F5DB6A821FE385020039D5B4 /* IMI003_暂停@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A751FE384FF0039D5B4 /* IMI003_暂停@3x.png */; };
+		F5DB6A831FE385020039D5B4 /* IMI003_暂停@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A761FE384FF0039D5B4 /* IMI003_暂停@2x.png */; };
+		F5DB6A841FE385020039D5B4 /* IMI003_缩屏@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A771FE385000039D5B4 /* IMI003_缩屏@3x.png */; };
+		F5DB6A851FE385020039D5B4 /* IMI003_knob.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A781FE385000039D5B4 /* IMI003_knob.png */; };
+		F5DB6A861FE385020039D5B4 /* IMI003_声音静音@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A791FE385010039D5B4 /* IMI003_声音静音@3x.png */; };
+		F5DB6A871FE385020039D5B4 /* IMI003_全屏icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A7A1FE385010039D5B4 /* IMI003_全屏icon@2x.png */; };
+		F5DB6A881FE385020039D5B4 /* IMI003_dot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A7B1FE385010039D5B4 /* IMI003_dot@3x.png */; };
+		F5DB6A891FE385020039D5B4 /* IMI003_声音@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A7C1FE385010039D5B4 /* IMI003_声音@3x.png */; };
+		F5DB6A8C1FE3850F0039D5B4 /* IMI003_PlayBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A8A1FE3850F0039D5B4 /* IMI003_PlayBtn@3x.png */; };
+		F5DB6A8D1FE3850F0039D5B4 /* IMI003_PlayBtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F5DB6A8B1FE3850F0039D5B4 /* IMI003_PlayBtn@2x.png */; };
+		F5DB6A901FE385420039D5B4 /* IMIPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DB6A8F1FE385420039D5B4 /* IMIPlayerManager.m */; };
 		F5E8391F1F3C54A200B2E2A7 /* RACViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */; };
 		F5E839221F3C54B600B2E2A7 /* RACSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5E839211F3C54B600B2E2A7 /* RACSecondViewController.m */; };
 		F5F936661FC814410014A5BE /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = F5F936651FC814400014A5BE /* win.wav */; };
@@ -64,6 +85,32 @@
 		F53700971FA708EB00E055F3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		F5523A421FC2E88F004C78EA /* TestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
 		F5523A431FC2E88F004C78EA /* TestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		F5DB6A601FE382C20039D5B4 /* AVPlayerTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVPlayerTestVC.h; sourceTree = "<group>"; };
+		F5DB6A611FE382C20039D5B4 /* AVPlayerTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVPlayerTestVC.m; sourceTree = "<group>"; };
+		F5DB6A631FE383F20039D5B4 /* IMIVideoContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMIVideoContainer.m; sourceTree = "<group>"; };
+		F5DB6A641FE383F20039D5B4 /* IMIVideoPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMIVideoPlayView.m; sourceTree = "<group>"; };
+		F5DB6A651FE383F20039D5B4 /* IMIPlayerBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMIPlayerBottomBar.h; sourceTree = "<group>"; };
+		F5DB6A661FE383F20039D5B4 /* IMIVideoPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMIVideoPlayView.h; sourceTree = "<group>"; };
+		F5DB6A671FE383F20039D5B4 /* IMIVideoContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMIVideoContainer.h; sourceTree = "<group>"; };
+		F5DB6A681FE383F30039D5B4 /* IMIPlayerBottomBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IMIPlayerBottomBar.xib; sourceTree = "<group>"; };
+		F5DB6A691FE383F30039D5B4 /* IMIPlayerBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMIPlayerBottomBar.m; sourceTree = "<group>"; };
+		F5DB6A701FE384FE0039D5B4 /* IMI003_全屏icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_全屏icon@3x.png"; sourceTree = "<group>"; };
+		F5DB6A711FE384FE0039D5B4 /* IMI003_声音@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_声音@2x.png"; sourceTree = "<group>"; };
+		F5DB6A721FE384FE0039D5B4 /* IMI003_缩屏@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_缩屏@2x.png"; sourceTree = "<group>"; };
+		F5DB6A731FE384FE0039D5B4 /* IMI003_dot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_dot@2x.png"; sourceTree = "<group>"; };
+		F5DB6A741FE384FF0039D5B4 /* IMI003_声音静音@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_声音静音@2x.png"; sourceTree = "<group>"; };
+		F5DB6A751FE384FF0039D5B4 /* IMI003_暂停@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_暂停@3x.png"; sourceTree = "<group>"; };
+		F5DB6A761FE384FF0039D5B4 /* IMI003_暂停@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_暂停@2x.png"; sourceTree = "<group>"; };
+		F5DB6A771FE385000039D5B4 /* IMI003_缩屏@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_缩屏@3x.png"; sourceTree = "<group>"; };
+		F5DB6A781FE385000039D5B4 /* IMI003_knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMI003_knob.png; sourceTree = "<group>"; };
+		F5DB6A791FE385010039D5B4 /* IMI003_声音静音@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_声音静音@3x.png"; sourceTree = "<group>"; };
+		F5DB6A7A1FE385010039D5B4 /* IMI003_全屏icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_全屏icon@2x.png"; sourceTree = "<group>"; };
+		F5DB6A7B1FE385010039D5B4 /* IMI003_dot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_dot@3x.png"; sourceTree = "<group>"; };
+		F5DB6A7C1FE385010039D5B4 /* IMI003_声音@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_声音@3x.png"; sourceTree = "<group>"; };
+		F5DB6A8A1FE3850F0039D5B4 /* IMI003_PlayBtn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_PlayBtn@3x.png"; sourceTree = "<group>"; };
+		F5DB6A8B1FE3850F0039D5B4 /* IMI003_PlayBtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IMI003_PlayBtn@2x.png"; sourceTree = "<group>"; };
+		F5DB6A8E1FE385420039D5B4 /* IMIPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMIPlayerManager.h; sourceTree = "<group>"; };
+		F5DB6A8F1FE385420039D5B4 /* IMIPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IMIPlayerManager.m; sourceTree = "<group>"; };
 		F5E8391D1F3C54A200B2E2A7 /* RACViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACViewController.h; sourceTree = "<group>"; };
 		F5E8391E1F3C54A200B2E2A7 /* RACViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACViewController.m; sourceTree = "<group>"; };
 		F5E839201F3C54B600B2E2A7 /* RACSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSecondViewController.h; sourceTree = "<group>"; };
@@ -125,6 +172,7 @@
 		F5070AA31F2ACE31002C0ADF /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				F5DB6A5F1FE382510039D5B4 /* AVPlayerDemo */,
 				F53700901FA7034100E055F3 /* JS_OC_JavaScriptCore */,
 				F52C016E1F8F641A005C6FF0 /* ZoomView */,
 				F52C016A1F8F60CB005C6FF0 /* UIImagePickerController */,
@@ -201,6 +249,55 @@
 			path = JS_OC_JavaScriptCore;
 			sourceTree = "<group>";
 		};
+		F5DB6A5F1FE382510039D5B4 /* AVPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F5DB6A6E1FE384040039D5B4 /* images */,
+				F5DB6A6F1FE384180039D5B4 /* AVPlayer */,
+				F5DB6A601FE382C20039D5B4 /* AVPlayerTestVC.h */,
+				F5DB6A611FE382C20039D5B4 /* AVPlayerTestVC.m */,
+			);
+			path = AVPlayerDemo;
+			sourceTree = "<group>";
+		};
+		F5DB6A6E1FE384040039D5B4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F5DB6A8B1FE3850F0039D5B4 /* IMI003_PlayBtn@2x.png */,
+				F5DB6A8A1FE3850F0039D5B4 /* IMI003_PlayBtn@3x.png */,
+				F5DB6A7A1FE385010039D5B4 /* IMI003_全屏icon@2x.png */,
+				F5DB6A701FE384FE0039D5B4 /* IMI003_全屏icon@3x.png */,
+				F5DB6A711FE384FE0039D5B4 /* IMI003_声音@2x.png */,
+				F5DB6A7C1FE385010039D5B4 /* IMI003_声音@3x.png */,
+				F5DB6A741FE384FF0039D5B4 /* IMI003_声音静音@2x.png */,
+				F5DB6A791FE385010039D5B4 /* IMI003_声音静音@3x.png */,
+				F5DB6A721FE384FE0039D5B4 /* IMI003_缩屏@2x.png */,
+				F5DB6A771FE385000039D5B4 /* IMI003_缩屏@3x.png */,
+				F5DB6A761FE384FF0039D5B4 /* IMI003_暂停@2x.png */,
+				F5DB6A751FE384FF0039D5B4 /* IMI003_暂停@3x.png */,
+				F5DB6A731FE384FE0039D5B4 /* IMI003_dot@2x.png */,
+				F5DB6A7B1FE385010039D5B4 /* IMI003_dot@3x.png */,
+				F5DB6A781FE385000039D5B4 /* IMI003_knob.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		F5DB6A6F1FE384180039D5B4 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F5DB6A651FE383F20039D5B4 /* IMIPlayerBottomBar.h */,
+				F5DB6A691FE383F30039D5B4 /* IMIPlayerBottomBar.m */,
+				F5DB6A681FE383F30039D5B4 /* IMIPlayerBottomBar.xib */,
+				F5DB6A8E1FE385420039D5B4 /* IMIPlayerManager.h */,
+				F5DB6A8F1FE385420039D5B4 /* IMIPlayerManager.m */,
+				F5DB6A671FE383F20039D5B4 /* IMIVideoContainer.h */,
+				F5DB6A631FE383F20039D5B4 /* IMIVideoContainer.m */,
+				F5DB6A661FE383F20039D5B4 /* IMIVideoPlayView.h */,
+				F5DB6A641FE383F20039D5B4 /* IMIVideoPlayView.m */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
 		F5E8391C1F3C549100B2E2A7 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,11 +372,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5070AB41F2ACE31002C0ADF /* LaunchScreen.storyboard in Resources */,
+				F5DB6A8C1FE3850F0039D5B4 /* IMI003_PlayBtn@3x.png in Resources */,
+				F5DB6A821FE385020039D5B4 /* IMI003_暂停@3x.png in Resources */,
+				F5DB6A831FE385020039D5B4 /* IMI003_暂停@2x.png in Resources */,
 				F5F936681FC814480014A5BE /* crunch.wav in Resources */,
+				F5DB6A7E1FE385020039D5B4 /* IMI003_声音@2x.png in Resources */,
+				F5DB6A6C1FE383F30039D5B4 /* IMIPlayerBottomBar.xib in Resources */,
+				F5DB6A7F1FE385020039D5B4 /* IMI003_缩屏@2x.png in Resources */,
+				F5DB6A7D1FE385020039D5B4 /* IMI003_全屏icon@3x.png in Resources */,
+				F5DB6A871FE385020039D5B4 /* IMI003_全屏icon@2x.png in Resources */,
+				F5DB6A801FE385020039D5B4 /* IMI003_dot@2x.png in Resources */,
 				F53700981FA708EB00E055F3 /* index.html in Resources */,
+				F5DB6A881FE385020039D5B4 /* IMI003_dot@3x.png in Resources */,
+				F5DB6A8D1FE3850F0039D5B4 /* IMI003_PlayBtn@2x.png in Resources */,
 				F5070AB11F2ACE31002C0ADF /* Assets.xcassets in Resources */,
+				F5DB6A861FE385020039D5B4 /* IMI003_声音静音@3x.png in Resources */,
+				F5DB6A891FE385020039D5B4 /* IMI003_声音@3x.png in Resources */,
 				F5F936661FC814410014A5BE /* win.wav in Resources */,
 				F5070AAF1F2ACE31002C0ADF /* Main.storyboard in Resources */,
+				F5DB6A851FE385020039D5B4 /* IMI003_knob.png in Resources */,
+				F5DB6A811FE385020039D5B4 /* IMI003_声音静音@2x.png in Resources */,
+				F5DB6A841FE385020039D5B4 /* IMI003_缩屏@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,18 +451,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5DB6A6A1FE383F30039D5B4 /* IMIVideoContainer.m in Sources */,
 				F52C01711F8F6463005C6FF0 /* ZoomViewController.m in Sources */,
+				F5DB6A901FE385420039D5B4 /* IMIPlayerManager.m in Sources */,
 				F5070AAC1F2ACE31002C0ADF /* ViewController.m in Sources */,
 				F5070AC41F2ADF7C002C0ADF /* DownloadOperation.m in Sources */,
+				F5DB6A6B1FE383F30039D5B4 /* IMIVideoPlayView.m in Sources */,
 				F52C01741F8F6914005C6FF0 /* TableViewController.m in Sources */,
 				F5070AC11F2ADEB9002C0ADF /* NSOperationTestVC.m in Sources */,
 				F5E8391F1F3C54A200B2E2A7 /* RACViewController.m in Sources */,
+				F5DB6A621FE382C20039D5B4 /* AVPlayerTestVC.m in Sources */,
 				F53700931FA703E000E055F3 /* JavaScriptCoreVC.m in Sources */,
 				F5070ABE1F2ACECA002C0ADF /* GCDTestVC.m in Sources */,
 				F5E839221F3C54B600B2E2A7 /* RACSecondViewController.m in Sources */,
 				F5070AA91F2ACE31002C0ADF /* AppDelegate.m in Sources */,
 				F53700961FA7073200E055F3 /* SaveImage_Util.m in Sources */,
 				F5070AA61F2ACE31002C0ADF /* main.m in Sources */,
+				F5DB6A6D1FE383F30039D5B4 /* IMIPlayerBottomBar.m in Sources */,
 				F5523A441FC2E88F004C78EA /* TestVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

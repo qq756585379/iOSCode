@@ -9,10 +9,6 @@
 #import "TestVC.h"
 #import "LogDefine.h"
 
-@interface TestVC ()
-
-@end
-
 @implementation TestVC
 
 - (void)viewDidLoad {

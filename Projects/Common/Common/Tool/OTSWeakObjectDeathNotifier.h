@@ -14,7 +14,7 @@ typedef void(^OTSWeakObjectDeathNotifierBlock)(OTSWeakObjectDeathNotifier *sende
 
 @interface OTSWeakObjectDeathNotifier : NSObject
 
-@property (nonatomic, weak) id owner;
+@property (nonatomic,   weak) id owner;
 @property (nonatomic, strong) id data;
 
 - (void)setBlock:(OTSWeakObjectDeathNotifierBlock)block;

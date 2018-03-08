@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="IMIPlayerBottomBar">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dc-mS-5mm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jx8-Ki-104">
+                            <rect key="frame" x="345" y="8" width="30" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="CiZ-NX-QGN"/>
+                                <constraint firstAttribute="height" constant="35" id="lcQ-Jl-ley"/>
+                            </constraints>
+                            <state key="normal" image="IMI003_全屏icon.png"/>
+                            <state key="selected" image="IMI003_缩屏.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsu-cw-RNG">
+                            <rect key="frame" x="0.0" y="0.0" width="40" height="51"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="3vi-EU-pKV"/>
+                            </constraints>
+                            <state key="normal" image="IMI003_PlayBtn.png"/>
+                            <state key="selected" image="IMI003_暂停.png"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ct7-8g-4ic">
+                            <rect key="frame" x="30" y="18" width="40" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="j3t-KX-kEP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WaG-PJ-YdV">
+                            <rect key="frame" x="73" y="0.0" width="199" height="52"/>
+                            <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="maximumTrackTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </slider>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAm-OD-JrO">
+                            <rect key="frame" x="315" y="7.5" width="30" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="TEb-vU-cCi"/>
+                                <constraint firstAttribute="width" constant="30" id="pKS-6A-ooJ"/>
+                            </constraints>
+                            <state key="normal" image="IMI003_声音.png"/>
+                            <state key="selected" image="IMI003_声音静音.png"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="01:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhS-ek-gcl">
+                            <rect key="frame" x="275" y="18" width="40" height="14.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="iPO-xl-eFf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Ct7-8g-4ic" firstAttribute="centerY" secondItem="2dc-mS-5mm" secondAttribute="centerY" id="3yZ-8s-t3Y"/>
+                        <constraint firstItem="bAm-OD-JrO" firstAttribute="leading" secondItem="zhS-ek-gcl" secondAttribute="trailing" id="4tf-N9-kxY"/>
+                        <constraint firstItem="WaG-PJ-YdV" firstAttribute="leading" secondItem="Ct7-8g-4ic" secondAttribute="trailing" constant="5" id="9V2-6P-kwR"/>
+                        <constraint firstAttribute="bottom" secondItem="Bsu-cw-RNG" secondAttribute="bottom" id="Kw7-0J-u5n"/>
+                        <constraint firstAttribute="bottom" secondItem="WaG-PJ-YdV" secondAttribute="bottom" id="SFD-Hh-mcN"/>
+                        <constraint firstItem="WaG-PJ-YdV" firstAttribute="top" secondItem="2dc-mS-5mm" secondAttribute="top" id="TGx-MT-6Mh"/>
+                        <constraint firstItem="jx8-Ki-104" firstAttribute="leading" secondItem="bAm-OD-JrO" secondAttribute="trailing" id="X3f-Bs-7u7"/>
+                        <constraint firstItem="Bsu-cw-RNG" firstAttribute="leading" secondItem="2dc-mS-5mm" secondAttribute="leading" id="ajG-lC-h8f"/>
+                        <constraint firstItem="zhS-ek-gcl" firstAttribute="centerY" secondItem="2dc-mS-5mm" secondAttribute="centerY" id="dsX-0e-HAh"/>
+                        <constraint firstItem="bAm-OD-JrO" firstAttribute="centerY" secondItem="2dc-mS-5mm" secondAttribute="centerY" id="khH-s0-Nb2"/>
+                        <constraint firstAttribute="trailing" secondItem="jx8-Ki-104" secondAttribute="trailing" id="oD1-bE-7v4"/>
+                        <constraint firstItem="jx8-Ki-104" firstAttribute="centerY" secondItem="2dc-mS-5mm" secondAttribute="centerY" id="poS-It-M7x"/>
+                        <constraint firstItem="Bsu-cw-RNG" firstAttribute="top" secondItem="2dc-mS-5mm" secondAttribute="top" id="qbk-aC-pMs"/>
+                        <constraint firstItem="zhS-ek-gcl" firstAttribute="leading" secondItem="WaG-PJ-YdV" secondAttribute="trailing" constant="5" id="uvf-xO-9T7"/>
+                        <constraint firstItem="Ct7-8g-4ic" firstAttribute="leading" secondItem="Bsu-cw-RNG" secondAttribute="trailing" constant="-10" id="yMI-Xt-6s4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="2dc-mS-5mm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UZ0-g8-ooW"/>
+                <constraint firstAttribute="trailing" secondItem="2dc-mS-5mm" secondAttribute="trailing" id="khk-HE-LMu"/>
+                <constraint firstAttribute="bottom" secondItem="2dc-mS-5mm" secondAttribute="bottom" id="p6e-d8-PNF"/>
+                <constraint firstItem="2dc-mS-5mm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="r4K-zj-J6j"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fullScreenBtn" destination="jx8-Ki-104" id="oO0-31-kfi"/>
+                <outlet property="leftLabel" destination="Ct7-8g-4ic" id="0N7-2j-4a8"/>
+                <outlet property="playOrPauseBtn" destination="Bsu-cw-RNG" id="YeB-Jz-J4F"/>
+                <outlet property="rightLabel" destination="zhS-ek-gcl" id="NAc-3n-CBi"/>
+                <outlet property="silder" destination="WaG-PJ-YdV" id="gBl-TC-opL"/>
+                <outlet property="voiceBtn" destination="bAm-OD-JrO" id="24d-1w-7sQ"/>
+            </connections>
+            <point key="canvasLocation" x="-188.5" y="-82.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IMI003_PlayBtn.png" width="13" height="15"/>
+        <image name="IMI003_全屏icon.png" width="16" height="16"/>
+        <image name="IMI003_声音.png" width="17" height="15"/>
+        <image name="IMI003_声音静音.png" width="18" height="16"/>
+        <image name="IMI003_暂停.png" width="10" height="14"/>
+        <image name="IMI003_缩屏.png" width="17" height="17"/>
+    </resources>
+</document>
