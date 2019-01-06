@@ -10,22 +10,6 @@
 
 @implementation BaseTableViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.view.backgroundColor=kF5F5F5;
-    self.tableView.tableFooterView=[UIView new];
-    self.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
-    
-    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-        self.extendedLayoutIncludesOpaqueBars = NO;
-        self.modalPresentationCapturesStatusBarAppearance = NO;
-    }
-    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]){
-        [self setEdgesForExtendedLayout:UIRectEdgeNone];
-    }
-}
-
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self cancelFirstResponse];
@@ -48,11 +32,6 @@
 #pragma mark - Table view data source
 -(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
     return [UIView new];
-}
--(void)cancelFirstResponse{
-    [self.view endEditing:YES];
-    [self resignFirstResponder];
-    [self.view resignFirstResponder];
 }
 
 -(void)dealloc{

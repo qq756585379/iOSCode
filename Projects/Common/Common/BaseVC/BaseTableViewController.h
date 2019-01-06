@@ -12,6 +12,6 @@
 
 @property (nonatomic, strong) NSMutableArray *dataArray;
 
--(void)cancelFirstResponse;
+
 
 @end

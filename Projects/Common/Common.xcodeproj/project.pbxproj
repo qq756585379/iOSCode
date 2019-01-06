@@ -11,12 +11,9 @@
 		D4186CCD1F9CEE4000204FB1 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CCB1F9CEE4000204FB1 /* BaseTableViewController.m */; };
 		D4186CD01F9CEF0B00204FB1 /* OTSTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CCF1F9CEF0B00204FB1 /* OTSTableViewHeaderFooterView.m */; };
 		D4186CD31F9CEF6200204FB1 /* OTSPlaceholderImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CD21F9CEF6200204FB1 /* OTSPlaceholderImageView.m */; };
-		D4186CD61F9CEF7A00204FB1 /* OTSBlockImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CD51F9CEF7A00204FB1 /* OTSBlockImageView.m */; };
 		D4186CD91F9CEF8500204FB1 /* OTSBlockBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CD71F9CEF8400204FB1 /* OTSBlockBtn.m */; };
 		D4186CDE1F9CEF9600204FB1 /* OTSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CDA1F9CEF9500204FB1 /* OTSActionSheet.m */; };
 		D4186CDF1F9CEF9600204FB1 /* OTSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186CDB1F9CEF9500204FB1 /* OTSAlertView.m */; };
-		D4186D091F9CF24100204FB1 /* OTSPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186D071F9CF24100204FB1 /* OTSPageControl.m */; };
-		D4186DD41F9CF3ED00204FB1 /* TableSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = D4186DD31F9CF3ED00204FB1 /* TableSectionHeader.m */; };
 		F5523A3D1FC2E803004C78EA /* MHNavigationBarMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F5523A331FC2E803004C78EA /* MHNavigationBarMenu.m */; };
 		F5523A3E1FC2E803004C78EA /* MHNavBarMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F5523A371FC2E803004C78EA /* MHNavBarMenuItem.m */; };
 		F5523A3F1FC2E803004C78EA /* MHTopPullMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F5523A391FC2E803004C78EA /* MHTopPullMenu.m */; };
@@ -67,7 +64,6 @@
 		F58111941F7F44FD00B9A214 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = F581113E1F7F44FC00B9A214 /* UIView+frame.m */; };
 		F58111951F7F44FD00B9A214 /* UIView+IB.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111401F7F44FC00B9A214 /* UIView+IB.m */; };
 		F58111961F7F44FD00B9A214 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111421F7F44FC00B9A214 /* UIView+Util.m */; };
-		F58111971F7F44FD00B9A214 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111471F7F44FC00B9A214 /* Foundation+Log.m */; };
 		F58111981F7F44FD00B9A214 /* UIViewController+dealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = F581114A1F7F44FC00B9A214 /* UIViewController+dealloc.m */; };
 		F58111991F7F44FD00B9A214 /* OTSArchiveData.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111521F7F44FC00B9A214 /* OTSArchiveData.m */; };
 		F581119A1F7F44FD00B9A214 /* OTSFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F58111551F7F44FC00B9A214 /* OTSFileManager.m */; };
@@ -100,18 +96,12 @@
 		D4186CCF1F9CEF0B00204FB1 /* OTSTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSTableViewHeaderFooterView.m; sourceTree = "<group>"; };
 		D4186CD11F9CEF6100204FB1 /* OTSPlaceholderImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPlaceholderImageView.h; sourceTree = "<group>"; };
 		D4186CD21F9CEF6200204FB1 /* OTSPlaceholderImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPlaceholderImageView.m; sourceTree = "<group>"; };
-		D4186CD41F9CEF7900204FB1 /* OTSBlockImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSBlockImageView.h; sourceTree = "<group>"; };
-		D4186CD51F9CEF7A00204FB1 /* OTSBlockImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSBlockImageView.m; sourceTree = "<group>"; };
 		D4186CD71F9CEF8400204FB1 /* OTSBlockBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSBlockBtn.m; sourceTree = "<group>"; };
 		D4186CD81F9CEF8500204FB1 /* OTSBlockBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSBlockBtn.h; sourceTree = "<group>"; };
 		D4186CDA1F9CEF9500204FB1 /* OTSActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSActionSheet.m; sourceTree = "<group>"; };
 		D4186CDB1F9CEF9500204FB1 /* OTSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSAlertView.m; sourceTree = "<group>"; };
 		D4186CDC1F9CEF9500204FB1 /* OTSActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSActionSheet.h; sourceTree = "<group>"; };
 		D4186CDD1F9CEF9600204FB1 /* OTSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSAlertView.h; sourceTree = "<group>"; };
-		D4186D071F9CF24100204FB1 /* OTSPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSPageControl.m; sourceTree = "<group>"; };
-		D4186D081F9CF24100204FB1 /* OTSPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSPageControl.h; sourceTree = "<group>"; };
-		D4186DD21F9CF3ED00204FB1 /* TableSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSectionHeader.h; sourceTree = "<group>"; };
-		D4186DD31F9CF3ED00204FB1 /* TableSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableSectionHeader.m; sourceTree = "<group>"; };
 		F5523A301FC2E803004C78EA /* MHNavBarMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNavBarMenuItem.h; sourceTree = "<group>"; };
 		F5523A311FC2E803004C78EA /* MHBottomTipMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHBottomTipMenu.h; sourceTree = "<group>"; };
 		F5523A321FC2E803004C78EA /* MHTopPullMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTopPullMenu.h; sourceTree = "<group>"; };
@@ -219,7 +209,6 @@
 		F58111431F7F44FC00B9A214 /* Common.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.pch; sourceTree = "<group>"; };
 		F58111451F7F44FC00B9A214 /* ColorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDefine.h; sourceTree = "<group>"; };
 		F58111461F7F44FC00B9A214 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
-		F58111471F7F44FC00B9A214 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		F58111481F7F44FC00B9A214 /* HMSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSingleton.h; sourceTree = "<group>"; };
 		F58111491F7F44FC00B9A214 /* OTSNotificationDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSNotificationDefine.h; sourceTree = "<group>"; };
 		F581114A1F7F44FC00B9A214 /* UIViewController+dealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+dealloc.m"; sourceTree = "<group>"; };
@@ -242,7 +231,6 @@
 		F58111631F7F44FC00B9A214 /* XMGFileTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGFileTool.h; sourceTree = "<group>"; };
 		F58111641F7F44FC00B9A214 /* XMGFileTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGFileTool.m; sourceTree = "<group>"; };
 		F59446761F18A49800916A4F /* libCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5ACF3951F8DF756008A1956 /* LogDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,18 +301,12 @@
 		F58110CD1F7F44FC00B9A214 /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
-				D4186DD21F9CF3ED00204FB1 /* TableSectionHeader.h */,
-				D4186DD31F9CF3ED00204FB1 /* TableSectionHeader.m */,
-				D4186D081F9CF24100204FB1 /* OTSPageControl.h */,
-				D4186D071F9CF24100204FB1 /* OTSPageControl.m */,
 				D4186CDC1F9CEF9500204FB1 /* OTSActionSheet.h */,
 				D4186CDA1F9CEF9500204FB1 /* OTSActionSheet.m */,
 				D4186CDD1F9CEF9600204FB1 /* OTSAlertView.h */,
 				D4186CDB1F9CEF9500204FB1 /* OTSAlertView.m */,
 				D4186CD81F9CEF8500204FB1 /* OTSBlockBtn.h */,
 				D4186CD71F9CEF8400204FB1 /* OTSBlockBtn.m */,
-				D4186CD41F9CEF7900204FB1 /* OTSBlockImageView.h */,
-				D4186CD51F9CEF7A00204FB1 /* OTSBlockImageView.m */,
 				D4186CD11F9CEF6100204FB1 /* OTSPlaceholderImageView.h */,
 				D4186CD21F9CEF6200204FB1 /* OTSPlaceholderImageView.m */,
 				D4186CCE1F9CEF0B00204FB1 /* OTSTableViewHeaderFooterView.h */,
@@ -554,10 +536,8 @@
 		F58111441F7F44FC00B9A214 /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				F5ACF3951F8DF756008A1956 /* LogDefine.h */,
 				F58111451F7F44FC00B9A214 /* ColorDefine.h */,
 				F58111461F7F44FC00B9A214 /* CommonDefine.h */,
-				F58111471F7F44FC00B9A214 /* Foundation+Log.m */,
 				F58111481F7F44FC00B9A214 /* HMSingleton.h */,
 				F58111491F7F44FC00B9A214 /* OTSNotificationDefine.h */,
 				F581114A1F7F44FC00B9A214 /* UIViewController+dealloc.m */,
@@ -734,7 +714,6 @@
 				F581119A1F7F44FD00B9A214 /* OTSFileManager.m in Sources */,
 				F58111721F7F44FC00B9A214 /* NSObject+BeeNotification.m in Sources */,
 				F58111931F7F44FD00B9A214 /* UIView+EnlargeArea.m in Sources */,
-				F58111971F7F44FD00B9A214 /* Foundation+Log.m in Sources */,
 				F581117B1F7F44FD00B9A214 /* NSString+safe.m in Sources */,
 				F58111831F7F44FD00B9A214 /* NSMutableString+safe.m in Sources */,
 				D4186CCD1F9CEE4000204FB1 /* BaseTableViewController.m in Sources */,
@@ -743,7 +722,6 @@
 				F581117F1F7F44FD00B9A214 /* NSArray+safe.m in Sources */,
 				F58111751F7F44FD00B9A214 /* NSObject+JsonToVO.m in Sources */,
 				F5523A3D1FC2E803004C78EA /* MHNavigationBarMenu.m in Sources */,
-				D4186CD61F9CEF7A00204FB1 /* OTSBlockImageView.m in Sources */,
 				F581118E1F7F44FD00B9A214 /* UIImage+bundleRes.m in Sources */,
 				F581116C1F7F44FC00B9A214 /* OTSWebView.m in Sources */,
 				F58111811F7F44FD00B9A214 /* NSMutableArray+safe.m in Sources */,
@@ -757,8 +735,6 @@
 				F5523A411FC2E803004C78EA /* MHNavigationBarMenuCell.m in Sources */,
 				F581118A1F7F44FD00B9A214 /* UIButton+util.m in Sources */,
 				D4186CD91F9CEF8500204FB1 /* OTSBlockBtn.m in Sources */,
-				D4186DD41F9CF3ED00204FB1 /* TableSectionHeader.m in Sources */,
-				D4186D091F9CF24100204FB1 /* OTSPageControl.m in Sources */,
 				F58111711F7F44FC00B9A214 /* NSNumber+Format.m in Sources */,
 				F581119F1F7F44FD00B9A214 /* OTSSize.m in Sources */,
 				F58111961F7F44FD00B9A214 /* UIView+Util.m in Sources */,

@@ -48,6 +48,7 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     [self cancelFirstResponse];
 }
+
 -(void)cancelFirstResponse{
     [self.view endEditing:YES];
     [self.view resignFirstResponder];

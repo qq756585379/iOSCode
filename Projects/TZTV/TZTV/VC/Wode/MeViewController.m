@@ -25,26 +25,7 @@
 
 @implementation MeViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.title=@"我的";
-    self.tableView.separatorStyle=UITableViewCellSeparatorStyleSingleLine;
-    //[self addFolatingball];
-}
 
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [self.tableView reloadData];
-}
-
--(NSArray *)titleArr{
-    return @[@"客服中心",@"收货地址",@"关于兔子",@"设置",@"开启直播"];
-}
-
-#pragma mark - Table view data source
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 3;
-}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section==0) {
         return 1;
@@ -55,6 +36,7 @@
         return account.user_type==1?5:4;
     }
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section==0) {
         MeCell1 *cell1=[tableView dequeueReusableCellWithIdentifier:[MeCell1 cellReuseIdentifier] forIndexPath:indexPath];
